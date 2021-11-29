@@ -2,26 +2,26 @@
 
 {% block title %}{% endblock %}
 
-
-    
-{% block body %}
-    <div id="calendrier">
-    </div>
-
-    
+{% block stylesheets %}
     <style>
         #calendrier{
             width: 50%;
             height:50%;
-            margin: auto;
-            margin-top:70px;
+            margin-bottom:200px;
+             margin-top:200px;
             
-            display:inline - block;
-            padding: 2 px 4px;
-            margin-bottom:100px;
+            
+           
         }
     </style>
+{% endblock %}
 
+{% block body %}
+    <div id="calendrier">
+    </div>
+{% endblock %}
+
+{% block javascripts %}
 <script>
     window.onload = () => {
         let calendarElt = document.querySelector("#calendrier")

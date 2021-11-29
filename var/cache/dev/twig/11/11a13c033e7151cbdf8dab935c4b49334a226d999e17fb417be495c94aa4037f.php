@@ -284,6 +284,7 @@ class __TwigTemplate_236e4c2c014799f8086e6a60d49a907caf97f439a42afdfb71aff3ac1b7
                         <form method=\"post\" class=\"wpcf7-form\" novalidate=\"novalidate\">
 
                           <div class=\"contact-form-footer\">
+                          
                             <p><span class=\"wpcf7-form-control-wrap your-first-name\"><input type=\"text\" name=\"your-first-name\" value=\"\" size=\"40\" class=\"wpcf7-form-control wpcf7-text\" aria-invalid=\"false\" placeholder=\"Your name\"></span></p>
                             <p><span class=\"wpcf7-form-control-wrap your-email_1\"><input type=\"email\" name=\"your-email_1\" value=\"\" size=\"40\" class=\"wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-email\" aria-invalid=\"false\" placeholder=\"Your email\"></span></p>
                             <p><span class=\"wpcf7-form-control-wrap your-message\"><textarea name=\"your-message\" cols=\"40\" rows=\"10\" class=\"wpcf7-form-control wpcf7-textarea\" aria-invalid=\"false\" placeholder=\"Your message\"></textarea></span></p>
@@ -948,7 +949,7 @@ footer .widget ul {
 
     public function getDebugInfo()
     {
-        return array (  922 => 85,  904 => 75,  885 => 5,  212 => 86,  210 => 85,  206 => 84,  200 => 81,  196 => 80,  192 => 79,  188 => 78,  184 => 77,  181 => 76,  179 => 75,  172 => 70,  165 => 66,  157 => 61,  154 => 60,  146 => 55,  138 => 52,  134 => 50,  132 => 49,  128 => 48,  124 => 47,  118 => 44,  114 => 43,  106 => 38,  102 => 37,  98 => 36,  92 => 33,  88 => 32,  81 => 28,  62 => 12,  52 => 5,  46 => 1,);
+        return array (  923 => 85,  905 => 75,  886 => 5,  212 => 86,  210 => 85,  206 => 84,  200 => 81,  196 => 80,  192 => 79,  188 => 78,  184 => 77,  181 => 76,  179 => 75,  172 => 70,  165 => 66,  157 => 61,  154 => 60,  146 => 55,  138 => 52,  134 => 50,  132 => 49,  128 => 48,  124 => 47,  118 => 44,  114 => 43,  106 => 38,  102 => 37,  98 => 36,  92 => 33,  88 => 32,  81 => 28,  62 => 12,  52 => 5,  46 => 1,);
     }
 
     public function getSourceContext()
@@ -1113,6 +1114,7 @@ footer .widget ul {
                         <form method=\"post\" class=\"wpcf7-form\" novalidate=\"novalidate\">
 
                           <div class=\"contact-form-footer\">
+                          
                             <p><span class=\"wpcf7-form-control-wrap your-first-name\"><input type=\"text\" name=\"your-first-name\" value=\"\" size=\"40\" class=\"wpcf7-form-control wpcf7-text\" aria-invalid=\"false\" placeholder=\"Your name\"></span></p>
                             <p><span class=\"wpcf7-form-control-wrap your-email_1\"><input type=\"email\" name=\"your-email_1\" value=\"\" size=\"40\" class=\"wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-email\" aria-invalid=\"false\" placeholder=\"Your email\"></span></p>
                             <p><span class=\"wpcf7-form-control-wrap your-message\"><textarea name=\"your-message\" cols=\"40\" rows=\"10\" class=\"wpcf7-form-control wpcf7-textarea\" aria-invalid=\"false\" placeholder=\"Your message\"></textarea></span></p>
@@ -1701,6 +1703,6 @@ footer .widget ul {
         \$(\".nav-menus\").toggleClass(\"active\");
     });
 </script>
-", "base.html.twig", "/opt/lampp/htdocs/sitemariage/templates/base.html.twig");
+", "base.html.twig", "/opt/lampp/htdocs/sitemariage2/templates/base.html.twig");
     }
 }

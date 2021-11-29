@@ -33,7 +33,7 @@ class ContactController extends AbstractController
             // On crée le message avec la vue twig
             ->setBody(
                 $this->renderView(
-                   'emails/contact.html.twig' , compact('contact')
+                   'home/index.html.twig' , compact('contact')
                 ),
                 'text/html'
             )

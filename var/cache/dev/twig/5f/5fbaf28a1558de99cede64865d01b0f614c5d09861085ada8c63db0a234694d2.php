@@ -26,7 +26,9 @@ class __TwigTemplate_745c2f5cb9b4fb88f14939ceef2e76f3e53c11274f4830451b45c7b2014
 
         $this->blocks = [
             'title' => [$this, 'block_title'],
+            'stylesheets' => [$this, 'block_stylesheets'],
             'body' => [$this, 'block_body'],
+            'javascripts' => [$this, 'block_javascripts'],
         ];
     }
 
@@ -73,7 +75,38 @@ class __TwigTemplate_745c2f5cb9b4fb88f14939ceef2e76f3e53c11274f4830451b45c7b2014
 
     }
 
-    // line 7
+    // line 5
+    public function block_stylesheets($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
+
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
+
+        // line 6
+        echo "    <style>
+        #calendrier{
+            width: 50%;
+            height:50%;
+            margin-bottom:200px;
+             margin-top:200px;
+            
+            
+           
+        }
+    </style>
+";
+        
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+        
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
+
+    }
+
+    // line 19
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -83,25 +116,30 @@ class __TwigTemplate_745c2f5cb9b4fb88f14939ceef2e76f3e53c11274f4830451b45c7b2014
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 8
+        // line 20
         echo "    <div id=\"calendrier\">
     </div>
+";
+        
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
-    
-    <style>
-        #calendrier{
-            width: 50%;
-            height:50%;
-            margin: auto;
-            margin-top:70px;
-            
-            display:inline - block;
-            padding: 2 px 4px;
-            margin-bottom:100px;
-        }
-    </style>
+        
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
 
-<script>
+    }
+
+    // line 24
+    public function block_javascripts($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
+
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
+
+        // line 25
+        echo "<script>
     window.onload = () => {
         let calendarElt = document.querySelector(\"#calendrier\")
         let calendar = new FullCalendar.Calendar(calendarElt, {
@@ -162,7 +200,7 @@ class __TwigTemplate_745c2f5cb9b4fb88f14939ceef2e76f3e53c11274f4830451b45c7b2014
 
     public function getDebugInfo()
     {
-        return array (  118 => 37,  87 => 8,  77 => 7,  59 => 3,  36 => 1,);
+        return array (  156 => 37,  142 => 25,  132 => 24,  120 => 20,  110 => 19,  89 => 6,  79 => 5,  61 => 3,  38 => 1,);
     }
 
     public function getSourceContext()
@@ -171,26 +209,26 @@ class __TwigTemplate_745c2f5cb9b4fb88f14939ceef2e76f3e53c11274f4830451b45c7b2014
 
 {% block title %}{% endblock %}
 
-
-    
-{% block body %}
-    <div id=\"calendrier\">
-    </div>
-
-    
+{% block stylesheets %}
     <style>
         #calendrier{
             width: 50%;
             height:50%;
-            margin: auto;
-            margin-top:70px;
+            margin-bottom:200px;
+             margin-top:200px;
             
-            display:inline - block;
-            padding: 2 px 4px;
-            margin-bottom:100px;
+            
+           
         }
     </style>
+{% endblock %}
 
+{% block body %}
+    <div id=\"calendrier\">
+    </div>
+{% endblock %}
+
+{% block javascripts %}
 <script>
     window.onload = () => {
         let calendarElt = document.querySelector(\"#calendrier\")
@@ -228,6 +266,6 @@ class __TwigTemplate_745c2f5cb9b4fb88f14939ceef2e76f3e53c11274f4830451b45c7b2014
     }
 </script>
 
-{% endblock %}", "rendez_vous/index.html.twig", "/opt/lampp/htdocs/sitemariage/templates/rendez_vous/index.html.twig");
+{% endblock %}", "rendez_vous/index.html.twig", "/opt/lampp/htdocs/sitemariage2/templates/rendez_vous/index.html.twig");
     }
 }
