@@ -2,9 +2,13 @@
 
 namespace App\Repository;
 
+use App\Data\SearchData2;
 use App\Entity\CentreDeBeaute;
-use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
+use Knp\Component\Pager\PaginatorInterface;
+use App\Repository\CentreDeBeauteRepository;
+use Knp\Component\Pager\Pagination\PaginationInterface;
+use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 
 /**
  * @method CentreDeBeaute|null find($id, $lockMode = null, $lockVersion = null)
@@ -14,37 +18,53 @@ use Doctrine\Persistence\ManagerRegistry;
  */
 class CentreDeBeauteRepository extends ServiceEntityRepository
 {
-    public function __construct(ManagerRegistry $registry)
+    public function __construct(ManagerRegistry $registry, PaginatorInterface $paginator )
     {
         parent::__construct($registry, CentreDeBeaute::class);
+        $this->paginator = $paginator;
     }
 
-    // /**
-    //  * @return CentreDeBeaute[] Returns an array of CentreDeBeaute objects
-    //  */
-    /*
-    public function findByExampleField($value)
-    {
-        return $this->createQueryBuilder('c')
-            ->andWhere('c.exampleField = :val')
-            ->setParameter('val', $value)
-            ->orderBy('c.id', 'ASC')
-            ->setMaxResults(10)
-            ->getQuery()
-            ->getResult()
-        ;
-    }
-    */
+    /**
+     * Résoudre les cours en lien avec une recherche
+     * @return PaginationInterface
+     */
 
-    /*
-    public function findOneBySomeField($value): ?CentreDeBeaute
+    public function findSearch2(SearchData2 $search): PaginationInterface
     {
-        return $this->createQueryBuilder('c')
-            ->andWhere('c.exampleField = :val')
-            ->setParameter('val', $value)
-            ->getQuery()
-            ->getOneOrNullResult()
-        ;
+        $query = $this
+         ->createQueryBuilder('p');
+         
+         
+
+         if (!empty($search->q)) {
+            $query = $query
+                ->andWhere('p.emplacement LIKE :q')
+                ->setParameter('q', "%{$search->q}%");
+        }
+
+        if (!empty($search->min)) {
+            $query = $query
+                ->andWhere('p.prix >= :min')
+                ->setParameter('min', $search->min);
+        }
+
+        if (!empty($search->max) ) {
+            $query = $query
+                ->andWhere('p.prix <= :max')
+                ->setParameter('max', $search->max);
+        }
+
+
+
+        
+
+        $query = $query->getQuery();
+        return $this->paginator->paginate(
+            $query,
+            $search->page,
+           12
+        );
     }
-    */
+
+
 }

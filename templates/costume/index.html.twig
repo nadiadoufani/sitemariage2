@@ -3,6 +3,9 @@
 {% block title %}{% endblock %}
 
 {% block body %}
+<div class="card-wrap "  style="margin-top:100px;">
+{% include 'costume/_filtre.html.twig' with{form:form} only %}
+</div>
 <section style="margin-top:100px;">
 <h3 >Tenue du marié</h3>
 <p style="text-align: center;" >Le jour du mariage, la tenue du marié est synonyme d’élégance.

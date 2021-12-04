@@ -3,7 +3,9 @@
 {% block title %}Hello SalleDeMariageController!{% endblock %}
  
 {% block body %}
- 
+ <div class="card-wrap "  style="margin-top:100px;">
+{% include 'centre_de_beaute/_filtre.html.twig' with{form:form} only %}
+</div>
 <div style="margin-top:100px;"> 
 
 <h3>Votre robe de mariée</h3>
@@ -16,7 +18,7 @@
 
 
 
-<section style="margin-bottom:1200px;">
+<section style="margin-bottom:1700px;">
  {% for item in centredebeaute %}
           <div class="pic">
 			<div class="mask"> 
@@ -30,7 +32,7 @@
     </section> 
     
     
-    <section>
+    <section style="margin-top:100px;">
 <div>
   <h3>Votre robe de mariée par style</h3>
   <p style="text-align: center;" >Découvrez les modèles tendances en 2022 selon le style de robe de mariée qui vous séduit le plus 
@@ -109,7 +111,7 @@
 
 .pic {
 	width: 320px;
-	height: 260px;
+	height: 360px;
 	float: left;
 	border: 10px solid #fff;
   overflow: hidden;

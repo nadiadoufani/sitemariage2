@@ -2,9 +2,13 @@
 
 namespace App\Repository;
 
+use App\Data\SearchData7;
+
 use App\Entity\Photographe;
-use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
+use Knp\Component\Pager\PaginatorInterface;
+use Knp\Component\Pager\Pagination\PaginationInterface;
+use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 
 /**
  * @method Photographe|null find($id, $lockMode = null, $lockVersion = null)
@@ -14,37 +18,53 @@ use Doctrine\Persistence\ManagerRegistry;
  */
 class PhotographeRepository extends ServiceEntityRepository
 {
-    public function __construct(ManagerRegistry $registry)
+    public function __construct(ManagerRegistry $registry, PaginatorInterface $paginator )
     {
         parent::__construct($registry, Photographe::class);
+        $this->paginator = $paginator;
     }
 
-    // /**
-    //  * @return Photographe[] Returns an array of Photographe objects
-    //  */
-    /*
-    public function findByExampleField($value)
-    {
-        return $this->createQueryBuilder('p')
-            ->andWhere('p.exampleField = :val')
-            ->setParameter('val', $value)
-            ->orderBy('p.id', 'ASC')
-            ->setMaxResults(10)
-            ->getQuery()
-            ->getResult()
-        ;
-    }
-    */
+    /**
+     * Résoudre les cours en lien avec une recherche
+     * @return PaginationInterface
+     */
 
-    /*
-    public function findOneBySomeField($value): ?Photographe
+    public function findSearch7(SearchData7 $search): PaginationInterface
     {
-        return $this->createQueryBuilder('p')
-            ->andWhere('p.exampleField = :val')
-            ->setParameter('val', $value)
-            ->getQuery()
-            ->getOneOrNullResult()
-        ;
+        $query = $this
+         ->createQueryBuilder('p');
+         
+         
+
+         if (!empty($search->q)) {
+            $query = $query
+                ->andWhere('p.emplacement LIKE :q')
+                ->setParameter('q', "%{$search->q}%");
+        }
+
+        if (!empty($search->min)) {
+            $query = $query
+                ->andWhere('p.prix >= :min')
+                ->setParameter('min', $search->min);
+        }
+
+        if (!empty($search->max) ) {
+            $query = $query
+                ->andWhere('p.prix <= :max')
+                ->setParameter('max', $search->max);
+        }
+
+
+
+        
+
+        $query = $query->getQuery();
+        return $this->paginator->paginate(
+            $query,
+            $search->page,
+           12
+        );
     }
-    */
+
+
 }

@@ -85,7 +85,7 @@ class __TwigTemplate_2fb688772a0d138c086910acd58b23c10785c761949f4d2a7d435a67541
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "    <h1>Create new Calendar</h1>
+        echo "    <h1 style=\"margin-top:100px;\">Create new Calendar</h1>
 
     ";
         // line 8
@@ -127,12 +127,12 @@ class __TwigTemplate_2fb688772a0d138c086910acd58b23c10785c761949f4d2a7d435a67541
 {% block title %}New Calendar{% endblock %}
 
 {% block body %}
-    <h1>Create new Calendar</h1>
+    <h1 style=\"margin-top:100px;\">Create new Calendar</h1>
 
     {{ include('calendar/_form.html.twig') }}
 
     <a href=\"{{ path('calendar_index') }}\">back to list</a>
 {% endblock %}
-", "calendar/new.html.twig", "/opt/lampp/htdocs/sitemariage/templates/calendar/new.html.twig");
+", "calendar/new.html.twig", "/opt/lampp/htdocs/sitemariage2/templates/calendar/new.html.twig");
     }
 }

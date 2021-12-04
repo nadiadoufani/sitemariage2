@@ -138,7 +138,10 @@ class __TwigTemplate_2acee5c29faeff5a1dc43f81609ee3b052c1b6fb7af22a4f28fe4baf7d9
         // line 40
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["salledemariage"]) || array_key_exists("salledemariage", $context) ? $context["salledemariage"] : (function () { throw new RuntimeError('Variable "salledemariage" does not exist.', 40, $this->source); })()), "description", [], "any", false, false, false, 40), "html", null, true);
         echo "</p>
-          <a href=\"\"<button type=\"submit\" class=\"btn btn-success \" style=\"border-radius: 30%;\">reserver</button></a>
+          <a href=\"";
+        // line 41
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("rendez_vous");
+        echo "\"<button type=\"submit\" class=\"btn btn-success \" style=\"border-radius: 30%;\">reserver</button></a>
               <a href=\"";
         // line 42
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("salle_de_mariage");
@@ -525,7 +528,7 @@ main{
 
     public function getDebugInfo()
     {
-        return array (  231 => 90,  218 => 83,  212 => 82,  208 => 80,  204 => 79,  201 => 78,  195 => 76,  187 => 71,  183 => 70,  169 => 60,  167 => 59,  162 => 57,  144 => 42,  139 => 40,  135 => 39,  128 => 35,  124 => 34,  104 => 17,  98 => 14,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  234 => 90,  221 => 83,  215 => 82,  211 => 80,  207 => 79,  204 => 78,  198 => 76,  190 => 71,  186 => 70,  172 => 60,  170 => 59,  165 => 57,  147 => 42,  143 => 41,  139 => 40,  135 => 39,  128 => 35,  124 => 34,  104 => 17,  98 => 14,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -570,7 +573,7 @@ main{
       <div data-aos=\"flip-left\" data-aos-easing=\"ease-out-cubic\" data-aos-duration=\"1000\" class=\"card-r\" id=\"\">
         <h2 style=\"font-family: 'Yeon Sung', cursive;\">{{ salledemariage.nom}}</h2>
           <p> {{ salledemariage.description}}</p>
-          <a href=\"\"<button type=\"submit\" class=\"btn btn-success \" style=\"border-radius: 30%;\">reserver</button></a>
+          <a href=\"{{ path('rendez_vous')}}\"<button type=\"submit\" class=\"btn btn-success \" style=\"border-radius: 30%;\">reserver</button></a>
               <a href=\"{{ path('salle_de_mariage')}}\"<button type=\"submit\" class=\"btn btn-success \" style=\"border-radius: 30%;\">Back</button></a>
       </div>
       
@@ -895,6 +898,6 @@ main{
 
 </style>
 
-{% endblock %}", "home/show.html.twig", "/opt/lampp/htdocs/sitemariage/templates/home/show.html.twig");
+{% endblock %}", "home/show.html.twig", "/opt/lampp/htdocs/sitemariage2/templates/home/show.html.twig");
     }
 }

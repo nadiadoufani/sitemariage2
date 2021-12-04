@@ -55,7 +55,7 @@ class __TwigTemplate_ba1f0063c05d59f2c7edd2bfbd7e9d23917ed1b25966632fbb0d8f4b718
 
     }
 
-    // line 3
+    // line 4
     public function block_title($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -65,7 +65,6 @@ class __TwigTemplate_ba1f0063c05d59f2c7edd2bfbd7e9d23917ed1b25966632fbb0d8f4b718
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Calendar index";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -74,7 +73,7 @@ class __TwigTemplate_ba1f0063c05d59f2c7edd2bfbd7e9d23917ed1b25966632fbb0d8f4b718
 
     }
 
-    // line 5
+    // line 6
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -84,8 +83,8 @@ class __TwigTemplate_ba1f0063c05d59f2c7edd2bfbd7e9d23917ed1b25966632fbb0d8f4b718
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 6
-        echo "    <h1>Calendar index</h1>
+        // line 7
+        echo "    <h1 style=\"margin-top:100px;\">Calendar index</h1>
 
     <table class=\"table\">
         <thead>
@@ -104,57 +103,57 @@ class __TwigTemplate_ba1f0063c05d59f2c7edd2bfbd7e9d23917ed1b25966632fbb0d8f4b718
         </thead>
         <tbody>
         ";
-        // line 24
+        // line 25
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["calendars"]) || array_key_exists("calendars", $context) ? $context["calendars"] : (function () { throw new RuntimeError('Variable "calendars" does not exist.', 24, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["calendars"]) || array_key_exists("calendars", $context) ? $context["calendars"] : (function () { throw new RuntimeError('Variable "calendars" does not exist.', 25, $this->source); })()));
         $context['_iterated'] = false;
         foreach ($context['_seq'] as $context["_key"] => $context["calendar"]) {
-            // line 25
+            // line 26
             echo "            <tr>
                 <td>";
-            // line 26
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["calendar"], "id", [], "any", false, false, false, 26), "html", null, true);
-            echo "</td>
-                <td>";
             // line 27
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["calendar"], "title", [], "any", false, false, false, 27), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["calendar"], "id", [], "any", false, false, false, 27), "html", null, true);
             echo "</td>
                 <td>";
             // line 28
-            ((twig_get_attribute($this->env, $this->source, $context["calendar"], "start", [], "any", false, false, false, 28)) ? (print (twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["calendar"], "start", [], "any", false, false, false, 28), "Y-m-d H:i:s"), "html", null, true))) : (print ("")));
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["calendar"], "title", [], "any", false, false, false, 28), "html", null, true);
             echo "</td>
                 <td>";
             // line 29
-            ((twig_get_attribute($this->env, $this->source, $context["calendar"], "end", [], "any", false, false, false, 29)) ? (print (twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["calendar"], "end", [], "any", false, false, false, 29), "Y-m-d H:i:s"), "html", null, true))) : (print ("")));
+            ((twig_get_attribute($this->env, $this->source, $context["calendar"], "start", [], "any", false, false, false, 29)) ? (print (twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["calendar"], "start", [], "any", false, false, false, 29), "Y-m-d H:i:s"), "html", null, true))) : (print ("")));
             echo "</td>
                 <td>";
             // line 30
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["calendar"], "description", [], "any", false, false, false, 30), "html", null, true);
+            ((twig_get_attribute($this->env, $this->source, $context["calendar"], "end", [], "any", false, false, false, 30)) ? (print (twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["calendar"], "end", [], "any", false, false, false, 30), "Y-m-d H:i:s"), "html", null, true))) : (print ("")));
             echo "</td>
                 <td>";
             // line 31
-            echo ((twig_get_attribute($this->env, $this->source, $context["calendar"], "allDay", [], "any", false, false, false, 31)) ? ("Yes") : ("No"));
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["calendar"], "description", [], "any", false, false, false, 31), "html", null, true);
             echo "</td>
                 <td>";
             // line 32
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["calendar"], "backgroundColor", [], "any", false, false, false, 32), "html", null, true);
+            echo ((twig_get_attribute($this->env, $this->source, $context["calendar"], "allDay", [], "any", false, false, false, 32)) ? ("Yes") : ("No"));
             echo "</td>
                 <td>";
             // line 33
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["calendar"], "borderColor", [], "any", false, false, false, 33), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["calendar"], "backgroundColor", [], "any", false, false, false, 33), "html", null, true);
             echo "</td>
                 <td>";
             // line 34
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["calendar"], "textColor", [], "any", false, false, false, 34), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["calendar"], "borderColor", [], "any", false, false, false, 34), "html", null, true);
+            echo "</td>
+                <td>";
+            // line 35
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["calendar"], "textColor", [], "any", false, false, false, 35), "html", null, true);
             echo "</td>
                 <td>
                     <a href=\"";
-            // line 36
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("calendar_show", ["id" => twig_get_attribute($this->env, $this->source, $context["calendar"], "id", [], "any", false, false, false, 36)]), "html", null, true);
+            // line 37
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("calendar_show", ["id" => twig_get_attribute($this->env, $this->source, $context["calendar"], "id", [], "any", false, false, false, 37)]), "html", null, true);
             echo "\">show</a>
                     <a href=\"";
-            // line 37
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("calendar_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["calendar"], "id", [], "any", false, false, false, 37)]), "html", null, true);
+            // line 38
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("calendar_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["calendar"], "id", [], "any", false, false, false, 38)]), "html", null, true);
             echo "\">edit</a>
                 </td>
             </tr>
@@ -162,7 +161,7 @@ class __TwigTemplate_ba1f0063c05d59f2c7edd2bfbd7e9d23917ed1b25966632fbb0d8f4b718
             $context['_iterated'] = true;
         }
         if (!$context['_iterated']) {
-            // line 41
+            // line 42
             echo "            <tr>
                 <td colspan=\"10\">no records found</td>
             </tr>
@@ -171,14 +170,18 @@ class __TwigTemplate_ba1f0063c05d59f2c7edd2bfbd7e9d23917ed1b25966632fbb0d8f4b718
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['calendar'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 45
+        // line 46
         echo "        </tbody>
     </table>
 
     <a href=\"";
-        // line 48
+        // line 49
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("calendar_new");
         echo "\">Create new</a>
+    <a href=\"";
+        // line 50
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("rendez_vous");
+        echo "\">Back</a>
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -200,17 +203,18 @@ class __TwigTemplate_ba1f0063c05d59f2c7edd2bfbd7e9d23917ed1b25966632fbb0d8f4b718
 
     public function getDebugInfo()
     {
-        return array (  180 => 48,  175 => 45,  166 => 41,  157 => 37,  153 => 36,  148 => 34,  144 => 33,  140 => 32,  136 => 31,  132 => 30,  128 => 29,  124 => 28,  120 => 27,  116 => 26,  113 => 25,  108 => 24,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  183 => 50,  179 => 49,  174 => 46,  165 => 42,  156 => 38,  152 => 37,  147 => 35,  143 => 34,  139 => 33,  135 => 32,  131 => 31,  127 => 30,  123 => 29,  119 => 28,  115 => 27,  112 => 26,  107 => 25,  87 => 7,  77 => 6,  59 => 4,  36 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Calendar index{% endblock %}
+
+{% block title %}{% endblock %}
 
 {% block body %}
-    <h1>Calendar index</h1>
+    <h1 style=\"margin-top:100px;\">Calendar index</h1>
 
     <table class=\"table\">
         <thead>
@@ -253,6 +257,7 @@ class __TwigTemplate_ba1f0063c05d59f2c7edd2bfbd7e9d23917ed1b25966632fbb0d8f4b718
     </table>
 
     <a href=\"{{ path('calendar_new') }}\">Create new</a>
-{% endblock %}", "calendar/index.html.twig", "/opt/lampp/htdocs/sitemariage/templates/calendar/index.html.twig");
+    <a href=\"{{ path('rendez_vous') }}\">Back</a>
+{% endblock %}", "calendar/index.html.twig", "/opt/lampp/htdocs/sitemariage2/templates/calendar/index.html.twig");
     }
 }

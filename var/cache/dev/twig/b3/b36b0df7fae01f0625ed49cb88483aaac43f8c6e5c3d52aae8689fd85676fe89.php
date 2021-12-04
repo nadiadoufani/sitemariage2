@@ -85,7 +85,12 @@ class __TwigTemplate_6f07d81d8dd2dd0007c6ec47a5f187b82b916d715000dd083067a4c574c
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo " 
+        echo " <div class=\"card-wrap \"  style=\"margin-top:100px;\">
+";
+        // line 7
+        $this->loadTemplate("centre_de_beaute/_filtre.html.twig", "centre_de_beaute/index.html.twig", 7)->display(twig_to_array(["form" => (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 7, $this->source); })())]));
+        // line 8
+        echo "</div>
 <div style=\"margin-top:100px;\"> 
 
 <h3>Votre robe de mariée</h3>
@@ -98,28 +103,28 @@ class __TwigTemplate_6f07d81d8dd2dd0007c6ec47a5f187b82b916d715000dd083067a4c574c
 
 
 
-<section style=\"margin-bottom:1200px;\">
+<section style=\"margin-bottom:1700px;\">
  ";
-        // line 20
+        // line 22
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["centredebeaute"]) || array_key_exists("centredebeaute", $context) ? $context["centredebeaute"] : (function () { throw new RuntimeError('Variable "centredebeaute" does not exist.', 20, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["centredebeaute"]) || array_key_exists("centredebeaute", $context) ? $context["centredebeaute"] : (function () { throw new RuntimeError('Variable "centredebeaute" does not exist.', 22, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
-            // line 21
+            // line 23
             echo "          <div class=\"pic\">
 \t\t\t<div class=\"mask\"> 
 \t\t\t\t<h3 class=\"title\">";
-            // line 23
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "nom", [], "any", false, false, false, 23), "html", null, true);
+            // line 25
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "nom", [], "any", false, false, false, 25), "html", null, true);
             echo "</h3>
 \t\t\t<br>
 \t\t\t\t<a href=\"";
-            // line 25
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home_detail_centre", ["id" => twig_get_attribute($this->env, $this->source, $context["item"], "id", [], "any", false, false, false, 25)]), "html", null, true);
+            // line 27
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home_detail_centre", ["id" => twig_get_attribute($this->env, $this->source, $context["item"], "id", [], "any", false, false, false, 27)]), "html", null, true);
             echo "\" class=\"readMore\">READ MORE</a>
 \t\t\t</div>
 \t\t\t<img src=\"/imgcentre/";
-            // line 27
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "image", [], "any", false, false, false, 27), "html", null, true);
+            // line 29
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "image", [], "any", false, false, false, 29), "html", null, true);
             echo "\" class=\"picture1\" >
 \t\t</div>
 \t\t";
@@ -127,11 +132,11 @@ class __TwigTemplate_6f07d81d8dd2dd0007c6ec47a5f187b82b916d715000dd083067a4c574c
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 30
+        // line 32
         echo "    </section> 
     
     
-    <section>
+    <section style=\"margin-top:100px;\">
 <div>
   <h3>Votre robe de mariée par style</h3>
   <p style=\"text-align: center;\" >Découvrez les modèles tendances en 2022 selon le style de robe de mariée qui vous séduit le plus 
@@ -146,7 +151,7 @@ class __TwigTemplate_6f07d81d8dd2dd0007c6ec47a5f187b82b916d715000dd083067a4c574c
         <div class=\"col-xs-12 col-sm-6 col-md-3\">
             <div class=\"image-block\">
                 <a href=\"#\"><img src=\"";
-        // line 47
+        // line 49
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/cover-robes-romantiques-2020-victoire-vermeulen.jpg"), "html", null, true);
         echo "\" /></a>
               </div>
@@ -155,7 +160,7 @@ class __TwigTemplate_6f07d81d8dd2dd0007c6ec47a5f187b82b916d715000dd083067a4c574c
           <div class=\"col-xs-12 col-sm-6 col-md-3\">
             <div class=\"image-block\">
                 <a href=\"#\"><img src=\"";
-        // line 53
+        // line 55
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/ELISE_MARTIMORT_Robe_de_mariee_sur_mesure_paris_bordeaux_Collection_Empowerment-Robe-SIMONE-2-BD.jpeg"), "html", null, true);
         echo "\" /></a>
               </div>
@@ -164,7 +169,7 @@ class __TwigTemplate_6f07d81d8dd2dd0007c6ec47a5f187b82b916d715000dd083067a4c574c
           <div class=\"col-xs-12 col-sm-6 col-md-3\">
             <div class=\"image-block\">
                 <a href=\"#\"><img src=\"";
-        // line 59
+        // line 61
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/robe-petrus-civile-dentelle-laure-de-sagazan-.jpg"), "html", null, true);
         echo "\" /></a>
               </div>
@@ -173,7 +178,7 @@ class __TwigTemplate_6f07d81d8dd2dd0007c6ec47a5f187b82b916d715000dd083067a4c574c
           <div class=\"col-xs-12 col-sm-6 col-md-3\">
             <div class=\"image-block\">
                 <a href=\"#\"><img src=\"";
-        // line 65
+        // line 67
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/cover-original-CALIFA-valerio-luna.jpg"), "html", null, true);
         echo "\" /></a>
               </div>
@@ -194,7 +199,7 @@ class __TwigTemplate_6f07d81d8dd2dd0007c6ec47a5f187b82b916d715000dd083067a4c574c
               <div class=\"col-xs-12 col-sm-6 col-md-3\">
                   <div class=\"image-block\">
                       <a href=\"#\"><img src=\"";
-        // line 83
+        // line 85
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/nicole-spose-NCA20031-NicoleCouture-moda-sposa-2020-710.jpg"), "html", null, true);
         echo "\" /></a>
                     </div>
@@ -203,7 +208,7 @@ class __TwigTemplate_6f07d81d8dd2dd0007c6ec47a5f187b82b916d715000dd083067a4c574c
                 <div class=\"col-xs-12 col-sm-6 col-md-3\">
                   <div class=\"image-block\">
                       <a href=\"#\"><img src=\"";
-        // line 89
+        // line 91
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/top-singuliere-jupe-couleur-de-lune-elsa-gary-2022-robe-de-mariee-elegante-6.jpeg"), "html", null, true);
         echo "\" /></a>
                     </div>
@@ -212,7 +217,7 @@ class __TwigTemplate_6f07d81d8dd2dd0007c6ec47a5f187b82b916d715000dd083067a4c574c
                 <div class=\"col-xs-12 col-sm-6 col-md-3\">
                   <div class=\"image-block\">
                       <a href=\"#\"><img src=\"";
-        // line 95
+        // line 97
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/alleyn_d.jpeg"), "html", null, true);
         echo "\" /></a>
                     </div>
@@ -221,7 +226,7 @@ class __TwigTemplate_6f07d81d8dd2dd0007c6ec47a5f187b82b916d715000dd083067a4c574c
                 <div class=\"col-xs-12 col-sm-6 col-md-3\">
                   <div class=\"image-block\">
                       <a href=\"#\"><img src=\"";
-        // line 101
+        // line 103
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/2020_LINZ_LUNA_NOVIAS_1.jpg"), "html", null, true);
         echo "\" /></a>
                     </div>
@@ -234,7 +239,7 @@ class __TwigTemplate_6f07d81d8dd2dd0007c6ec47a5f187b82b916d715000dd083067a4c574c
 
 .pic {
 \twidth: 320px;
-\theight: 260px;
+\theight: 360px;
 \tfloat: left;
 \tborder: 10px solid #fff;
   overflow: hidden;
@@ -458,7 +463,7 @@ h3{
 
     public function getDebugInfo()
     {
-        return array (  225 => 101,  216 => 95,  207 => 89,  198 => 83,  177 => 65,  168 => 59,  159 => 53,  150 => 47,  131 => 30,  122 => 27,  117 => 25,  112 => 23,  108 => 21,  104 => 20,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  230 => 103,  221 => 97,  212 => 91,  203 => 85,  182 => 67,  173 => 61,  164 => 55,  155 => 49,  136 => 32,  127 => 29,  122 => 27,  117 => 25,  113 => 23,  109 => 22,  93 => 8,  91 => 7,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -468,7 +473,9 @@ h3{
 {% block title %}Hello SalleDeMariageController!{% endblock %}
  
 {% block body %}
- 
+ <div class=\"card-wrap \"  style=\"margin-top:100px;\">
+{% include 'centre_de_beaute/_filtre.html.twig' with{form:form} only %}
+</div>
 <div style=\"margin-top:100px;\"> 
 
 <h3>Votre robe de mariée</h3>
@@ -481,7 +488,7 @@ h3{
 
 
 
-<section style=\"margin-bottom:1200px;\">
+<section style=\"margin-bottom:1700px;\">
  {% for item in centredebeaute %}
           <div class=\"pic\">
 \t\t\t<div class=\"mask\"> 
@@ -495,7 +502,7 @@ h3{
     </section> 
     
     
-    <section>
+    <section style=\"margin-top:100px;\">
 <div>
   <h3>Votre robe de mariée par style</h3>
   <p style=\"text-align: center;\" >Découvrez les modèles tendances en 2022 selon le style de robe de mariée qui vous séduit le plus 
@@ -574,7 +581,7 @@ h3{
 
 .pic {
 \twidth: 320px;
-\theight: 260px;
+\theight: 360px;
 \tfloat: left;
 \tborder: 10px solid #fff;
   overflow: hidden;
@@ -778,6 +785,6 @@ h3{
 
 </style>   
 {% endblock %}
-", "centre_de_beaute/index.html.twig", "/opt/lampp/htdocs/sitemariage/templates/centre_de_beaute/index.html.twig");
+", "centre_de_beaute/index.html.twig", "/opt/lampp/htdocs/sitemariage2/templates/centre_de_beaute/index.html.twig");
     }
 }

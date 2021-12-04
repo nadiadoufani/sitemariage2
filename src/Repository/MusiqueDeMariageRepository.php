@@ -2,9 +2,12 @@
 
 namespace App\Repository;
 
+use App\Data\SearchData4;
 use App\Entity\MusiqueDeMariage;
-use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
+use Knp\Component\Pager\PaginatorInterface;
+use Knp\Component\Pager\Pagination\PaginationInterface;
+use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 
 /**
  * @method MusiqueDeMariage|null find($id, $lockMode = null, $lockVersion = null)
@@ -14,37 +17,53 @@ use Doctrine\Persistence\ManagerRegistry;
  */
 class MusiqueDeMariageRepository extends ServiceEntityRepository
 {
-    public function __construct(ManagerRegistry $registry)
+    public function __construct(ManagerRegistry $registry, PaginatorInterface $paginator )
     {
         parent::__construct($registry, MusiqueDeMariage::class);
+        $this->paginator = $paginator;
     }
 
-    // /**
-    //  * @return MusiqueDeMariage[] Returns an array of MusiqueDeMariage objects
-    //  */
-    /*
-    public function findByExampleField($value)
-    {
-        return $this->createQueryBuilder('m')
-            ->andWhere('m.exampleField = :val')
-            ->setParameter('val', $value)
-            ->orderBy('m.id', 'ASC')
-            ->setMaxResults(10)
-            ->getQuery()
-            ->getResult()
-        ;
-    }
-    */
+    /**
+     * Résoudre les cours en lien avec une recherche
+     * @return PaginationInterface
+     */
 
-    /*
-    public function findOneBySomeField($value): ?MusiqueDeMariage
+    public function findSearch4(SearchData4 $search): PaginationInterface
     {
-        return $this->createQueryBuilder('m')
-            ->andWhere('m.exampleField = :val')
-            ->setParameter('val', $value)
-            ->getQuery()
-            ->getOneOrNullResult()
-        ;
+        $query = $this
+         ->createQueryBuilder('p');
+         
+         
+
+         if (!empty($search->q)) {
+            $query = $query
+                ->andWhere('p.emplacement LIKE :q')
+                ->setParameter('q', "%{$search->q}%");
+        }
+
+        if (!empty($search->min)) {
+            $query = $query
+                ->andWhere('p.prix >= :min')
+                ->setParameter('min', $search->min);
+        }
+
+        if (!empty($search->max) ) {
+            $query = $query
+                ->andWhere('p.prix <= :max')
+                ->setParameter('max', $search->max);
+        }
+
+
+
+        
+
+        $query = $query->getQuery();
+        return $this->paginator->paginate(
+            $query,
+            $search->page,
+           12
+        );
     }
-    */
+
+
 }

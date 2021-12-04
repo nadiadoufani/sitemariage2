@@ -10,7 +10,7 @@ if (in_array(PHP_SAPI, ['cli', 'phpdbg'], true)) {
 }
 
 require dirname(__DIR__, 3).'/vendor/autoload.php';
-require __DIR__.'/Container9C0Zla5/srcApp_KernelDevDebugContainer.php';
+require __DIR__.'/Container4fv9ENQ/srcApp_KernelDevDebugContainer.php';
 
 $classes = [];
 $classes[] = 'Symfony\Bundle\FrameworkBundle\FrameworkBundle';
@@ -73,6 +73,15 @@ $classes[] = 'App\Form\CalendarType';
 $classes[] = 'App\Form\CommentaireType';
 $classes[] = 'App\Form\ContactType';
 $classes[] = 'App\Form\RegisterType';
+$classes[] = 'App\Form\SearchForm';
+$classes[] = 'App\Form\SearchForm1';
+$classes[] = 'App\Form\SearchForm2';
+$classes[] = 'App\Form\SearchForm3';
+$classes[] = 'App\Form\SearchForm4';
+$classes[] = 'App\Form\SearchForm5';
+$classes[] = 'App\Form\SearchForm6';
+$classes[] = 'App\Form\SearchForm7';
+$classes[] = 'App\Form\SearchForm8';
 $classes[] = 'App\Repository\AdminRepository';
 $classes[] = 'App\Repository\CalendarRepository';
 $classes[] = 'App\Repository\CategorieRepository';

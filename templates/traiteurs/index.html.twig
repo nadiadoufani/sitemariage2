@@ -3,6 +3,10 @@
 {% block title %}Hello TraiteursController!{% endblock %}
 
 {% block body %}
+
+<div class="card-wrap "  style="margin-top:100px;">
+{% include 'traiteurs/_filtre.html.twig' with{form:form} only %}
+</div>
 <div class="traiteurs" style="margin-top:100px;">
 <h3>Traiteurs de mariage</h3>
 <p>Venez découvrir notre sélection d’inspirations et d’idées concernant les plus 

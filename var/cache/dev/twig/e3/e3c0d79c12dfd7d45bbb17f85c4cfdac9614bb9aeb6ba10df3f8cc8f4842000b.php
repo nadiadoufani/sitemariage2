@@ -208,6 +208,13 @@ h3 {
 
 
 </style>
+
+<div class=\"card-wrap \"  style=\"margin-top:100px;\">
+";
+        // line 131
+        $this->loadTemplate("voyage_de_noce/_filtre.html.twig", "voyage_de_noce/index.html.twig", 131)->display(twig_to_array(["form" => (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 131, $this->source); })())]));
+        // line 132
+        echo "</div>
 <div  style=\"margin-top:100px\">
 <h3>Voyages de noces</h3>
 <p style=\"text-align: center;\"> Ou partir en voyage de noces ? Vous avez des idées mais vous ne savez pas laquelle choisir ?
@@ -219,24 +226,24 @@ Votre lune de miel doit être<br> inoubliable, pour cela choisissez celle qui vo
 <div class=\"voyage\">
   <div class=\"flex\">
   ";
-        // line 139
+        // line 143
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["voyagedenoce"]) || array_key_exists("voyagedenoce", $context) ? $context["voyagedenoce"] : (function () { throw new RuntimeError('Variable "voyagedenoce" does not exist.', 139, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["voyagedenoce"]) || array_key_exists("voyagedenoce", $context) ? $context["voyagedenoce"] : (function () { throw new RuntimeError('Variable "voyagedenoce" does not exist.', 143, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
-            // line 140
+            // line 144
             echo "    <div class=\"card\">
       <img src=\"/imgvoyages/";
-            // line 141
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "image", [], "any", false, false, false, 141), "html", null, true);
+            // line 145
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "image", [], "any", false, false, false, 145), "html", null, true);
             echo "\" alt=\"\">
       <div class=\"card-body\">
         <h3>";
-            // line 143
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "nom", [], "any", false, false, false, 143), "html", null, true);
+            // line 147
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "nom", [], "any", false, false, false, 147), "html", null, true);
             echo "</h3>
         <p class=\"para\" >";
-            // line 144
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "description", [], "any", false, false, false, 144), "html", null, true);
+            // line 148
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "description", [], "any", false, false, false, 148), "html", null, true);
             echo "
         </p>
       </div>
@@ -246,7 +253,7 @@ Votre lune de miel doit être<br> inoubliable, pour cela choisissez celle qui vo
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 149
+        // line 153
         echo "  </div>
 </div>
 <div class=\"d-flex justify-content-end\" > 
@@ -490,7 +497,7 @@ html, body {
 
     public function getDebugInfo()
     {
-        return array (  250 => 149,  239 => 144,  235 => 143,  230 => 141,  227 => 140,  223 => 139,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  257 => 153,  246 => 148,  242 => 147,  237 => 145,  234 => 144,  230 => 143,  217 => 132,  215 => 131,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -623,6 +630,10 @@ h3 {
 
 
 </style>
+
+<div class=\"card-wrap \"  style=\"margin-top:100px;\">
+{% include 'voyage_de_noce/_filtre.html.twig' with{form:form} only %}
+</div>
 <div  style=\"margin-top:100px\">
 <h3>Voyages de noces</h3>
 <p style=\"text-align: center;\"> Ou partir en voyage de noces ? Vous avez des idées mais vous ne savez pas laquelle choisir ?
@@ -870,6 +881,6 @@ html, body {
 
 
 
-", "voyage_de_noce/index.html.twig", "/opt/lampp/htdocs/sitemariage/templates/voyage_de_noce/index.html.twig");
+", "voyage_de_noce/index.html.twig", "/opt/lampp/htdocs/sitemariage2/templates/voyage_de_noce/index.html.twig");
     }
 }

@@ -85,7 +85,7 @@ class __TwigTemplate_c471323eeda86e83f36056645ba396d5a972ff591f4672ceac4886bd439
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "    <h1>Edit Calendar</h1>
+        echo "    <h1 style=\"margin-top:100px;\">Edit Calendar</h1>
 
     ";
         // line 8
@@ -132,7 +132,7 @@ class __TwigTemplate_c471323eeda86e83f36056645ba396d5a972ff591f4672ceac4886bd439
 {% block title %}Edit Calendar{% endblock %}
 
 {% block body %}
-    <h1>Edit Calendar</h1>
+    <h1 style=\"margin-top:100px;\">Edit Calendar</h1>
 
     {{ include('calendar/_form.html.twig', {'button_label': 'Update'}) }}
 
@@ -140,6 +140,6 @@ class __TwigTemplate_c471323eeda86e83f36056645ba396d5a972ff591f4672ceac4886bd439
 
     {{ include('calendar/_delete_form.html.twig') }}
 {% endblock %}
-", "calendar/edit.html.twig", "/opt/lampp/htdocs/sitemariage/templates/calendar/edit.html.twig");
+", "calendar/edit.html.twig", "/opt/lampp/htdocs/sitemariage2/templates/calendar/edit.html.twig");
     }
 }

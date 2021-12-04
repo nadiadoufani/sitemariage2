@@ -86,17 +86,7 @@ class __TwigTemplate_745c2f5cb9b4fb88f14939ceef2e76f3e53c11274f4830451b45c7b2014
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
 
         // line 6
-        echo "    <style>
-        #calendrier{
-            width: 50%;
-            height:50%;
-            margin-bottom:200px;
-             margin-top:200px;
-            
-            
-           
-        }
-    </style>
+        echo "    
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -106,7 +96,7 @@ class __TwigTemplate_745c2f5cb9b4fb88f14939ceef2e76f3e53c11274f4830451b45c7b2014
 
     }
 
-    // line 19
+    // line 8
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -116,9 +106,20 @@ class __TwigTemplate_745c2f5cb9b4fb88f14939ceef2e76f3e53c11274f4830451b45c7b2014
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 20
-        echo "    <div id=\"calendrier\">
+        // line 9
+        echo "<section style=\"width: 50%;height:600px;margin-top:80px;\">
+    <div id=\"calendrier\" style=\" 
+            
+            
+            float:left;
+            padding-left:10px;
+        
+
+            \">
+
     </div>
+ 
+</section>
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -139,7 +140,19 @@ class __TwigTemplate_745c2f5cb9b4fb88f14939ceef2e76f3e53c11274f4830451b45c7b2014
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
         // line 25
-        echo "<script>
+        echo "  <div style=\" 
+ text-align:left;\">
+ <a href=\"";
+        // line 27
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("calendar_index");
+        echo "\"><button>Demande Reservation</button></a>
+  <a href=\"";
+        // line 28
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("salle_de_mariage");
+        echo "\"><button>Back</button></a>
+
+</div> 
+<script>
     window.onload = () => {
         let calendarElt = document.querySelector(\"#calendrier\")
         let calendar = new FullCalendar.Calendar(calendarElt, {
@@ -152,8 +165,8 @@ class __TwigTemplate_745c2f5cb9b4fb88f14939ceef2e76f3e53c11274f4830451b45c7b2014
                 end: 'dayGridMonth,timeGridWeek'
             },
             events: ";
-        // line 37
-        echo (isset($context["data"]) || array_key_exists("data", $context) ? $context["data"] : (function () { throw new RuntimeError('Variable "data" does not exist.', 37, $this->source); })());
+        // line 43
+        echo (isset($context["data"]) || array_key_exists("data", $context) ? $context["data"] : (function () { throw new RuntimeError('Variable "data" does not exist.', 43, $this->source); })());
         echo ",
             editable: true,
             eventResizableFromStart: true
@@ -200,7 +213,7 @@ class __TwigTemplate_745c2f5cb9b4fb88f14939ceef2e76f3e53c11274f4830451b45c7b2014
 
     public function getDebugInfo()
     {
-        return array (  156 => 37,  142 => 25,  132 => 24,  120 => 20,  110 => 19,  89 => 6,  79 => 5,  61 => 3,  38 => 1,);
+        return array (  169 => 43,  151 => 28,  147 => 27,  143 => 25,  133 => 24,  110 => 9,  100 => 8,  89 => 6,  79 => 5,  61 => 3,  38 => 1,);
     }
 
     public function getSourceContext()
@@ -210,25 +223,31 @@ class __TwigTemplate_745c2f5cb9b4fb88f14939ceef2e76f3e53c11274f4830451b45c7b2014
 {% block title %}{% endblock %}
 
 {% block stylesheets %}
-    <style>
-        #calendrier{
-            width: 50%;
-            height:50%;
-            margin-bottom:200px;
-             margin-top:200px;
-            
-            
-           
-        }
-    </style>
+    
 {% endblock %}
-
 {% block body %}
-    <div id=\"calendrier\">
+<section style=\"width: 50%;height:600px;margin-top:80px;\">
+    <div id=\"calendrier\" style=\" 
+            
+            
+            float:left;
+            padding-left:10px;
+        
+
+            \">
+
     </div>
+ 
+</section>
 {% endblock %}
 
 {% block javascripts %}
+  <div style=\" 
+ text-align:left;\">
+ <a href=\"{{path('calendar_index')}}\"><button>Demande Reservation</button></a>
+  <a href=\"{{path('salle_de_mariage')}}\"><button>Back</button></a>
+
+</div> 
 <script>
     window.onload = () => {
         let calendarElt = document.querySelector(\"#calendrier\")

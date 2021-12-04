@@ -84,7 +84,13 @@ class __TwigTemplate_cc306ab129c8013475df5cc4dae418e2372362dc8d6d03beca523918b26
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "
+        echo "<div class=\"card-wrap \"  style=\"margin-top:100px;\">
+";
+        // line 7
+        $this->loadTemplate("photographe/_filtre.html.twig", "photographe/index.html.twig", 7)->display(twig_to_array(["form" => (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 7, $this->source); })())]));
+        // line 8
+        echo "</div>
+
 <div class=\"traiteurs\" style=\"margin-top:100px\">
 <h3>Photographe Mariage</h3>
 <p> Vous engagez un certain nombre de prestataires dans le but d’assurer le bon déroulement de votre mariage et de le rendre unique.
@@ -93,23 +99,23 @@ class __TwigTemplate_cc306ab129c8013475df5cc4dae418e2372362dc8d6d03beca523918b26
 </div> 
 <div class=\"cards-list\">
   ";
-        // line 14
+        // line 17
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["photographe"]) || array_key_exists("photographe", $context) ? $context["photographe"] : (function () { throw new RuntimeError('Variable "photographe" does not exist.', 14, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["photographe"]) || array_key_exists("photographe", $context) ? $context["photographe"] : (function () { throw new RuntimeError('Variable "photographe" does not exist.', 17, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
             echo " 
 <div class=\"card 1\">
   <div class=\"card_image\"> 
   <a href=\"";
-            // line 17
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home_detail", ["id" => twig_get_attribute($this->env, $this->source, $context["item"], "id", [], "any", false, false, false, 17)]), "html", null, true);
+            // line 20
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home_detail", ["id" => twig_get_attribute($this->env, $this->source, $context["item"], "id", [], "any", false, false, false, 20)]), "html", null, true);
             echo "\"><img src=\"/imgphotographes/";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "image", [], "any", false, false, false, 17), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "image", [], "any", false, false, false, 20), "html", null, true);
             echo "\" /></a> </div>
   <div class=\"card_title title-white\">
     <p style=\"color: palevioletred;\">";
-            // line 19
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "nom", [], "any", false, false, false, 19), "html", null, true);
+            // line 22
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "nom", [], "any", false, false, false, 22), "html", null, true);
             echo "</p>
   </div>
 </div>
@@ -118,7 +124,7 @@ class __TwigTemplate_cc306ab129c8013475df5cc4dae418e2372362dc8d6d03beca523918b26
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 23
+        // line 26
         echo "</div>
 <div style=\" margin-top: 30px;
  text-align: center;\">
@@ -133,7 +139,7 @@ class __TwigTemplate_cc306ab129c8013475df5cc4dae418e2372362dc8d6d03beca523918b26
             <div class=\"box\">
                 <div class=\"our-services settings\">
                     <div class=\"icon\"> <img src=\"";
-        // line 36
+        // line 39
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/images.jpeg"), "html", null, true);
         echo "\" style=\"width:100px; height:100px; border-radius:50%;\"> </div>
                     <h4>Mariage</h4>
@@ -150,7 +156,7 @@ class __TwigTemplate_cc306ab129c8013475df5cc4dae418e2372362dc8d6d03beca523918b26
             <div class=\"box\">
                 <div class=\"our-services speedup\">
                     <div class=\"icon\"> <img src=\"";
-        // line 50
+        // line 53
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/téléchargement3.png"), "html", null, true);
         echo "\" style=\"width:100px; height:100px; border-radius:50%;\"> </div>
                     <h4>Shooting</h4>
@@ -167,7 +173,7 @@ class __TwigTemplate_cc306ab129c8013475df5cc4dae418e2372362dc8d6d03beca523918b26
             <div class=\"box\">
                 <div class=\"our-services privacy\">
                     <div class=\"icon\"> <img src=\"";
-        // line 64
+        // line 67
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/images (1).jpeg"), "html", null, true);
         echo "\" style=\"width:100px; height:100px; border-radius:50%;\"> </div>
                     <h4>Événements</h4>
@@ -203,29 +209,29 @@ class __TwigTemplate_cc306ab129c8013475df5cc4dae418e2372362dc8d6d03beca523918b26
   
   <div class=\"scrolling-wrapper\">
     <div class=\"card1\"><img src=\"";
-        // line 97
+        // line 100
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/1e77bd7a5f2789604b34aaf810a1c76e.jpg"), "html", null, true);
         echo "\" alt=\"\"></div>
    
     <div class=\"card1\" style=\"margin-left:10px;\"><img src=\"";
-        // line 99
+        // line 102
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/727c6a3594876837fa0981693c127494.jpg"), "html", null, true);
         echo "\" alt=\"\"></div>
    
     <div class=\"card1\" style=\"margin-left:10px;\"><img src=\"";
-        // line 101
+        // line 104
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/6867e12a4a55f7e392bdc65b1fe91058.jpg"), "html", null, true);
         echo "\" alt=\"\"></div>
     <div class=\"card1\" style=\"margin-left:10px;\"><img src=\"";
-        // line 102
+        // line 105
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/ad310d818731633d0d6c97b16919a4e6.jpg"), "html", null, true);
         echo "\" alt=\"\"></div>
     <div class=\"card1\"style=\"margin-left:10px;\"><img src=\"";
-        // line 103
+        // line 106
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/ea805768d77fca1876c7d111a3303db4.jpg"), "html", null, true);
         echo "\" alt=\"\"></div>
     <div class=\"card1\"style=\"margin-left:10px;\"><img src=\"";
-        // line 104
+        // line 107
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/8649b1607269c9a5b69a4fb986308605.jpg"), "html", null, true);
         echo "\" alt=\"\"></div>
 
@@ -449,7 +455,7 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
 
     public function getDebugInfo()
     {
-        return array (  229 => 104,  225 => 103,  221 => 102,  217 => 101,  212 => 99,  207 => 97,  171 => 64,  154 => 50,  137 => 36,  122 => 23,  112 => 19,  105 => 17,  97 => 14,  87 => 6,  77 => 5,  59 => 3,  36 => 1,);
+        return array (  235 => 107,  231 => 106,  227 => 105,  223 => 104,  218 => 102,  213 => 100,  177 => 67,  160 => 53,  143 => 39,  128 => 26,  118 => 22,  111 => 20,  103 => 17,  92 => 8,  90 => 7,  87 => 6,  77 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -459,6 +465,9 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
 {% block title %}{% endblock %}
 
 {% block body %}
+<div class=\"card-wrap \"  style=\"margin-top:100px;\">
+{% include 'photographe/_filtre.html.twig' with{form:form} only %}
+</div>
 
 <div class=\"traiteurs\" style=\"margin-top:100px\">
 <h3>Photographe Mariage</h3>
@@ -759,6 +768,6 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
 
 </style>
 {% endblock %}
-", "photographe/index.html.twig", "/opt/lampp/htdocs/sitemariage/templates/photographe/index.html.twig");
+", "photographe/index.html.twig", "/opt/lampp/htdocs/sitemariage2/templates/photographe/index.html.twig");
     }
 }

@@ -112,7 +112,7 @@ class __TwigTemplate_a9663c8ef269d2ec45c28ea258aa98b5815bc74854a86b9e077d89ed550
 .coiffure .box {
     position:relative;
     width:calc(400px - 60px);
-    height:calc(300px - 30px);
+    height:calc(450px - 30px);
     background:#000;
     float:left;
     margin:15px;
@@ -286,8 +286,16 @@ section p {
 \tcolor: black;
 }
 </style>
-<div>
-<h3 style=\"margin-top:100px;\">Coiffure mariage</h3>
+<div class=\"card-wrap \"  style=\"margin-top:100px;\">
+";
+        // line 208
+        $this->loadTemplate("coiffure/_filtre.html.twig", "coiffure/index.html.twig", 208)->display(twig_to_array(["form" => (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 208, $this->source); })())]));
+        // line 209
+        echo "</div>
+
+
+<div style=\"margin-top:300px;\">
+<h3 >Coiffure mariage</h3>
 <p style=\"text-align: center;\" >
 Vous vous mariez prochainement et êtes en plein dans les préparatifs du plus beau jour de votre vie… 
 <br>Vous venez de trouver votre magnifique robe de mariée et avez choisi les accessoires qui la sublimeront.
@@ -300,26 +308,26 @@ Mais alors, comment se coiffer quand on a les cheveux longs ou bien très courts
 </div>
 <div class=\"coiffure\" >
 ";
-        // line 220
+        // line 225
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["coiffure"]) || array_key_exists("coiffure", $context) ? $context["coiffure"] : (function () { throw new RuntimeError('Variable "coiffure" does not exist.', 220, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["coiffure"]) || array_key_exists("coiffure", $context) ? $context["coiffure"] : (function () { throw new RuntimeError('Variable "coiffure" does not exist.', 225, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
-            // line 221
+            // line 226
             echo "    <div class=\"box\">
         <div class=\"imgBox\">
             <img src=\"/imgcoiffure/";
-            // line 223
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "image", [], "any", false, false, false, 223), "html", null, true);
+            // line 228
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "image", [], "any", false, false, false, 228), "html", null, true);
             echo "\">
         </div>
         <div class=\"content\">
             <h2>";
-            // line 226
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "nom", [], "any", false, false, false, 226), "html", null, true);
+            // line 231
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "nom", [], "any", false, false, false, 231), "html", null, true);
             echo "</h2>
             <p>";
-            // line 227
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "description", [], "any", false, false, false, 227), "html", null, true);
+            // line 232
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "description", [], "any", false, false, false, 232), "html", null, true);
             echo "</p>
         </div>
     </div>
@@ -328,20 +336,20 @@ Mais alors, comment se coiffer quand on a les cheveux longs ou bien très courts
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 231
+        // line 236
         echo "</div>
 
 <section>
 \t<div class=\"circle circle-one\">
 \t\t<img src=\"";
-        // line 235
+        // line 240
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/11108871.webp"), "html", null, true);
         echo "\" alt=\"\" title=\"\">
 \t</div>
 \t
 \t<div class=\"circle circle-two\">
 \t\t<img src=\"";
-        // line 239
+        // line 244
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/institut-beauty-moment-maquillage-mariage-1030x687 (1).jpg"), "html", null, true);
         echo "\" alt=\"\">
 \t</div>
@@ -390,7 +398,7 @@ Mais alors, comment se coiffer quand on a les cheveux longs ou bien très courts
 
     public function getDebugInfo()
     {
-        return array (  345 => 239,  338 => 235,  332 => 231,  322 => 227,  318 => 226,  312 => 223,  308 => 221,  304 => 220,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  353 => 244,  346 => 240,  340 => 236,  330 => 232,  326 => 231,  320 => 228,  316 => 226,  312 => 225,  294 => 209,  292 => 208,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -427,7 +435,7 @@ Mais alors, comment se coiffer quand on a les cheveux longs ou bien très courts
 .coiffure .box {
     position:relative;
     width:calc(400px - 60px);
-    height:calc(300px - 30px);
+    height:calc(450px - 30px);
     background:#000;
     float:left;
     margin:15px;
@@ -601,8 +609,13 @@ section p {
 \tcolor: black;
 }
 </style>
-<div>
-<h3 style=\"margin-top:100px;\">Coiffure mariage</h3>
+<div class=\"card-wrap \"  style=\"margin-top:100px;\">
+{% include 'coiffure/_filtre.html.twig' with{form:form} only %}
+</div>
+
+
+<div style=\"margin-top:300px;\">
+<h3 >Coiffure mariage</h3>
 <p style=\"text-align: center;\" >
 Vous vous mariez prochainement et êtes en plein dans les préparatifs du plus beau jour de votre vie… 
 <br>Vous venez de trouver votre magnifique robe de mariée et avez choisi les accessoires qui la sublimeront.
@@ -659,6 +672,6 @@ Mais alors, comment se coiffer quand on a les cheveux longs ou bien très courts
 </section>
 
 
-{% endblock %}", "coiffure/index.html.twig", "/opt/lampp/htdocs/sitemariage/templates/coiffure/index.html.twig");
+{% endblock %}", "coiffure/index.html.twig", "/opt/lampp/htdocs/sitemariage2/templates/coiffure/index.html.twig");
     }
 }

@@ -85,7 +85,12 @@ class __TwigTemplate_3ff5b7491ce8a90cddc4dbd826d47fb0e1e0c3ad646c3d514c3370187e8
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "
+        echo "<div class=\"card-wrap \"  style=\"margin-top:100px;\">
+";
+        // line 7
+        $this->loadTemplate("musique_de_mariage/_filtre.html.twig", "musique_de_mariage/index.html.twig", 7)->display(twig_to_array(["form" => (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 7, $this->source); })())]));
+        // line 8
+        echo "</div>
 
 <div style=\"margin-top:100px;\">
     
@@ -102,19 +107,19 @@ class __TwigTemplate_3ff5b7491ce8a90cddc4dbd826d47fb0e1e0c3ad646c3d514c3370187e8
 <div>
   <ul class=\"cards\">
   ";
-        // line 22
+        // line 24
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["musiquedemariage"]) || array_key_exists("musiquedemariage", $context) ? $context["musiquedemariage"] : (function () { throw new RuntimeError('Variable "musiquedemariage" does not exist.', 22, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["musiquedemariage"]) || array_key_exists("musiquedemariage", $context) ? $context["musiquedemariage"] : (function () { throw new RuntimeError('Variable "musiquedemariage" does not exist.', 24, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
-            // line 23
+            // line 25
             echo "     <li>
       <a href=\"";
-            // line 24
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home_detail_musique", ["id" => twig_get_attribute($this->env, $this->source, $context["item"], "id", [], "any", false, false, false, 24)]), "html", null, true);
+            // line 26
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home_detail_musique", ["id" => twig_get_attribute($this->env, $this->source, $context["item"], "id", [], "any", false, false, false, 26)]), "html", null, true);
             echo "\" class=\"card\">
             <img src=\"/imgmusiques/";
-            // line 25
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "image", [], "any", false, false, false, 25), "html", null, true);
+            // line 27
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "image", [], "any", false, false, false, 27), "html", null, true);
             echo "\" class=\"card_image\" alt=\"\" />
         <div class=\"card_overlay\">
           <div class=\"card-header\">
@@ -122,20 +127,20 @@ class __TwigTemplate_3ff5b7491ce8a90cddc4dbd826d47fb0e1e0c3ad646c3d514c3370187e8
               <path/>
             </svg>
             <img src=\"/imgmusiques/";
-            // line 31
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "image", [], "any", false, false, false, 31), "html", null, true);
+            // line 33
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "image", [], "any", false, false, false, 33), "html", null, true);
             echo "\" class=\"card-thumb\" />
             <div class=\"card-header-text\">
               <h3 class=\"card-title\"> ";
-            // line 33
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "nom", [], "any", false, false, false, 33), "html", null, true);
+            // line 35
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "nom", [], "any", false, false, false, 35), "html", null, true);
             echo "</h3>              
             </div>
           </div>
           <p class=\"card-description\"> 
             ";
-            // line 37
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "description", [], "any", false, false, false, 37), "html", null, true);
+            // line 39
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "description", [], "any", false, false, false, 39), "html", null, true);
             echo "
           </p>
         </div>
@@ -146,7 +151,7 @@ class __TwigTemplate_3ff5b7491ce8a90cddc4dbd826d47fb0e1e0c3ad646c3d514c3370187e8
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 43
+        // line 45
         echo "  </ul>
   
 </div>
@@ -175,29 +180,29 @@ Afin de ne vous préoccuper de rien le jour de l’événement et et de tout pr�
   
   <div class=\"scrolling-wrapper\">
     <div class=\"card1\"><img src=\"";
-        // line 70
+        // line 72
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/5a129ae5520be3ac2410166ba4ea574e.jpg"), "html", null, true);
         echo "\" alt=\"\"></div>
    
     <div class=\"card1\" style=\"margin-left:10px;\"><img src=\"";
-        // line 72
+        // line 74
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/a839972967d98be619df1b956f0707d9.jpg"), "html", null, true);
         echo "\" alt=\"\"></div>
    
     <div class=\"card1\" style=\"margin-left:10px;\"><img src=\"";
-        // line 74
+        // line 76
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/79198e373b1556b60ed66f5cbbd30644.jpg"), "html", null, true);
         echo "\" alt=\"\"></div>
     <div class=\"card1\" style=\"margin-left:10px;\"><img src=\"";
-        // line 75
+        // line 77
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/ffeae0b1571c6b9526c6246c22632044.jpg"), "html", null, true);
         echo "\" alt=\"\"></div>
     <div class=\"card1\"style=\"margin-left:10px;\"><img src=\"";
-        // line 76
+        // line 78
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/4a30662481b6b4cf2eaac76d747e833b.jpg"), "html", null, true);
         echo "\" alt=\"\"></div>
     <div class=\"card1\"style=\"margin-left:10px;\"><img src=\"";
-        // line 77
+        // line 79
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/e99ba87dcf183209ce8d74b3d4110b8b.jpg"), "html", null, true);
         echo "\" alt=\"\"></div>
 
@@ -406,7 +411,7 @@ Afin de ne vous préoccuper de rien le jour de l’événement et et de tout pr�
 
     public function getDebugInfo()
     {
-        return array (  201 => 77,  197 => 76,  193 => 75,  189 => 74,  184 => 72,  179 => 70,  150 => 43,  138 => 37,  131 => 33,  126 => 31,  117 => 25,  113 => 24,  110 => 23,  106 => 22,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  206 => 79,  202 => 78,  198 => 77,  194 => 76,  189 => 74,  184 => 72,  155 => 45,  143 => 39,  136 => 35,  131 => 33,  122 => 27,  118 => 26,  115 => 25,  111 => 24,  93 => 8,  91 => 7,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -416,7 +421,9 @@ Afin de ne vous préoccuper de rien le jour de l’événement et et de tout pr�
 {% block title %}Hello MusiqueDeMariageController!{% endblock %}
 
 {% block body %}
-
+<div class=\"card-wrap \"  style=\"margin-top:100px;\">
+{% include 'musique_de_mariage/_filtre.html.twig' with{form:form} only %}
+</div>
 
 <div style=\"margin-top:100px;\">
     
@@ -673,6 +680,6 @@ Afin de ne vous préoccuper de rien le jour de l’événement et et de tout pr�
 
 
 
-{% endblock %}", "musique_de_mariage/index.html.twig", "/opt/lampp/htdocs/sitemariage/templates/musique_de_mariage/index.html.twig");
+{% endblock %}", "musique_de_mariage/index.html.twig", "/opt/lampp/htdocs/sitemariage2/templates/musique_de_mariage/index.html.twig");
     }
 }

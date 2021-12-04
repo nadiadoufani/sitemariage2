@@ -85,16 +85,24 @@ class __TwigTemplate_a1ece386defcf5704e41b931a494ff83c7875c3e728618fec44060667ab
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\">
+        echo "
+<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\">
   <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js\"></script>
   <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\"></script>
   <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\"></script>
      <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css
 \">
  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, \">
+<div class=\"card-wrap \" style=\"margin-top:70px;\">
+";
+        // line 15
+        $this->loadTemplate("salle_de_mariage/_filtre.html.twig", "salle_de_mariage/index.html.twig", 15)->display(twig_to_array(["form" => (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 15, $this->source); })())]));
+        // line 16
+        echo "</div>
 
 <div class=\"container\" style=\"box-sizing: content-box;height: 100%;\">     
 <div class=\"sale\" style=\"margin-top:100px;\">
+
 <h3>Salle de mariage</h3>
 <p>Votre cher et tendre vient de vous faire la plus belle des demandes en mariage… C’est un grand Oui ! Tic-tac tic-tac…  
 <br> Le compte à rebours des préparatifs est donc lancé !
@@ -151,21 +159,21 @@ class __TwigTemplate_a1ece386defcf5704e41b931a494ff83c7875c3e728618fec44060667ab
                 maxZoom: 20
             }).addTo(carte);
             ";
-        // line 71
+        // line 76
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["salledemariage"]) || array_key_exists("salledemariage", $context) ? $context["salledemariage"] : (function () { throw new RuntimeError('Variable "salledemariage" does not exist.', 71, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["salledemariage"]) || array_key_exists("salledemariage", $context) ? $context["salledemariage"] : (function () { throw new RuntimeError('Variable "salledemariage" does not exist.', 76, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
-            // line 72
+            // line 77
             echo "                // On crée le marqueur et on lui attribue une popup
                 var marqueur = L.marker([";
-            // line 73
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "lat", [], "any", false, false, false, 73), "html", null, true);
+            // line 78
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "lat", [], "any", false, false, false, 78), "html", null, true);
             echo ", ";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "lon", [], "any", false, false, false, 73), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "lon", [], "any", false, false, false, 78), "html", null, true);
             echo "]).addTo(carte); //.addTo(carte);
              marqueur.bindPopup(\"<h3>";
-            // line 74
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "nom", [], "any", false, false, false, 74), "html", null, true);
+            // line 79
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "nom", [], "any", false, false, false, 79), "html", null, true);
             echo "</h3>\");
 
 
@@ -175,7 +183,7 @@ class __TwigTemplate_a1ece386defcf5704e41b931a494ff83c7875c3e728618fec44060667ab
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 79
+        // line 84
         echo "     </script>
         
         
@@ -194,11 +202,11 @@ class __TwigTemplate_a1ece386defcf5704e41b931a494ff83c7875c3e728618fec44060667ab
 <!-- UIkit SECTION -->
 <section>
 ";
-        // line 96
+        // line 101
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["salledemariage"]) || array_key_exists("salledemariage", $context) ? $context["salledemariage"] : (function () { throw new RuntimeError('Variable "salledemariage" does not exist.', 96, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["salledemariage"]) || array_key_exists("salledemariage", $context) ? $context["salledemariage"] : (function () { throw new RuntimeError('Variable "salledemariage" does not exist.', 101, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
-            // line 97
+            // line 102
             echo "<div class=\"uk-section uk-section-default\">
     <div class=\"uk-container\">
 \t    <div class=\"uk-margin uk-grid-small uk-child-width-expand@s uk-text-center\" uk-grid>
@@ -210,24 +218,24 @@ class __TwigTemplate_a1ece386defcf5704e41b931a494ff83c7875c3e728618fec44060667ab
 
 
 \t\t\t\t\t       <a href=\"";
-            // line 107
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home_show", ["id" => twig_get_attribute($this->env, $this->source, $context["item"], "id", [], "any", false, false, false, 107)]), "html", null, true);
+            // line 112
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home_show", ["id" => twig_get_attribute($this->env, $this->source, $context["item"], "id", [], "any", false, false, false, 112)]), "html", null, true);
             echo "\" ><img src=\"/imgsalles/";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "image", [], "any", false, false, false, 107), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "image", [], "any", false, false, false, 112), "html", null, true);
             echo "\" alt=\"\" style=\"width:300px;height:200px;\">
 \t\t\t\t\t\t</div></a>
 \t\t\t\t\t    <div class=\"uk-card-body\">
 \t\t\t\t\t        <div class=\"uk-card-badge uk-label\">";
-            // line 110
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "nom", [], "any", false, false, false, 110), "html", null, true);
+            // line 115
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "nom", [], "any", false, false, false, 115), "html", null, true);
             echo "</div>
 \t\t\t\t\t\t    <h3 class=\"uk-card-title\" style=\" color:hotpink;\" >";
-            // line 111
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "categorie", [], "any", false, false, false, 111), "html", null, true);
+            // line 116
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "categorie", [], "any", false, false, false, 116), "html", null, true);
             echo "</h3>
 \t\t\t\t\t\t    <p>";
-            // line 112
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "description", [], "any", false, false, false, 112), "html", null, true);
+            // line 117
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "description", [], "any", false, false, false, 117), "html", null, true);
             echo "</p>
 \t\t\t\t\t\t</div>
 \t\t\t\t\t</div>
@@ -243,7 +251,7 @@ class __TwigTemplate_a1ece386defcf5704e41b931a494ff83c7875c3e728618fec44060667ab
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 123
+        // line 128
         echo "</section>
 
 
@@ -554,7 +562,7 @@ h3{
 
     public function getDebugInfo()
     {
-        return array (  247 => 123,  230 => 112,  226 => 111,  222 => 110,  214 => 107,  202 => 97,  198 => 96,  179 => 79,  168 => 74,  162 => 73,  159 => 72,  155 => 71,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  255 => 128,  238 => 117,  234 => 116,  230 => 115,  222 => 112,  210 => 102,  206 => 101,  187 => 84,  176 => 79,  170 => 78,  167 => 77,  163 => 76,  101 => 16,  99 => 15,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -564,6 +572,7 @@ h3{
 {% block title %}Hello SalleDeMariageController!{% endblock %}
 
 {% block body %}
+
 <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\">
   <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js\"></script>
   <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\"></script>
@@ -571,9 +580,13 @@ h3{
      <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css
 \">
  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, \">
+<div class=\"card-wrap \" style=\"margin-top:70px;\">
+{% include 'salle_de_mariage/_filtre.html.twig' with{form:form} only %}
+</div>
 
 <div class=\"container\" style=\"box-sizing: content-box;height: 100%;\">     
 <div class=\"sale\" style=\"margin-top:100px;\">
+
 <h3>Salle de mariage</h3>
 <p>Votre cher et tendre vient de vous faire la plus belle des demandes en mariage… C’est un grand Oui ! Tic-tac tic-tac…  
 <br> Le compte à rebours des préparatifs est donc lancé !
@@ -971,6 +984,6 @@ h3{
 </script>
 
 {% endblock %}
-", "salle_de_mariage/index.html.twig", "/opt/lampp/htdocs/sitemariage/templates/salle_de_mariage/index.html.twig");
+", "salle_de_mariage/index.html.twig", "/opt/lampp/htdocs/sitemariage2/templates/salle_de_mariage/index.html.twig");
     }
 }

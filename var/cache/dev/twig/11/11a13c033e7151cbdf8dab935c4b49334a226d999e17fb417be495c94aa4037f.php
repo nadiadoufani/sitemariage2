@@ -221,18 +221,21 @@ class __TwigTemplate_236e4c2c014799f8086e6a60d49a907caf97f439a42afdfb71aff3ac1b7
           <div class=\"row\">
             <div class=\"col-lg-3 col-md-12 col-sm-12 footer-col-3\">
               <div class=\"widget footer_widget\">
-                <h5 class=\"footer-title\">Address</h5>
+                <h5 class=\"footer-title\">A Propos</h5>
                 <div class=\"gem-contacts\">
-                  <div class=\"gem-contacts-item gem-contacts-address\">Corporate Office :<br> Doon House, B-275(A), First floor
-                    Sector-57, Shushant Lok 3
-                    Near Hong Kong Bazzar, Gurugram Pin 122001, Haryana.
+                  <div class=\"gem-contacts-item gem-contacts-address\"> Organiser votre mariage de A à Z avec le meilleur <br>
+                  Wedding planner en ligne tunisien, de la salle de mariage à la robe en passant<br>
+                   par le photographe ou le décorateur ou bien le centre de beaute. En BREF! vous traversez <br>
+                   tout ! Happy Mariage partenaire pour un mariage d'exception.<br>
+                   n'hésitez pas à nous contacter si vous avez besoin d'aide , et suivez-nous <br>
+sur nos réseaux sociaux.
+                    
                   </div>
-                  <div class=\"gem-contacts-item gem-contacts-phone\"><i class=\"fa fa-phone\" aria-hidden=\"true\"></i> Phone: <a href=\"\">+91-9122588799</a></div>
+                  <div class=\"gem-contacts-item gem-contacts-phone\"><i class=\"fa fa-phone\" aria-hidden=\"true\"></i> Phone: <a href=\"#\">22522139</a></div>
 
-                  <div class=\"gem-contacts-item gem-contacts-address mt-2\">Reg. Office :<br> Doon House, D2/3,
-                    4th Floor, Chandra Tower, IDBI Bank Building
-                    Dimna Road, Mango, Jamshedpur-831012, Jharkhand.</div>
-                  <div class=\"gem-contacts-item gem-contacts-phone\"><i class=\"fa fa-phone\" aria-hidden=\"true\"></i> Phone: <a>+91 9122588799</a></div>
+                  <div class=\"gem-contacts-item gem-contacts-address mt-2\">Addresse :<br> Cité Khaled Ibn Walid Manouba
+                   Tunis</div>
+                  <div class=\"gem-contacts-item gem-contacts-phone\"><i class=\"fa fa-phone\" aria-hidden=\"true\"></i> Phone: <a href=\"#\">25063109</a></div>
 
                 </div>
               </div>
@@ -242,42 +245,63 @@ class __TwigTemplate_236e4c2c014799f8086e6a60d49a907caf97f439a42afdfb71aff3ac1b7
               <div class=\"row\">
                 <div class=\"col-6 col-lg-6 col-md-6 col-sm-6\">
                   <div class=\"widget footer_widget\">
-                    <h5 class=\"footer-title\">Recent News</h5>
+                    <h5 class=\"footer-title\">Contact Info</h5>
                     <ul class=\"posts  styled\">
                       <li class=\"clearfix gem-pp-posts\">
                         <div class=\"gem-pp-posts-text\">
                           <div class=\"gem-pp-posts-item\">
-                            <a href=\"#\">Want to start Your Own Play School.
+                            <a href=\"";
+        // line 127
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
+        echo "\">Sinscrire
                             </a>
                           </div>
-                          <div class=\"gem-pp-posts-date\">Call +91-9122588799</div>
+                          <div class=\"gem-pp-posts-date\"><i class=\"fa fa-phone\" aria-hidden=\"true\"></i>(+216)25063109</div>
                         </div>
                       </li>
                       <li class=\"clearfix gem-pp-posts\">
                         <div class=\"gem-pp-posts-text\">
                           <div class=\"gem-pp-posts-item\">
-                            <a href=\"#\">Now we are in Faridabad,Now we are in DaudNagar.
-                            </a>
+                            <i class=\"fa fa-envelope\" aria-hidden=\"true\"></i>contact@happymariage.tn
+                           
                           </div>
-                          <div class=\"gem-pp-posts-date\">Call +91-9122588799, +91-9122588799</div>
+                          <div class=\"gem-pp-posts-date\"></div>
                         </div>
                       </li>
                       <li class=\"clearfix gem-pp-posts\">
                         <div class=\"gem-pp-posts-text\">
                           <div class=\"gem-pp-posts-item\">
-                            <a href=\"\">Now we are in Ranchi, Admission open
-                            </a>
+                            <i class=\"fab fa-facebook\"></i></i>happymariage@gmail.com 
+                            
                           </div>
-                          <div class=\"gem-pp-posts-date\">Call +91-9122588799, +91-9122588799</div>
+                          <div class=\"gem-pp-posts-date\"></div>
                         </div>
                       </li>
-
+                      <li class=\"clearfix gem-pp-posts\">
+                        <div class=\"gem-pp-posts-text\">
+                          <div class=\"gem-pp-posts-item\">
+                            <i class=\"fa fa-envelope\" aria-hidden=\"true\"></i>contact@happymariage.tn
+                           
+                          </div>
+                          <div class=\"gem-pp-posts-date\"></div>
+                        </div>
+                      </li>
+                      <li class=\"clearfix gem-pp-posts\">
+                        <div class=\"gem-pp-posts-text\">
+                          <div class=\"gem-pp-posts-item\">
+                          <i class=\"fas fa-map-marker-alt\"></i>
+                           Cité Khaled Ibn Walid Manouba
+                   Tunis
+                          </div>
+                          <div class=\"gem-pp-posts-date\"></div>
+                        </div>
+                      </li>
                     </ul>
                   </div>
                 </div>
                 <div class=\"col-6 col-lg-6 col-md-6 col-sm-6\">
                   <div class=\"widget\">
-                    <h5 class=\"footer-title\">Email Us</h5>
+                    <h5 class=\"footer-title\">Contactez-nous !!</h5>
                     <div class=\"textwidget\">
                       <div role=\"form\" class=\"wpcf7\" id=\"wpcf7-f4-o1\" lang=\"en-US\" dir=\"ltr\">
 
@@ -299,18 +323,63 @@ class __TwigTemplate_236e4c2c014799f8086e6a60d49a907caf97f439a42afdfb71aff3ac1b7
             </div>
             <div class=\"col-12 col-lg-3 col-md-5 col-sm-12 footer-col-4\">
               <div class=\"widget widget_gallery gallery-grid-4\">
-                <h5 class=\"footer-title\">Our Gallery</h5>
+                <h5 class=\"footer-title\"> Photos </h5>
                 <ul class=\"magnific-image\">
 
-                  <li><a class=\"magnific-anchor\"><img src=\"https://images.unsplash.com/photo-1477239439998-839196943351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=414&q=80\" alt=\"\"></a></li>
-                  <li><a class=\"magnific-anchor\"><img src=\"https://images.unsplash.com/photo-1477239439998-839196943351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=414&q=80\" alt=\"\"></a></li>
-                  <li><a class=\"magnific-anchor\"><img src=\"https://images.unsplash.com/photo-1477239439998-839196943351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=414&q=80\" alt=\"\"></a></li>
-                  <li><a class=\"magnific-anchor\"><img src=\"https://images.unsplash.com/photo-1477239439998-839196943351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=414&q=80\" alt=\"\"></a></li>
-                  <li><a class=\"magnific-anchor\"><img src=\"https://images.unsplash.com/photo-1477239439998-839196943351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=414&q=80\" alt=\"\"></a></li>
-                  <li><a class=\"magnific-anchor\"><img src=\"https://images.unsplash.com/photo-1477239439998-839196943351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=414&q=80\" alt=\"\"></a></li>
-                  <li><a class=\"magnific-anchor\"><img src=\"https://images.unsplash.com/photo-1477239439998-839196943351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=414&q=80\" alt=\"\"></a></li>
-                  <li><a class=\"magnific-anchor\"><img src=\"https://images.unsplash.com/photo-1477239439998-839196943351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=414&q=80\" alt=\"\"></a></li>
-                  <li><a class=\"magnific-anchor\"><img src=\"https://images.unsplash.com/photo-1477239439998-839196943351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=414&q=80\" alt=\"\"></a></li>
+                  <li><a href=\"";
+        // line 200
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("salle_de_mariage");
+        echo "\" class=\"magnific-anchor\"><img src=\"";
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgsalles/fa1f4e29f92680f0ef26b8117ffdcfe4.jpg"), "html", null, true);
+        echo "\" alt=\"\"  style=\"height:87px;width:80px;\"></a></li>
+                  <li><a href=\"";
+        // line 201
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("musique_de_mariage");
+        echo "\" class=\"magnific-anchor\"><img src=\"";
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgphotographes/6867e12a4a55f7e392bdc65b1fe91058.jpg"), "html", null, true);
+        echo "\" alt=\"\" style=\"height:87px;width:80px;\"></a></li>
+                  <li><a href=\"";
+        // line 202
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("photographe");
+        echo "\"class=\"magnific-anchor\"><img src=\"";
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgphotographes/044f6d45d83f6eedeca1d9634bd7238f.jpg"), "html", null, true);
+        echo "\" alt=\"\" style=\"height:87px;width:80px;\"></a></li>
+                  <li><a href=\"";
+        // line 203
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("costume");
+        echo "\"class=\"magnific-anchor\"><img src=\"";
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcostume/b173a3cc7bdd7a328284f89214f18ca6.jpg"), "html", null, true);
+        echo "\" alt=\"\" style=\"height:87px;width:80px;\"></a></li>
+                  <li><a href=\"";
+        // line 204
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("coiffure");
+        echo "\"class=\"magnific-anchor\"><img src=\"";
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcoiffure/1d4a44923c6d9ef7b57568ee87605ff847e8b0e9.jpeg"), "html", null, true);
+        echo "\" alt=\"\" style=\"height:87px;width:80px;\"></a></li>
+                  <li><a href=\"";
+        // line 205
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("centre_de_beaute");
+        echo "\"class=\"magnific-anchor\"><img src=\"";
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcentre/200822dc729c0a43d952b734803562e3.jpg"), "html", null, true);
+        echo "\" alt=\"\" style=\"height:87px;width:80px;\"></a></li>
+                  <li><a href=\"";
+        // line 206
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("traiteurs");
+        echo "\"class=\"magnific-anchor\"><img src=\"";
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgtraiteurs/eef359b07a71dbedd593ab808a614000.jpg"), "html", null, true);
+        echo "\" alt=\"\" style=\"height:87px;width:80px;\"></a></li>
+                  <li><a href=\"";
+        // line 207
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("voyage_de_noce");
+        echo "\"class=\"magnific-anchor\"><img src=\"";
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgvoyages/e916d6672cd31e4a6a3a03e83023fd2d.jpg"), "html", null, true);
+        echo "\" alt=\"\" style=\"height:87px;width:80px;\"></a></li>
+                  <li><a href=\"";
+        // line 208
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home");
+        echo "\"class=\"magnific-anchor\"><img src=\"";
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcoiffure/5d7bc1596bbfa919d43527a1addf5af5f7cb1824.jpeg"), "html", null, true);
+        echo "\" alt=\"\" style=\"height:87px;width:80px;\"></a></li>
                 </ul>
               </div>
             </div>
@@ -490,11 +559,11 @@ class __TwigTemplate_236e4c2c014799f8086e6a60d49a907caf97f439a42afdfb71aff3ac1b7
 }
 }
 footer p, footer strong, footer b, footer {
-    color: #b0b0b0;
+    color: #fff;
 }
 
 .footer-top {
-    background: #303030;
+    background: white;
     background-size: cover;
     background-position: center;
     padding: 0 0 20px;
@@ -949,7 +1018,7 @@ footer .widget ul {
 
     public function getDebugInfo()
     {
-        return array (  923 => 85,  905 => 75,  886 => 5,  212 => 86,  210 => 85,  206 => 84,  200 => 81,  196 => 80,  192 => 79,  188 => 78,  184 => 77,  181 => 76,  179 => 75,  172 => 70,  165 => 66,  157 => 61,  154 => 60,  146 => 55,  138 => 52,  134 => 50,  132 => 49,  128 => 48,  124 => 47,  118 => 44,  114 => 43,  106 => 38,  102 => 37,  98 => 36,  92 => 33,  88 => 32,  81 => 28,  62 => 12,  52 => 5,  46 => 1,);
+        return array (  992 => 85,  974 => 75,  955 => 5,  379 => 208,  373 => 207,  367 => 206,  361 => 205,  355 => 204,  349 => 203,  343 => 202,  337 => 201,  331 => 200,  255 => 127,  212 => 86,  210 => 85,  206 => 84,  200 => 81,  196 => 80,  192 => 79,  188 => 78,  184 => 77,  181 => 76,  179 => 75,  172 => 70,  165 => 66,  157 => 61,  154 => 60,  146 => 55,  138 => 52,  134 => 50,  132 => 49,  128 => 48,  124 => 47,  118 => 44,  114 => 43,  106 => 38,  102 => 37,  98 => 36,  92 => 33,  88 => 32,  81 => 28,  62 => 12,  52 => 5,  46 => 1,);
     }
 
     public function getSourceContext()
@@ -1051,18 +1120,21 @@ footer .widget ul {
           <div class=\"row\">
             <div class=\"col-lg-3 col-md-12 col-sm-12 footer-col-3\">
               <div class=\"widget footer_widget\">
-                <h5 class=\"footer-title\">Address</h5>
+                <h5 class=\"footer-title\">A Propos</h5>
                 <div class=\"gem-contacts\">
-                  <div class=\"gem-contacts-item gem-contacts-address\">Corporate Office :<br> Doon House, B-275(A), First floor
-                    Sector-57, Shushant Lok 3
-                    Near Hong Kong Bazzar, Gurugram Pin 122001, Haryana.
+                  <div class=\"gem-contacts-item gem-contacts-address\"> Organiser votre mariage de A à Z avec le meilleur <br>
+                  Wedding planner en ligne tunisien, de la salle de mariage à la robe en passant<br>
+                   par le photographe ou le décorateur ou bien le centre de beaute. En BREF! vous traversez <br>
+                   tout ! Happy Mariage partenaire pour un mariage d'exception.<br>
+                   n'hésitez pas à nous contacter si vous avez besoin d'aide , et suivez-nous <br>
+sur nos réseaux sociaux.
+                    
                   </div>
-                  <div class=\"gem-contacts-item gem-contacts-phone\"><i class=\"fa fa-phone\" aria-hidden=\"true\"></i> Phone: <a href=\"\">+91-9122588799</a></div>
+                  <div class=\"gem-contacts-item gem-contacts-phone\"><i class=\"fa fa-phone\" aria-hidden=\"true\"></i> Phone: <a href=\"#\">22522139</a></div>
 
-                  <div class=\"gem-contacts-item gem-contacts-address mt-2\">Reg. Office :<br> Doon House, D2/3,
-                    4th Floor, Chandra Tower, IDBI Bank Building
-                    Dimna Road, Mango, Jamshedpur-831012, Jharkhand.</div>
-                  <div class=\"gem-contacts-item gem-contacts-phone\"><i class=\"fa fa-phone\" aria-hidden=\"true\"></i> Phone: <a>+91 9122588799</a></div>
+                  <div class=\"gem-contacts-item gem-contacts-address mt-2\">Addresse :<br> Cité Khaled Ibn Walid Manouba
+                   Tunis</div>
+                  <div class=\"gem-contacts-item gem-contacts-phone\"><i class=\"fa fa-phone\" aria-hidden=\"true\"></i> Phone: <a href=\"#\">25063109</a></div>
 
                 </div>
               </div>
@@ -1072,42 +1144,60 @@ footer .widget ul {
               <div class=\"row\">
                 <div class=\"col-6 col-lg-6 col-md-6 col-sm-6\">
                   <div class=\"widget footer_widget\">
-                    <h5 class=\"footer-title\">Recent News</h5>
+                    <h5 class=\"footer-title\">Contact Info</h5>
                     <ul class=\"posts  styled\">
                       <li class=\"clearfix gem-pp-posts\">
                         <div class=\"gem-pp-posts-text\">
                           <div class=\"gem-pp-posts-item\">
-                            <a href=\"#\">Want to start Your Own Play School.
+                            <a href=\"{{path('app_login')}}\">Sinscrire
                             </a>
                           </div>
-                          <div class=\"gem-pp-posts-date\">Call +91-9122588799</div>
+                          <div class=\"gem-pp-posts-date\"><i class=\"fa fa-phone\" aria-hidden=\"true\"></i>(+216)25063109</div>
                         </div>
                       </li>
                       <li class=\"clearfix gem-pp-posts\">
                         <div class=\"gem-pp-posts-text\">
                           <div class=\"gem-pp-posts-item\">
-                            <a href=\"#\">Now we are in Faridabad,Now we are in DaudNagar.
-                            </a>
+                            <i class=\"fa fa-envelope\" aria-hidden=\"true\"></i>contact@happymariage.tn
+                           
                           </div>
-                          <div class=\"gem-pp-posts-date\">Call +91-9122588799, +91-9122588799</div>
+                          <div class=\"gem-pp-posts-date\"></div>
                         </div>
                       </li>
                       <li class=\"clearfix gem-pp-posts\">
                         <div class=\"gem-pp-posts-text\">
                           <div class=\"gem-pp-posts-item\">
-                            <a href=\"\">Now we are in Ranchi, Admission open
-                            </a>
+                            <i class=\"fab fa-facebook\"></i></i>happymariage@gmail.com 
+                            
                           </div>
-                          <div class=\"gem-pp-posts-date\">Call +91-9122588799, +91-9122588799</div>
+                          <div class=\"gem-pp-posts-date\"></div>
                         </div>
                       </li>
-
+                      <li class=\"clearfix gem-pp-posts\">
+                        <div class=\"gem-pp-posts-text\">
+                          <div class=\"gem-pp-posts-item\">
+                            <i class=\"fa fa-envelope\" aria-hidden=\"true\"></i>contact@happymariage.tn
+                           
+                          </div>
+                          <div class=\"gem-pp-posts-date\"></div>
+                        </div>
+                      </li>
+                      <li class=\"clearfix gem-pp-posts\">
+                        <div class=\"gem-pp-posts-text\">
+                          <div class=\"gem-pp-posts-item\">
+                          <i class=\"fas fa-map-marker-alt\"></i>
+                           Cité Khaled Ibn Walid Manouba
+                   Tunis
+                          </div>
+                          <div class=\"gem-pp-posts-date\"></div>
+                        </div>
+                      </li>
                     </ul>
                   </div>
                 </div>
                 <div class=\"col-6 col-lg-6 col-md-6 col-sm-6\">
                   <div class=\"widget\">
-                    <h5 class=\"footer-title\">Email Us</h5>
+                    <h5 class=\"footer-title\">Contactez-nous !!</h5>
                     <div class=\"textwidget\">
                       <div role=\"form\" class=\"wpcf7\" id=\"wpcf7-f4-o1\" lang=\"en-US\" dir=\"ltr\">
 
@@ -1129,18 +1219,18 @@ footer .widget ul {
             </div>
             <div class=\"col-12 col-lg-3 col-md-5 col-sm-12 footer-col-4\">
               <div class=\"widget widget_gallery gallery-grid-4\">
-                <h5 class=\"footer-title\">Our Gallery</h5>
+                <h5 class=\"footer-title\"> Photos </h5>
                 <ul class=\"magnific-image\">
 
-                  <li><a class=\"magnific-anchor\"><img src=\"https://images.unsplash.com/photo-1477239439998-839196943351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=414&q=80\" alt=\"\"></a></li>
-                  <li><a class=\"magnific-anchor\"><img src=\"https://images.unsplash.com/photo-1477239439998-839196943351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=414&q=80\" alt=\"\"></a></li>
-                  <li><a class=\"magnific-anchor\"><img src=\"https://images.unsplash.com/photo-1477239439998-839196943351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=414&q=80\" alt=\"\"></a></li>
-                  <li><a class=\"magnific-anchor\"><img src=\"https://images.unsplash.com/photo-1477239439998-839196943351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=414&q=80\" alt=\"\"></a></li>
-                  <li><a class=\"magnific-anchor\"><img src=\"https://images.unsplash.com/photo-1477239439998-839196943351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=414&q=80\" alt=\"\"></a></li>
-                  <li><a class=\"magnific-anchor\"><img src=\"https://images.unsplash.com/photo-1477239439998-839196943351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=414&q=80\" alt=\"\"></a></li>
-                  <li><a class=\"magnific-anchor\"><img src=\"https://images.unsplash.com/photo-1477239439998-839196943351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=414&q=80\" alt=\"\"></a></li>
-                  <li><a class=\"magnific-anchor\"><img src=\"https://images.unsplash.com/photo-1477239439998-839196943351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=414&q=80\" alt=\"\"></a></li>
-                  <li><a class=\"magnific-anchor\"><img src=\"https://images.unsplash.com/photo-1477239439998-839196943351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=414&q=80\" alt=\"\"></a></li>
+                  <li><a href=\"{{path('salle_de_mariage')}}\" class=\"magnific-anchor\"><img src=\"{{asset('imgsalles/fa1f4e29f92680f0ef26b8117ffdcfe4.jpg')}}\" alt=\"\"  style=\"height:87px;width:80px;\"></a></li>
+                  <li><a href=\"{{path('musique_de_mariage')}}\" class=\"magnific-anchor\"><img src=\"{{asset('imgphotographes/6867e12a4a55f7e392bdc65b1fe91058.jpg')}}\" alt=\"\" style=\"height:87px;width:80px;\"></a></li>
+                  <li><a href=\"{{path('photographe')}}\"class=\"magnific-anchor\"><img src=\"{{asset('imgphotographes/044f6d45d83f6eedeca1d9634bd7238f.jpg')}}\" alt=\"\" style=\"height:87px;width:80px;\"></a></li>
+                  <li><a href=\"{{path('costume')}}\"class=\"magnific-anchor\"><img src=\"{{asset('imgcostume/b173a3cc7bdd7a328284f89214f18ca6.jpg')}}\" alt=\"\" style=\"height:87px;width:80px;\"></a></li>
+                  <li><a href=\"{{path('coiffure')}}\"class=\"magnific-anchor\"><img src=\"{{asset('imgcoiffure/1d4a44923c6d9ef7b57568ee87605ff847e8b0e9.jpeg')}}\" alt=\"\" style=\"height:87px;width:80px;\"></a></li>
+                  <li><a href=\"{{path('centre_de_beaute')}}\"class=\"magnific-anchor\"><img src=\"{{asset('imgcentre/200822dc729c0a43d952b734803562e3.jpg')}}\" alt=\"\" style=\"height:87px;width:80px;\"></a></li>
+                  <li><a href=\"{{path('traiteurs')}}\"class=\"magnific-anchor\"><img src=\"{{asset('imgtraiteurs/eef359b07a71dbedd593ab808a614000.jpg')}}\" alt=\"\" style=\"height:87px;width:80px;\"></a></li>
+                  <li><a href=\"{{path('voyage_de_noce')}}\"class=\"magnific-anchor\"><img src=\"{{asset('imgvoyages/e916d6672cd31e4a6a3a03e83023fd2d.jpg')}}\" alt=\"\" style=\"height:87px;width:80px;\"></a></li>
+                  <li><a href=\"{{path('home')}}\"class=\"magnific-anchor\"><img src=\"{{asset('imgcoiffure/5d7bc1596bbfa919d43527a1addf5af5f7cb1824.jpeg')}}\" alt=\"\" style=\"height:87px;width:80px;\"></a></li>
                 </ul>
               </div>
             </div>
@@ -1320,11 +1410,11 @@ footer .widget ul {
 }
 }
 footer p, footer strong, footer b, footer {
-    color: #b0b0b0;
+    color: #fff;
 }
 
 .footer-top {
-    background: #303030;
+    background: white;
     background-size: cover;
     background-position: center;
     padding: 0 0 20px;

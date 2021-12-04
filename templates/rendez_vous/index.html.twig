@@ -3,25 +3,31 @@
 {% block title %}{% endblock %}
 
 {% block stylesheets %}
-    <style>
-        #calendrier{
-            width: 50%;
-            height:50%;
-            margin-bottom:200px;
-             margin-top:200px;
-            
-            
-           
-        }
-    </style>
+    
 {% endblock %}
-
 {% block body %}
-    <div id="calendrier">
+<section style="width: 50%;height:600px;margin-top:80px;">
+    <div id="calendrier" style=" 
+            
+            
+            float:left;
+            padding-left:10px;
+        
+
+            ">
+
     </div>
+ 
+</section>
 {% endblock %}
 
 {% block javascripts %}
+  <div style=" 
+ text-align:left;">
+ <a href="{{path('calendar_index')}}"><button>Demande Reservation</button></a>
+  <a href="{{path('salle_de_mariage')}}"><button>Back</button></a>
+
+</div> 
 <script>
     window.onload = () => {
         let calendarElt = document.querySelector("#calendrier")

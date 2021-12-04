@@ -85,7 +85,14 @@ class __TwigTemplate_d8bbc8d70199d5f42b723faea11acca09d3a7991818c6e90604dca560e9
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "<div class=\"traiteurs\" style=\"margin-top:100px;\">
+        echo "
+<div class=\"card-wrap \"  style=\"margin-top:100px;\">
+";
+        // line 8
+        $this->loadTemplate("traiteurs/_filtre.html.twig", "traiteurs/index.html.twig", 8)->display(twig_to_array(["form" => (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 8, $this->source); })())]));
+        // line 9
+        echo "</div>
+<div class=\"traiteurs\" style=\"margin-top:100px;\">
 <h3>Traiteurs de mariage</h3>
 <p>Venez découvrir notre sélection d’inspirations et d’idées concernant les plus 
  <br> beaux lieux de réception de mariage. Nous vous proposons toutes nos idées de salles de mariage originales afin de vous offrir un lieu atypique et romantique 
@@ -93,23 +100,23 @@ class __TwigTemplate_d8bbc8d70199d5f42b723faea11acca09d3a7991818c6e90604dca560e9
 </div> 
 <div class=\"cards-list\">
   ";
-        // line 13
+        // line 17
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["traiteurs"]) || array_key_exists("traiteurs", $context) ? $context["traiteurs"] : (function () { throw new RuntimeError('Variable "traiteurs" does not exist.', 13, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["traiteurs"]) || array_key_exists("traiteurs", $context) ? $context["traiteurs"] : (function () { throw new RuntimeError('Variable "traiteurs" does not exist.', 17, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
-            // line 14
+            // line 18
             echo "<div class=\"card 1\">
   <div class=\"card_image\"> 
   <a href=\"";
-            // line 16
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home_details", ["id" => twig_get_attribute($this->env, $this->source, $context["item"], "id", [], "any", false, false, false, 16)]), "html", null, true);
+            // line 20
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home_details", ["id" => twig_get_attribute($this->env, $this->source, $context["item"], "id", [], "any", false, false, false, 20)]), "html", null, true);
             echo "\"><img src=\"/imgtraiteurs/";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "image", [], "any", false, false, false, 16), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "image", [], "any", false, false, false, 20), "html", null, true);
             echo "\" /></a> </div>
   <div class=\"card_title title-white\">
     <p style=\"color: palevioletred;\">";
-            // line 18
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "nom", [], "any", false, false, false, 18), "html", null, true);
+            // line 22
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "nom", [], "any", false, false, false, 22), "html", null, true);
             echo "</p>
   </div>
 </div>
@@ -118,7 +125,7 @@ class __TwigTemplate_d8bbc8d70199d5f42b723faea11acca09d3a7991818c6e90604dca560e9
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 22
+        // line 26
         echo "</div>
 </div>
 
@@ -127,14 +134,14 @@ class __TwigTemplate_d8bbc8d70199d5f42b723faea11acca09d3a7991818c6e90604dca560e9
 <section>
 \t<div class=\"circle circle-one\">
 \t\t<img src=\"";
-        // line 29
+        // line 33
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgtraiteurs/655c7b0ed51d327b589077a7cd322768.jpg"), "html", null, true);
         echo "\" alt=\"\" title=\"\">
 \t</div>
 \t
 \t<div class=\"circle circle-two\">
 \t\t<img src=\"";
-        // line 33
+        // line 37
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgtraiteurs/70b35d25f3fbae8010b72cc71df78e65.jpg"), "html", null, true);
         echo "\" alt=\"\">
 \t</div>
@@ -511,7 +518,7 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
 
     public function getDebugInfo()
     {
-        return array (  138 => 33,  131 => 29,  122 => 22,  112 => 18,  105 => 16,  101 => 14,  97 => 13,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  145 => 37,  138 => 33,  129 => 26,  119 => 22,  112 => 20,  108 => 18,  104 => 17,  94 => 9,  92 => 8,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -521,6 +528,10 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
 {% block title %}Hello TraiteursController!{% endblock %}
 
 {% block body %}
+
+<div class=\"card-wrap \"  style=\"margin-top:100px;\">
+{% include 'traiteurs/_filtre.html.twig' with{form:form} only %}
+</div>
 <div class=\"traiteurs\" style=\"margin-top:100px;\">
 <h3>Traiteurs de mariage</h3>
 <p>Venez découvrir notre sélection d’inspirations et d’idées concernant les plus 
@@ -903,6 +914,6 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
 }
 </style>
 {% endblock %}
-", "traiteurs/index.html.twig", "/opt/lampp/htdocs/sitemariage/templates/traiteurs/index.html.twig");
+", "traiteurs/index.html.twig", "/opt/lampp/htdocs/sitemariage2/templates/traiteurs/index.html.twig");
     }
 }

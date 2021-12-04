@@ -84,7 +84,13 @@ class __TwigTemplate_099d033ce03814358096071452c1cd5144435a361b09dfdd0197f321ebe
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "<section style=\"margin-top:100px;\">
+        echo "<div class=\"card-wrap \"  style=\"margin-top:100px;\">
+";
+        // line 7
+        $this->loadTemplate("costume/_filtre.html.twig", "costume/index.html.twig", 7)->display(twig_to_array(["form" => (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 7, $this->source); })())]));
+        // line 8
+        echo "</div>
+<section style=\"margin-top:100px;\">
 <h3 >Tenue du marié</h3>
 <p style=\"text-align: center;\" >Le jour du mariage, la tenue du marié est synonyme d’élégance.
 <br> Pour mettre en valeur votre personnalité tout en ayant une touche d’originalité, découvrez nos conseils,
@@ -93,24 +99,24 @@ class __TwigTemplate_099d033ce03814358096071452c1cd5144435a361b09dfdd0197f321ebe
 </section>
 <div class=\"grid\">
 ";
-        // line 14
+        // line 17
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["costume"]) || array_key_exists("costume", $context) ? $context["costume"] : (function () { throw new RuntimeError('Variable "costume" does not exist.', 14, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["costume"]) || array_key_exists("costume", $context) ? $context["costume"] : (function () { throw new RuntimeError('Variable "costume" does not exist.', 17, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
-            // line 15
+            // line 18
             echo "<div class=\"cardcontainer\">
 <img src=\"/imgcostume/";
-            // line 16
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "image", [], "any", false, false, false, 16), "html", null, true);
+            // line 19
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "image", [], "any", false, false, false, 19), "html", null, true);
             echo "\">
 <h1>";
-            // line 17
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "titre", [], "any", false, false, false, 17), "html", null, true);
+            // line 20
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "titre", [], "any", false, false, false, 20), "html", null, true);
             echo "</h1>
 <br>
   <p>";
-            // line 19
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "description", [], "any", false, false, false, 19), "html", null, true);
+            // line 22
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "description", [], "any", false, false, false, 22), "html", null, true);
             echo "</p>
   
   </div>
@@ -119,19 +125,19 @@ class __TwigTemplate_099d033ce03814358096071452c1cd5144435a361b09dfdd0197f321ebe
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 23
+        // line 26
         echo "</div>
 <section>
 \t<div class=\"circle circle-one\">
 \t\t<img src=\"";
-        // line 26
+        // line 29
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/costume-marie-morphologie-cover-faubourg-saint-sulpice2019-696x387.jpg"), "html", null, true);
         echo "\" alt=\"\" title=\"\">
 \t</div>
 \t
 \t<div class=\"circle circle-two\">
 \t\t<img src=\"";
-        // line 30
+        // line 33
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/samson-sur-mesure-Mariage-Smoking-sur-mesure.jpg"), "html", null, true);
         echo "\" alt=\"\">
 \t</div>
@@ -415,7 +421,7 @@ box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 
     public function getDebugInfo()
     {
-        return array (  135 => 30,  128 => 26,  123 => 23,  113 => 19,  108 => 17,  104 => 16,  101 => 15,  97 => 14,  87 => 6,  77 => 5,  59 => 3,  36 => 1,);
+        return array (  141 => 33,  134 => 29,  129 => 26,  119 => 22,  114 => 20,  110 => 19,  107 => 18,  103 => 17,  92 => 8,  90 => 7,  87 => 6,  77 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -425,6 +431,9 @@ box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 {% block title %}{% endblock %}
 
 {% block body %}
+<div class=\"card-wrap \"  style=\"margin-top:100px;\">
+{% include 'costume/_filtre.html.twig' with{form:form} only %}
+</div>
 <section style=\"margin-top:100px;\">
 <h3 >Tenue du marié</h3>
 <p style=\"text-align: center;\" >Le jour du mariage, la tenue du marié est synonyme d’élégance.
@@ -711,6 +720,6 @@ box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 </style>
 {% endblock %}
-", "costume/index.html.twig", "/opt/lampp/htdocs/sitemariage/templates/costume/index.html.twig");
+", "costume/index.html.twig", "/opt/lampp/htdocs/sitemariage2/templates/costume/index.html.twig");
     }
 }

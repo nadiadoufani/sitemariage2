@@ -1,0 +1,56 @@
+{% form_theme form 'bootstrap_4_layout.html.twig' %}
+
+<style>
+.form{
+    margin-top: 30px;
+    display:flex;
+    width:100%;
+    align-items:left;
+    justify-content:left;
+    border-radius:0px 0px 15px 15px;
+    padding:15px;
+    
+    background-image:url("https://images.squarespace-cdn.com/content/v1/512e5a23e4b0e0699d13d75a/1461743778273-K2J5G5XAGUZCQIWQAJVC/image-0204.jpg?format=1000w");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+}
+    .btn{
+        width: 100px;
+        background-color: lightcoral;
+        margin-left:150px;
+    
+}
+h4{
+    color: lightcoral;
+}
+
+
+</style>
+
+
+<div  class="form"> 
+ 
+ {{ form_start(form, {attr: {class: 'filtre js-filtre-form'}}) }}
+
+ {{ form_row(form.q) }}
+
+  
+
+ 
+  {{ form_row(form.categorie) }}
+   
+
+   
+      {{ form_row(form.min) }}
+    
+    
+      {{ form_row(form.max) }}
+    
+
+
+
+  <button type="submit" class="btn">Rechercher</button>
+
+{{ form_end(form) }}
+</div>

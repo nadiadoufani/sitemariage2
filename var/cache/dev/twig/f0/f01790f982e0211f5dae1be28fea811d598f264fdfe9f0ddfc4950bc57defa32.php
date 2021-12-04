@@ -168,7 +168,76 @@ class __TwigTemplate_869ab34dd49822d4797f94aa16dcf836fefe01fdbd4cc8f872d61d09385
     </section>
 
 
+    <style>
+    *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+
+
+form{
+width: 500px;
+box-shadow: 1px -4px  21px 20px #d4d4d4;
+  border-radius: 8px;
+  padding: 50px;
+  background: linear-gradient(to top, black,orange,orangered);
+  
+}
+
+label{
+  position: relative;
+  display: block;
+  margin-bottom: 25px;
+}
+
+input{
+  width: 100%;
+  height: 50px;
+  border-radius: 16px;
+  padding: 0 20px;
+  border-radius: 16px;
+  border: 0;
+  background-color: #e8eaf6;
+  transition: 0.9s;
+  outline: none;
+}
+
+input:hover{
+  background-color: white;
+  color: black;
+  
+}
+strong{
+  margin: 5px;
+  display: block;
+}
+
+.btn{
+  display: inline-block;
+  width: 180px;
+  height: 50px;
+  line-height: 50px;
+ \tbackground: linear-gradient(to left, #e91e63, #ffeb3b);
+  ouline: none;
+  border: none;
+ color: white;
+  font-size: 16px;
+  box-shadow: 0 20px 30px rgba(0,0,0,0.2) ;
+  transition: 0.9s linear;
+  cursor: pointer;
+  border-radius: 50px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.btn:hover{
+  box-shadow: 0 20px 30px;
+  letter-spacing: 1px;
+  outline: none;
+}
+</style>
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -240,8 +309,77 @@ class __TwigTemplate_869ab34dd49822d4797f94aa16dcf836fefe01fdbd4cc8f872d61d09385
     </section>
 
 
+    <style>
+    *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+
+
+form{
+width: 500px;
+box-shadow: 1px -4px  21px 20px #d4d4d4;
+  border-radius: 8px;
+  padding: 50px;
+  background: linear-gradient(to top, black,orange,orangered);
+  
+}
+
+label{
+  position: relative;
+  display: block;
+  margin-bottom: 25px;
+}
+
+input{
+  width: 100%;
+  height: 50px;
+  border-radius: 16px;
+  padding: 0 20px;
+  border-radius: 16px;
+  border: 0;
+  background-color: #e8eaf6;
+  transition: 0.9s;
+  outline: none;
+}
+
+input:hover{
+  background-color: white;
+  color: black;
+  
+}
+strong{
+  margin: 5px;
+  display: block;
+}
+
+.btn{
+  display: inline-block;
+  width: 180px;
+  height: 50px;
+  line-height: 50px;
+ \tbackground: linear-gradient(to left, #e91e63, #ffeb3b);
+  ouline: none;
+  border: none;
+ color: white;
+  font-size: 16px;
+  box-shadow: 0 20px 30px rgba(0,0,0,0.2) ;
+  transition: 0.9s linear;
+  cursor: pointer;
+  border-radius: 50px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.btn:hover{
+  box-shadow: 0 20px 30px;
+  letter-spacing: 1px;
+  outline: none;
+}
+</style>
 {% endblock %}
-", "register/index.html.twig", "/opt/lampp/htdocs/sitemariage/templates/register/index.html.twig");
+", "register/index.html.twig", "/opt/lampp/htdocs/sitemariage2/templates/register/index.html.twig");
     }
 }
