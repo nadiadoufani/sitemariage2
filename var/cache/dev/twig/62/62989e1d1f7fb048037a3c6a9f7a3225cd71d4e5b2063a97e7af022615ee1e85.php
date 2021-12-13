@@ -81,6 +81,6 @@ class __TwigTemplate_f5d307c79ff860e1097803209d1085d803700158e9367c5224c89328e8f
         return new Source("<h1>Nouveau contact</h1>
 <p>Nom : {{ contact.nom }}</p>
 <p>Email : {{ contact.email }}</p>
-<p>Message : {{ contact.message|raw }}</p>", "emails/contact.html.twig", "/opt/lampp/htdocs/sitemariage/templates/emails/contact.html.twig");
+<p>Message : {{ contact.message|raw }}</p>", "emails/contact.html.twig", "/opt/lampp/htdocs/sitemariage2/templates/emails/contact.html.twig");
     }
 }

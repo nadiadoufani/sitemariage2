@@ -40,7 +40,7 @@
       <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="card-r" id="">
         <h2 style="font-family: 'Yeon Sung', cursive;">{{ photographe.nom}}</h2>
           <p> {{ photographe.description}}</p>
-          <a href="#"<button type="submit" class="btn btn-success " style="border-radius: 30%;">reserver</button></a>
+          <a href="{{ path('contact')}}"<button type="submit" class="btn btn-success " style="border-radius: 30%;">Contactez!!!</button></a>
           <a href="{{ path('photographe')}}"<button type="submit" class="btn btn-success " style="border-radius: 30%;">Back</button></a>
       </div>
      
@@ -73,7 +73,7 @@
                 </form>
                 <hr>
                 {% else %}
-                    <a href="{{path('security_login')}}" class="btn btn-link">Connectez vous pour commenter</a>
+                    <a href="{{path('app_login')}}" class="btn btn-link">Connectez vous pour commenter</a>
                 {% endif %}
                 <!-- show comments -->
                 {% for commentaire in photographe.getCommentaire %}

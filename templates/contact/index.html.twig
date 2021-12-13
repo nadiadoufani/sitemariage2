@@ -1,6 +1,6 @@
 
 
-{% block title %}Hello ContactController!{% endblock %}
+{% block title %}{% endblock %}
 
 {% block body %}
 
@@ -8,10 +8,87 @@
 
 
 {% for message in app.flashes('message')%}
-<div class="alert alert-success" role="alert">
+<div class="alert" role="alert">
 {{message}}
 </div>
 {% endfor %}
-<h1>Nous contacter</h1>
-{{form(contactForm)}}
+<div class="container">
+  <div  class="form">  {{form(contactForm)}}</div>
+</div>
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+   background: url("{{asset('https://www.justifit.fr/wp-content/uploads/2018/04/regles-mariage-civil-union-couple-alliances.jpg')}}");
+    height: 100vh;
+    background-size: cover; 
+}
+.alert{
+    background-color: cyan;
+}
+.container{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 20px;
+    
+}
+.form{
+    background: rgba(0,0,0,0.8);
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 40px;
+    border-radius: 9px;
+    display: flex;
+    box-shadow: 0 0 100px rgba(0,0,0,0.9);
+    display: flex;
+    flex-direction: column;
+    margin-right: ;
+}
+
+button{
+    border-radius: 4px;
+    display: block;
+    color: aqua;
+    background: #666;
+    padding: 10px;
+    width: 50%;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px 3px #823579;
+    margin: 0 auto;
+    text-align: center;
+}
+input,textarea{
+  background: transparent;
+    color: aqua;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 2px solid aqua;
+    padding: 10px;
+    margin: 10px 20px;
+    width: 100%;
+    
+}
+::webkit-input-placeholder{
+    color: aquamarine;
+}
+
+::moz-input-placeholder{
+    color: aquamarine;
+}
+button:hover{
+    color: orange;
+    background-color: cyan;
+}
+
+</style>
+
 {% endblock %}

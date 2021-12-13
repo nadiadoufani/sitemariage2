@@ -27,7 +27,7 @@ class SearchForm6 extends AbstractType
                 'required' => false,
                 'attr' => [
 
-                    'placeholder' => 'rechercher'
+                    'placeholder' => 'où?'
                 ],
 
             ])

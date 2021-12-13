@@ -1,11 +1,21 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}New Calendar{% endblock %}
+{% block title %}{% endblock %}
 
 {% block body %}
     <h1 style="margin-top:100px;">Create new Calendar</h1>
 
     {{ include('calendar/_form.html.twig') }}
 
-    <a href="{{ path('calendar_index') }}">back to list</a>
+    <a style="border-radius: 4px;
+    
+    color: aqua;
+    background: #666;
+    padding: 10px;
+    width: 20%;
+    cursor: pointer;
+    display:inline-block;
+    box-shadow: 4px 4px 4px 3px #823579;
+    margin: 0 auto;
+    " href="{{ path('calendar_index') }}">back to list</a>
 {% endblock %}

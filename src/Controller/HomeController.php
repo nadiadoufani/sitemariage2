@@ -2,11 +2,13 @@
 
 namespace App\Controller;
 
+use App\Entity\Coiffure;
 use App\Entity\Publicite;
 use App\Entity\Traiteurs;
 use App\Entity\Publicite1;
 use App\Entity\Publicite3;
 use App\Entity\Photographe;
+use App\Entity\VoyageDeNoce;
 use App\Entity\CentreDeBeaute;
 use App\Entity\SalleDeMariage;
 use App\Entity\MusiqueDeMariage;
@@ -29,6 +31,7 @@ class HomeController extends AbstractController
    
     public function index(): Response
     {
+
         $publicite1 = $this->entityManager->getRepository(Publicite1::class)->findAll();
         $publicite3 = $this->entityManager->getRepository(Publicite3::class)->findAll();
         $publicite = $this->entityManager->getRepository(Publicite::class)->findAll();
@@ -36,8 +39,31 @@ class HomeController extends AbstractController
             'publicite' => $publicite,
             'publicite1' => $publicite1,
             'publicite3' => $publicite3,
+            
         ]);
     }
+     /**
+     * @Route("/home/detail/voyage/de/noce/{id}", name="home_detail_voyage")
+    */
+    public function detailvoyagedenoce($id)
+    {
+        $voyagedenoce= $this->getDoctrine()
+                      ->getRepository(VoyageDeNoce::class)
+                      ->findOneBy(['id'=>$id]);
+                      return $this->render('home/detailvoyage.html.twig', [
+                        'voyagedenoce' => $voyagedenoce]);
+}
+    /**
+     * @Route("/home/detail/coiffure/{id}", name="home_detail_coiffure")
+    */
+    public function detailcoiffure($id)
+    {
+        $coiffure= $this->getDoctrine()
+                      ->getRepository(Coiffure::class)
+                      ->findOneBy(['id'=>$id]);
+                      return $this->render('home/detailcoiffure.html.twig', [
+                        'coiffure' => $coiffure]);
+}
     /**
      * @Route("/home/detail/musique/{id}", name="home_detail_musique")
     */

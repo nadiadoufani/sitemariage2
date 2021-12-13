@@ -91,7 +91,7 @@ class __TwigTemplate_cc306ab129c8013475df5cc4dae418e2372362dc8d6d03beca523918b26
         // line 8
         echo "</div>
 
-<div class=\"traiteurs\" style=\"margin-top:100px\">
+<div class=\"photographe\" style=\"margin-top:50px\">
 <h3>Photographe Mariage</h3>
 <p> Vous engagez un certain nombre de prestataires dans le but d’assurer le bon déroulement de votre mariage et de le rendre unique.
 <br> Le photographe, lui, participera autrement à vos festivités, puiqu’il sera chargé de capturer l’ambiance et l’émotion de votre événement pour que vous puissiez le revivre postérieurement. D’où l’importance de bien choisir l’auteur de vos photos de mariage,
@@ -126,6 +126,8 @@ class __TwigTemplate_cc306ab129c8013475df5cc4dae418e2372362dc8d6d03beca523918b26
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 26
         echo "</div>
+    <div style=\"text-align: center;\"><img src=\"https://cdn.pixabay.com/photo/2020/03/06/08/23/divider-4906386_960_720.png\" alt=\"\" style=\"height: 100px;width: 500px;text-align: center;\"></div>
+
 <div style=\" margin-top: 30px;
  text-align: center;\">
  <button class=\"btn-blink1\">Services</button>
@@ -139,7 +141,7 @@ class __TwigTemplate_cc306ab129c8013475df5cc4dae418e2372362dc8d6d03beca523918b26
             <div class=\"box\">
                 <div class=\"our-services settings\">
                     <div class=\"icon\"> <img src=\"";
-        // line 39
+        // line 41
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/images.jpeg"), "html", null, true);
         echo "\" style=\"width:100px; height:100px; border-radius:50%;\"> </div>
                     <h4>Mariage</h4>
@@ -156,7 +158,7 @@ class __TwigTemplate_cc306ab129c8013475df5cc4dae418e2372362dc8d6d03beca523918b26
             <div class=\"box\">
                 <div class=\"our-services speedup\">
                     <div class=\"icon\"> <img src=\"";
-        // line 53
+        // line 55
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/téléchargement3.png"), "html", null, true);
         echo "\" style=\"width:100px; height:100px; border-radius:50%;\"> </div>
                     <h4>Shooting</h4>
@@ -173,7 +175,7 @@ class __TwigTemplate_cc306ab129c8013475df5cc4dae418e2372362dc8d6d03beca523918b26
             <div class=\"box\">
                 <div class=\"our-services privacy\">
                     <div class=\"icon\"> <img src=\"";
-        // line 67
+        // line 69
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/images (1).jpeg"), "html", null, true);
         echo "\" style=\"width:100px; height:100px; border-radius:50%;\"> </div>
                     <h4>Événements</h4>
@@ -187,6 +189,7 @@ class __TwigTemplate_cc306ab129c8013475df5cc4dae418e2372362dc8d6d03beca523918b26
         </div>
     </div>
  
+    <div style=\"text-align: center;\"><img src=\"https://cdn.pixabay.com/photo/2020/03/06/08/23/divider-4906386_960_720.png\" alt=\"\" style=\"height: 100px;width: 500px;text-align: center;\"></div>
 
 <section  style=\"margin-bottom:80px;\">
   
@@ -209,29 +212,29 @@ class __TwigTemplate_cc306ab129c8013475df5cc4dae418e2372362dc8d6d03beca523918b26
   
   <div class=\"scrolling-wrapper\">
     <div class=\"card1\"><img src=\"";
-        // line 100
+        // line 103
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/1e77bd7a5f2789604b34aaf810a1c76e.jpg"), "html", null, true);
         echo "\" alt=\"\"></div>
    
     <div class=\"card1\" style=\"margin-left:10px;\"><img src=\"";
-        // line 102
+        // line 105
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/727c6a3594876837fa0981693c127494.jpg"), "html", null, true);
         echo "\" alt=\"\"></div>
    
     <div class=\"card1\" style=\"margin-left:10px;\"><img src=\"";
-        // line 104
+        // line 107
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/6867e12a4a55f7e392bdc65b1fe91058.jpg"), "html", null, true);
         echo "\" alt=\"\"></div>
     <div class=\"card1\" style=\"margin-left:10px;\"><img src=\"";
-        // line 105
+        // line 108
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/ad310d818731633d0d6c97b16919a4e6.jpg"), "html", null, true);
         echo "\" alt=\"\"></div>
     <div class=\"card1\"style=\"margin-left:10px;\"><img src=\"";
-        // line 106
+        // line 109
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/ea805768d77fca1876c7d111a3303db4.jpg"), "html", null, true);
         echo "\" alt=\"\"></div>
     <div class=\"card1\"style=\"margin-left:10px;\"><img src=\"";
-        // line 107
+        // line 110
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/8649b1607269c9a5b69a4fb986308605.jpg"), "html", null, true);
         echo "\" alt=\"\"></div>
 
@@ -245,7 +248,9 @@ class __TwigTemplate_cc306ab129c8013475df5cc4dae418e2372362dc8d6d03beca523918b26
 
 
 <style>
-
+body{
+ background-image:url(\"http://alijafarian.com/demos/responsive-jquery-accordions/images/texture_old_map.png\");
+}
 *{
     box-sizing: border-box;
     margin: 0;
@@ -455,7 +460,7 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
 
     public function getDebugInfo()
     {
-        return array (  235 => 107,  231 => 106,  227 => 105,  223 => 104,  218 => 102,  213 => 100,  177 => 67,  160 => 53,  143 => 39,  128 => 26,  118 => 22,  111 => 20,  103 => 17,  92 => 8,  90 => 7,  87 => 6,  77 => 5,  59 => 3,  36 => 1,);
+        return array (  238 => 110,  234 => 109,  230 => 108,  226 => 107,  221 => 105,  216 => 103,  179 => 69,  162 => 55,  145 => 41,  128 => 26,  118 => 22,  111 => 20,  103 => 17,  92 => 8,  90 => 7,  87 => 6,  77 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -469,7 +474,7 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
 {% include 'photographe/_filtre.html.twig' with{form:form} only %}
 </div>
 
-<div class=\"traiteurs\" style=\"margin-top:100px\">
+<div class=\"photographe\" style=\"margin-top:50px\">
 <h3>Photographe Mariage</h3>
 <p> Vous engagez un certain nombre de prestataires dans le but d’assurer le bon déroulement de votre mariage et de le rendre unique.
 <br> Le photographe, lui, participera autrement à vos festivités, puiqu’il sera chargé de capturer l’ambiance et l’émotion de votre événement pour que vous puissiez le revivre postérieurement. D’où l’importance de bien choisir l’auteur de vos photos de mariage,
@@ -486,6 +491,8 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
 </div>
 {% endfor %}
 </div>
+    <div style=\"text-align: center;\"><img src=\"https://cdn.pixabay.com/photo/2020/03/06/08/23/divider-4906386_960_720.png\" alt=\"\" style=\"height: 100px;width: 500px;text-align: center;\"></div>
+
 <div style=\" margin-top: 30px;
  text-align: center;\">
  <button class=\"btn-blink1\">Services</button>
@@ -538,6 +545,7 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
         </div>
     </div>
  
+    <div style=\"text-align: center;\"><img src=\"https://cdn.pixabay.com/photo/2020/03/06/08/23/divider-4906386_960_720.png\" alt=\"\" style=\"height: 100px;width: 500px;text-align: center;\"></div>
 
 <section  style=\"margin-bottom:80px;\">
   
@@ -578,7 +586,9 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
 
 
 <style>
-
+body{
+ background-image:url(\"http://alijafarian.com/demos/responsive-jquery-accordions/images/texture_old_map.png\");
+}
 *{
     box-sizing: border-box;
     margin: 0;

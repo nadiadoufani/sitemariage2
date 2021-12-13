@@ -29,27 +29,28 @@
         <i class="toggle-btn fas fa-bars"></i>
         <!-- Navbar -->
         <nav class="nav-menus ">
-            <li><a href="{{path('home')}}"> Acceuil</a></li>
-            <li><a href="{{ path('musique_de_mariage')}}"> Musique De Mariage</a></li>
-            <li class="sub-menus"><a href="#"> centre de beaute</a>
+            <li><a href="{{path('home')}}"><i class="fas fa-home"></i> Acceuil</a></li>
+            <li><a href="{{ path('musique_de_mariage')}}"><i class="fas fa-music"></i> Musique De Mariage</a></li>
+            <li class="sub-menus"><a href="#"><i class="fas fa-list"></i> Centre De Beaute</a>
                 <ul>
-                    <li><a href="{{ path('centre_de_beaute')}}">Robe De Mariage </a></li>
-                    <li><a href="{{ path('coiffure')}}"> Coiffure</a></li>
-                    <li><a href="{{ path('costume')}}"> Costumes De Marrié</a></li>
+                    <li><a href="{{ path('centre_de_beaute')}}"><i class="fa fa-female" aria-hidden="true"></i>Robe De Mariage </a></li>
+                    <li><a href="{{ path('coiffure')}}"><i class="fas fa-spa"></i> Coiffure</a></li>
+                    <li><a href="{{ path('costume')}}"><i class="fas fa-user-tie"></i> Costumes De Marrié</a></li>
                 </ul>
                 </li>
-                <li class="sub-menus"><a href="#"> Reception</a>
+                <li class="sub-menus"><a href="#"><i class="fas fa-list"></i>
+                  Reception</a>
                 <ul>
-                    <li><a href="{{ path('salle_de_mariage')}}"></i>Salle De Beauté </a></li>
-                    <li><a href="{{ path('traiteurs')}}"> Traiteurs</a></li>
+                    <li><a href="{{ path('salle_de_mariage')}}"><i class="fas fa-table"></i>Salle De Mariage </a></li>
+                    <li><a href="{{ path('traiteurs')}}"><i class="far fa-soup"></i> Traiteurs</a></li>
                   </ul>
            </li>
-            <li><a href="{{ path('photographe')}}">photographe</a></li>
-            <li><a href="{{ path('voyage_de_noce')}}"> voyage de noce</a></li>
+            <li><a href="{{ path('photographe')}}"><i class="fas fa-camera"></i>Photographe</a></li>
+            <li><a href="{{ path('voyage_de_noce')}}"><i class="fas fa-plane-departure"></i> Voyage De Noce</a></li>
         {% if app.user %}
 
        <li class="nav-item ">
-        <a class="nav-link" >{{ app.user.nom }} {{ app.user.prenom }}</a>
+        <a class="nav-link" ><i class="fas fa-user"></i>{{ app.user.nom }} {{ app.user.prenom }}</a>
       </li>
       <li class="nav-item">
         <a class="nav-link"  href="{{path('app_logout')}}" >Déconnexion</a>
@@ -58,12 +59,12 @@
 
        {% else %}
         <li class="navbar-dropdown">
-          <a href="{{path('register')}}">Inscription</a>
+          <a href="{{path('register')}}"><i class="fas fa-user"></i>Inscription</a>
 
         </li>
           </li>
         <li class="navbar-dropdown">
-          <a href="{{path('app_login')}}">Connexion</a>
+          <a href="{{path('app_login')}}"><i class="fas fa-user"></i>Connexion</a>
 
         </li>
         {% endif %}
@@ -240,8 +241,6 @@ sur nos réseaux sociaux.
     padding: 0;
     box-sizing: border-box;
 }
-
-
   
 .wrapper {
    
@@ -254,9 +253,6 @@ sur nos réseaux sociaux.
     
     
 } 
-
-
-
 /*-- Navbar CSS --*/
 .nav-menus {
     float: right;
@@ -276,11 +272,11 @@ sur nos réseaux sociaux.
     position: relative;
     font-size: 17px;
     text-decoration: none;
-    padding: 15px 12px;
+    padding: 15px 1px;
     z-index: 1;
 }
 .nav-menus li:hover {
-    color: #c79826;
+    color: #c7267e;
 }
 .nav-menus a:after {
     content: "";
@@ -316,7 +312,7 @@ sur nos réseaux sociaux.
 /*-- Sub Menus CSS--*/
 .sub-menus ul {
     position: absolute;
-    top: 80px;
+    margin-bottom: -80px;
     background-color: #fff;
     padding: 5px 0px;
     min-width: 150px;
@@ -387,7 +383,6 @@ sur nos réseaux sociaux.
 footer p, footer strong, footer b, footer {
     color: #fff;
 }
-
 .footer-top {
     background: white;
     background-size: cover;
@@ -397,20 +392,15 @@ footer p, footer strong, footer b, footer {
   padding-top:30px;
   
 }
-
 .footer-top, .footer-bottom {
     background-color: #1c1f2f;
 }
-
 .footer-bottom {
     padding: 15px 0;
     border-top: 1px solid #313646;
     background-color: #181828 !important;
     color: #b0b0b0;
     font-family: rubik;
-}
-color: #99a9b5;
-    padding-top: 15px;
 }
 
 .footer-site-info {
@@ -419,12 +409,10 @@ color: #99a9b5;
 #footer-navigation, #footer-navigation li a:hover, .custom-footer, .custom-footer li a:hover {
     color: white;
 }
-
 #footer-navigation, #footer-navigation li a, .custom-footer, .custom-footer li a {
     color: #99a9b5;
     padding-top: 15px;
 }
-
 .footer-bottom ul {
     margin: 0;
 }
@@ -442,12 +430,10 @@ color: #99a9b5;
     position: relative;
     line-height: 1;
 }
-
 #footer-navigation, #footer-navigation li a, .custom-footer, .custom-footer li a {
     color: #99a9b5;
     padding-top: 15px;
 }
-
 #footer-navigation, #footer-navigation li a, .custom-footer, .custom-footer li a {
     color: #99a9b5;
     padding-top: 15px;
@@ -463,24 +449,19 @@ color: #99a9b5;
     border-left: 1px solid #232234;
     border-right: 1px solid #333146;
 }
-
-
-navigation li a, .custom-footer, .custom-footer li a {
+ li a, .custom-footer, .custom-footer li a {
     color: #99a9b5;
     padding-top: 15px;
 }
-
 #footer-socials {
     text-align: right;
 }
-
 #footer-socials .socials {
     text-align: right;
     margin: 0 -7px;
     display: inline-block;
     vertical-align: middle;
 }
-
 a.socials-item {
     display: inline-block;
     vertical-align: top;
@@ -496,7 +477,6 @@ a.socials-item {
     border: 1px solid #2e2e4c;
     box-shadow: 3px 9px 16px rgb(0,0,0,0.4), -3px -3px 10px rgba(255,255,255, 0.06), inset 14px 14px 26px rgb(0,0,0,0.3), inset -3px -3px 15px rgba(255,255,255, 0.05);
 }
-
 .socials-item i {
     display: inline-block;
     font-weight: normal;
@@ -517,11 +497,9 @@ a.socials-item {
     font-weight: normal;
     text-rendering: auto;
 }
-
 .facebook {
     color: #4e64b5;
 }
-
 .twitter {
     color: #00aced;
 }
@@ -531,33 +509,24 @@ a.socials-item {
 .youtube {
     color: #c82929;
 }
-
 .telegram {
     color: #2ca5e0;
 }
-
-
 a.socials-item:hover {
     box-shadow: 0 0px 20px rgba(84, 1, 74, 0.7);
     border-color: rgba(255, 6, 224, 0.61);
     background: linear-gradient(to right, rgba(255, 9, 9, 0.12941176470588237), #c000ffb5, rgba(255, 0, 94, 0.14));
 }
-
 .footer-bottom a:hover {
     color: white;
 }
-
-
 footer p, footer li {
     font-size: 15px;
     line-height: 22px;
 }
-
-
 .widget {
     margin-bottom: 50px;
 }
-
 .footer-title {
     margin-bottom: 40px;
     color: #fff;
@@ -567,7 +536,6 @@ footer p, footer li {
     font-size: 16px;
     position: relative;
 }
-
 .footer-title:after {
     width: 50px;
     background: #fff;
@@ -578,47 +546,38 @@ footer p, footer li {
     bottom: 0;
     left: 0;
 }
-
 .gem-contacts-item {
     padding-top: 10px;
     font-size: 15px;
 }
-
 .gem-contacts-item i {
     padding-right: 10px;
 }
-
 footer .widget ul {
     list-style: none;
     margin-top: 5px;
 }
-
 .posts li {
     border-bottom: 1px solid #393d50;
     padding-bottom: 12px;
     padding-top: 6px;
 }
-
 footer p, footer li {
     font-size: 15px;
     line-height: 22px;
 }
-
 .gem-pp-posts-date {
     color: #00bcd4;
     font-size: 89.5%;
 }
-
 footer p {
     line-height: 24px;
     margin-bottom: 10px;font-size: 15px;
 }
-
 .wpcf7-form-control-wrap .wpcf7-form-control {
     padding: 7px!important;
     width: 100%;
 }
-
 .wpcf7-form-control-wrap input {
     background: #1c1f2f;
     overflow: hidden;
@@ -628,26 +587,22 @@ footer p {
     border-radius: 5px;
     transition: all 0.3s ease-in-out 0s;
 }
-
 .wpcf7-form-control-wrap input:hover {
     background-color: transparent;
     box-shadow: 10px 10px 36px rgb(0,0,0,0.5), -13px -13px 23px rgba(255,255,255, 0.03), inset 14px 14px 70px rgb(0,0,0,0.2), inset -15px -15px 30px rgba(255,255,255, 0.04);
     border-color: rgba(255, 255, 255, 0.2);
     color: white;
 }
-
 .wpcf7 .wpcf7-form .contact-form-footer textarea {
     height: 160px;
     width: 100%;
 }
-
 .wpcf7-form-control-wrap textarea:hover {
     background-color: transparent;
     box-shadow: 10px 10px 36px rgb(0,0,0,0.5), -13px -13px 23px rgba(255,255,255, 0.03), inset 14px 14px 70px rgb(0,0,0,0.2), inset -15px -15px 30px rgba(255,255,255, 0.04);
     border-color: rgba(255, 255, 255, 0.2);
     color: white;
 }
-
 .wpcf7-form-control-wrap textarea {
     background: #1c1f2f;
     overflow: hidden;
@@ -657,12 +612,10 @@ footer p {
     border-radius: 5px;
     transition: all 0.3s ease-in-out 0s;
 }
-
 textarea {
     overflow: auto;
     resize: vertical;
 }
-
 .wpcf7 .wpcf7-form .contact-form-footer .wpcf7-submit {
     width: 100%;
     padding: 11px;
@@ -693,25 +646,21 @@ textarea {
     border-color: #2e344d;
     transition: all 0.3s ease-in-out 0s;
 }
-
 .wpcf7-form input[type=submit] {
     height: 40px;
     line-height: 21px;
     padding: 10px 40px;
     font-size: 14px;
 }
-
 .posts li a {
     color: #99a9b5;
 }
-
 .wpcf7-form .contact-form-footer .wpcf7-submit:hover {
     box-shadow: 0 0px 20px rgba(84, 1, 74, 0.7);
     border-color: rgba(255, 6, 224, 0.61);
     background: linear-gradient(to right, rgba(255, 9, 9, 0.12941176470588237), #c000ffb5, rgba(255, 0, 94, 0.14));
     color: white;
 }
-
 img {
     border-style: none;
     height: auto;
@@ -729,7 +678,6 @@ footer .widget ul {
     padding-left: 0;
     display: table;
 }
-
 .widget_gallery li {
     display: inline-block;
     width: 33.33%;
@@ -740,26 +688,19 @@ footer .widget ul {
     -o-transition: all 0.5s;
     padding: 2px;
 }
-
 .widget_gallery.gallery-grid-4 li {
     width: 30%;
 }
-
-
 #waterdrop {
     height: 30px;
 }
-
 #waterdrop canvas {
     bottom: -70px !important;
 }
-
 .footer-site-info
 {
   padding-top: 10px;
 }
-
-
 </style>
   <!-- Toggle jQuery for Small Devices -->
 <script type="text/javascript">

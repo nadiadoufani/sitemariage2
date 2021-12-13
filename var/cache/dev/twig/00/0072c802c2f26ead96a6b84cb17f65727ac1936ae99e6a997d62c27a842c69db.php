@@ -70,7 +70,6 @@ class __TwigTemplate_09bb5b7aa5868a93da2cfb3dc17abb3d7b0b17f6f012c068a3973e6d02c
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Hello ContactController!";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -100,7 +99,7 @@ class __TwigTemplate_09bb5b7aa5868a93da2cfb3dc17abb3d7b0b17f6f012c068a3973e6d02c
         $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 10, $this->source); })()), "flashes", [0 => "message"], "method", false, false, false, 10));
         foreach ($context['_seq'] as $context["_key"] => $context["message"]) {
             // line 11
-            echo "<div class=\"alert alert-success\" role=\"alert\">
+            echo "<div class=\"alert\" role=\"alert\">
 ";
             // line 12
             echo twig_escape_filter($this->env, $context["message"], "html", null, true);
@@ -112,11 +111,91 @@ class __TwigTemplate_09bb5b7aa5868a93da2cfb3dc17abb3d7b0b17f6f012c068a3973e6d02c
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['message'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 15
-        echo "<h1>Nous contacter</h1>
-";
+        echo "<div class=\"container\">
+  <div  class=\"form\">  ";
         // line 16
         echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["contactForm"]) || array_key_exists("contactForm", $context) ? $context["contactForm"] : (function () { throw new RuntimeError('Variable "contactForm" does not exist.', 16, $this->source); })()), 'form');
-        echo "
+        echo "</div>
+</div>
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+   background: url(\"";
+        // line 29
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("https://www.justifit.fr/wp-content/uploads/2018/04/regles-mariage-civil-union-couple-alliances.jpg"), "html", null, true);
+        echo "\");
+    height: 100vh;
+    background-size: cover; 
+}
+.alert{
+    background-color: cyan;
+}
+.container{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 20px;
+    
+}
+.form{
+    background: rgba(0,0,0,0.8);
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 40px;
+    border-radius: 9px;
+    display: flex;
+    box-shadow: 0 0 100px rgba(0,0,0,0.9);
+    display: flex;
+    flex-direction: column;
+    margin-right: ;
+}
+
+button{
+    border-radius: 4px;
+    display: block;
+    color: aqua;
+    background: #666;
+    padding: 10px;
+    width: 50%;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px 3px #823579;
+    margin: 0 auto;
+    text-align: center;
+}
+input,textarea{
+  background: transparent;
+    color: aqua;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 2px solid aqua;
+    padding: 10px;
+    margin: 10px 20px;
+    width: 100%;
+    
+}
+::webkit-input-placeholder{
+    color: aquamarine;
+}
+
+::moz-input-placeholder{
+    color: aquamarine;
+}
+button:hover{
+    color: orange;
+    background-color: cyan;
+}
+
+</style>
+
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -133,14 +212,14 @@ class __TwigTemplate_09bb5b7aa5868a93da2cfb3dc17abb3d7b0b17f6f012c068a3973e6d02c
 
     public function getDebugInfo()
     {
-        return array (  118 => 16,  115 => 15,  106 => 12,  103 => 11,  99 => 10,  93 => 6,  83 => 5,  64 => 3,  54 => 5,  51 => 4,  49 => 3,  45 => 1,);
+        return array (  133 => 29,  117 => 16,  114 => 15,  105 => 12,  102 => 11,  98 => 10,  92 => 6,  82 => 5,  64 => 3,  54 => 5,  51 => 4,  49 => 3,  45 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("
 
-{% block title %}Hello ContactController!{% endblock %}
+{% block title %}{% endblock %}
 
 {% block body %}
 
@@ -148,12 +227,89 @@ class __TwigTemplate_09bb5b7aa5868a93da2cfb3dc17abb3d7b0b17f6f012c068a3973e6d02c
 
 
 {% for message in app.flashes('message')%}
-<div class=\"alert alert-success\" role=\"alert\">
+<div class=\"alert\" role=\"alert\">
 {{message}}
 </div>
 {% endfor %}
-<h1>Nous contacter</h1>
-{{form(contactForm)}}
-{% endblock %}", "contact/index.html.twig", "/opt/lampp/htdocs/sitemariage/templates/contact/index.html.twig");
+<div class=\"container\">
+  <div  class=\"form\">  {{form(contactForm)}}</div>
+</div>
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+   background: url(\"{{asset('https://www.justifit.fr/wp-content/uploads/2018/04/regles-mariage-civil-union-couple-alliances.jpg')}}\");
+    height: 100vh;
+    background-size: cover; 
+}
+.alert{
+    background-color: cyan;
+}
+.container{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 20px;
+    
+}
+.form{
+    background: rgba(0,0,0,0.8);
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 40px;
+    border-radius: 9px;
+    display: flex;
+    box-shadow: 0 0 100px rgba(0,0,0,0.9);
+    display: flex;
+    flex-direction: column;
+    margin-right: ;
+}
+
+button{
+    border-radius: 4px;
+    display: block;
+    color: aqua;
+    background: #666;
+    padding: 10px;
+    width: 50%;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px 3px #823579;
+    margin: 0 auto;
+    text-align: center;
+}
+input,textarea{
+  background: transparent;
+    color: aqua;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 2px solid aqua;
+    padding: 10px;
+    margin: 10px 20px;
+    width: 100%;
+    
+}
+::webkit-input-placeholder{
+    color: aquamarine;
+}
+
+::moz-input-placeholder{
+    color: aquamarine;
+}
+button:hover{
+    color: orange;
+    background-color: cyan;
+}
+
+</style>
+
+{% endblock %}", "contact/index.html.twig", "/opt/lampp/htdocs/sitemariage2/templates/contact/index.html.twig");
     }
 }

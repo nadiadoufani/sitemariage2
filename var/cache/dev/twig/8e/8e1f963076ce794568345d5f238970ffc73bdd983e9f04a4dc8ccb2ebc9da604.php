@@ -49,7 +49,16 @@ class __TwigTemplate_0efc0d16f99b15a860609a2d20a8fa6e1dc33a50776728b071614a7d79a
         // line 3
         echo twig_escape_filter($this->env, $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderCsrfToken(("delete" . twig_get_attribute($this->env, $this->source, (isset($context["calendar"]) || array_key_exists("calendar", $context) ? $context["calendar"] : (function () { throw new RuntimeError('Variable "calendar" does not exist.', 3, $this->source); })()), "id", [], "any", false, false, false, 3))), "html", null, true);
         echo "\">
-    <button class=\"btn\">Delete</button>
+    <button style=\"border-radius: 4px;
+    
+    color: aqua;
+    background: #666;
+    padding: 10px;
+    width: 20%;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px 3px #823579;
+    margin: 0 auto;
+    \" class=\"btn\">Delete</button>
 </form>
 ";
         
@@ -80,7 +89,16 @@ class __TwigTemplate_0efc0d16f99b15a860609a2d20a8fa6e1dc33a50776728b071614a7d79a
         return new Source("
 <form style=\"margin-top:100px;\"  method=\"post\" action=\"{{ path('calendar_delete', {'id': calendar.id}) }}\" onsubmit=\"return confirm('Are you sure you want to delete this item?');\">
     <input type=\"hidden\" name=\"_token\" value=\"{{ csrf_token('delete' ~ calendar.id) }}\">
-    <button class=\"btn\">Delete</button>
+    <button style=\"border-radius: 4px;
+    
+    color: aqua;
+    background: #666;
+    padding: 10px;
+    width: 20%;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px 3px #823579;
+    margin: 0 auto;
+    \" class=\"btn\">Delete</button>
 </form>
 ", "calendar/_delete_form.html.twig", "/opt/lampp/htdocs/sitemariage2/templates/calendar/_delete_form.html.twig");
     }

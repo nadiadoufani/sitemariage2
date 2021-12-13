@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '713502c659b1d0633e6648c5909640ca0ea9e0ac',
+        'reference' => 'b53beb56db761b287028e32539628cf6645a2f4e',
         'name' => '__root__',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '713502c659b1d0633e6648c5909640ca0ea9e0ac',
+            'reference' => 'b53beb56db761b287028e32539628cf6645a2f4e',
             'dev_requirement' => false,
         ),
         'composer/package-versions-deprecated' => array(
@@ -624,6 +624,15 @@
             'install_path' => __DIR__ . '/../sensio/framework-extra-bundle',
             'aliases' => array(),
             'reference' => '430d14c01836b77c28092883d195a43ce413ee32',
+            'dev_requirement' => false,
+        ),
+        'stripe/stripe-php' => array(
+            'pretty_version' => 'v7.107.0',
+            'version' => '7.107.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../stripe/stripe-php',
+            'aliases' => array(),
+            'reference' => 'a90f74037261ed376c0d37066f396c48809c8e99',
             'dev_requirement' => false,
         ),
         'swiftmailer/swiftmailer' => array(

@@ -154,6 +154,6 @@ class __TwigTemplate_f989a3aed6db4dc09f0aa04f84c5e48f0ba525fbc45cf2108802c1a5181
     </ul>
 </div>
 {% endblock %}
-", "commentaire/index.html.twig", "/opt/lampp/htdocs/sitemariage/templates/commentaire/index.html.twig");
+", "commentaire/index.html.twig", "/opt/lampp/htdocs/sitemariage2/templates/commentaire/index.html.twig");
     }
 }

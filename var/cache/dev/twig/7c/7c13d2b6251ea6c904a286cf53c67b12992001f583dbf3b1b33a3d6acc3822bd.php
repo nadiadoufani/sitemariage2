@@ -140,7 +140,7 @@ class __TwigTemplate_2acee5c29faeff5a1dc43f81609ee3b052c1b6fb7af22a4f28fe4baf7d9
         echo "</p>
           <a href=\"";
         // line 41
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("rendez_vous");
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("reservation");
         echo "\"<button type=\"submit\" class=\"btn btn-success \" style=\"border-radius: 30%;\">reserver</button></a>
               <a href=\"";
         // line 42
@@ -573,7 +573,7 @@ main{
       <div data-aos=\"flip-left\" data-aos-easing=\"ease-out-cubic\" data-aos-duration=\"1000\" class=\"card-r\" id=\"\">
         <h2 style=\"font-family: 'Yeon Sung', cursive;\">{{ salledemariage.nom}}</h2>
           <p> {{ salledemariage.description}}</p>
-          <a href=\"{{ path('rendez_vous')}}\"<button type=\"submit\" class=\"btn btn-success \" style=\"border-radius: 30%;\">reserver</button></a>
+          <a href=\"{{ path('reservation')}}\"<button type=\"submit\" class=\"btn btn-success \" style=\"border-radius: 30%;\">reserver</button></a>
               <a href=\"{{ path('salle_de_mariage')}}\"<button type=\"submit\" class=\"btn btn-success \" style=\"border-radius: 30%;\">Back</button></a>
       </div>
       

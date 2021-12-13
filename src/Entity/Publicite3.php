@@ -39,19 +39,19 @@ class Publicite3
 
     /**
      * @ORM\ManyToOne(targetEntity=Coiffure::class)
-     * @ORM\JoinColumn(nullable=false)
+     * @ORM\JoinColumn(nullable=true)
      */
     private $coiffure;
 
     /**
      * @ORM\ManyToOne(targetEntity=Costume::class)
-     * @ORM\JoinColumn(nullable=false)
+     * @ORM\JoinColumn(nullable=true)
      */
     private $costume;
 
     /**
      * @ORM\ManyToOne(targetEntity=VoyageDeNoce::class)
-     * @ORM\JoinColumn(nullable=false)
+     * @ORM\JoinColumn(nullable=true)
      */
     private $voyagedenoce;
 

@@ -65,7 +65,6 @@ class __TwigTemplate_8748e9a4e8389b59f0ab69c17db02b994c453ceba8b3de2c55840694a8d
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Hello VoyageDeNoceController!";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -151,7 +150,7 @@ img {
 }
 
 .card-body {
-  height: 200px;
+  height: 300px;
   padding: 1em 0;
 }
 
@@ -215,7 +214,7 @@ h3 {
         $this->loadTemplate("voyage_de_noce/_filtre.html.twig", "voyage_de_noce/index.html.twig", 131)->display(twig_to_array(["form" => (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 131, $this->source); })())]));
         // line 132
         echo "</div>
-<div  style=\"margin-top:100px\">
+<div  style=\"margin-top:50px\">
 <h3>Voyages de noces</h3>
 <p style=\"text-align: center;\"> Ou partir en voyage de noces ? Vous avez des idées mais vous ne savez pas laquelle choisir ?
 <br> Trouvez le pays ou la ville qui vous correspond le mieux à travers notre liste d’idées de 
@@ -231,31 +230,39 @@ Votre lune de miel doit être<br> inoubliable, pour cela choisissez celle qui vo
         $context['_seq'] = twig_ensure_traversable((isset($context["voyagedenoce"]) || array_key_exists("voyagedenoce", $context) ? $context["voyagedenoce"] : (function () { throw new RuntimeError('Variable "voyagedenoce" does not exist.', 143, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
             // line 144
-            echo "    <div class=\"card\">
+            echo "  <a href=\"";
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home_detail_voyage", ["id" => twig_get_attribute($this->env, $this->source, $context["item"], "id", [], "any", false, false, false, 144)]), "html", null, true);
+            echo "\">
+    <div class=\"card\">
       <img src=\"/imgvoyages/";
-            // line 145
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "image", [], "any", false, false, false, 145), "html", null, true);
+            // line 146
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "image", [], "any", false, false, false, 146), "html", null, true);
             echo "\" alt=\"\">
       <div class=\"card-body\">
         <h3>";
-            // line 147
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "nom", [], "any", false, false, false, 147), "html", null, true);
+            // line 148
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "nom", [], "any", false, false, false, 148), "html", null, true);
             echo "</h3>
         <p class=\"para\" >";
-            // line 148
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "description", [], "any", false, false, false, 148), "html", null, true);
+            // line 149
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "description", [], "any", false, false, false, 149), "html", null, true);
             echo "
         </p>
+
       </div>
-    </div>
+ 
+</div>
+</a>
     ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 153
+        // line 157
         echo "  </div>
 </div>
+    
+
 <div class=\"d-flex justify-content-end\" > 
  <div style=\"margin-top: 30px;margin-left: 10px;\">
    <h3>lune de miel</h3>
@@ -301,7 +308,12 @@ les agences vous proposent plusieurs destinations, en fonction de votre profil,
 * {
 \tbox-sizing: border-box;
 }
-html, body {
+body{
+ 
+ background-image:url(\"http://alijafarian.com/demos/responsive-jquery-accordions/images/texture_old_map.png\");
+}
+
+html{
 \tmargin: 0;
   width: 100%;
   min-height: 100vh;
@@ -497,14 +509,14 @@ html, body {
 
     public function getDebugInfo()
     {
-        return array (  257 => 153,  246 => 148,  242 => 147,  237 => 145,  234 => 144,  230 => 143,  217 => 132,  215 => 131,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  262 => 157,  248 => 149,  244 => 148,  239 => 146,  233 => 144,  229 => 143,  216 => 132,  214 => 131,  87 => 6,  77 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Hello VoyageDeNoceController!{% endblock %}
+{% block title %}{% endblock %}
 
 {% block body %}
 <style>
@@ -573,7 +585,7 @@ img {
 }
 
 .card-body {
-  height: 200px;
+  height: 300px;
   padding: 1em 0;
 }
 
@@ -634,7 +646,7 @@ h3 {
 <div class=\"card-wrap \"  style=\"margin-top:100px;\">
 {% include 'voyage_de_noce/_filtre.html.twig' with{form:form} only %}
 </div>
-<div  style=\"margin-top:100px\">
+<div  style=\"margin-top:50px\">
 <h3>Voyages de noces</h3>
 <p style=\"text-align: center;\"> Ou partir en voyage de noces ? Vous avez des idées mais vous ne savez pas laquelle choisir ?
 <br> Trouvez le pays ou la ville qui vous correspond le mieux à travers notre liste d’idées de 
@@ -645,17 +657,23 @@ Votre lune de miel doit être<br> inoubliable, pour cela choisissez celle qui vo
 <div class=\"voyage\">
   <div class=\"flex\">
   {% for item in voyagedenoce %}
+  <a href=\"{{path('home_detail_voyage',{'id':item.id})}}\">
     <div class=\"card\">
       <img src=\"/imgvoyages/{{ item.image }}\" alt=\"\">
       <div class=\"card-body\">
         <h3>{{ item.nom}}</h3>
         <p class=\"para\" >{{ item.description}}
         </p>
+
       </div>
-    </div>
+ 
+</div>
+</a>
     {% endfor %}
   </div>
 </div>
+    
+
 <div class=\"d-flex justify-content-end\" > 
  <div style=\"margin-top: 30px;margin-left: 10px;\">
    <h3>lune de miel</h3>
@@ -701,7 +719,12 @@ les agences vous proposent plusieurs destinations, en fonction de votre profil,
 * {
 \tbox-sizing: border-box;
 }
-html, body {
+body{
+ 
+ background-image:url(\"http://alijafarian.com/demos/responsive-jquery-accordions/images/texture_old_map.png\");
+}
+
+html{
 \tmargin: 0;
   width: 100%;
   min-height: 100vh;
@@ -881,6 +904,6 @@ html, body {
 
 
 
-", "voyage_de_noce/index.html.twig", "/opt/lampp/htdocs/sitemariage2/templates/voyage_de_noce/index.html.twig");
+    ", "voyage_de_noce/index.html.twig", "/opt/lampp/htdocs/sitemariage2/templates/voyage_de_noce/index.html.twig");
     }
 }

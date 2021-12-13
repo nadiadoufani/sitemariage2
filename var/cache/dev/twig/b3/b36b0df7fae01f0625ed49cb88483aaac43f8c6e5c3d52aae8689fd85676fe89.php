@@ -65,7 +65,6 @@ class __TwigTemplate_6f07d81d8dd2dd0007c6ec47a5f187b82b916d715000dd083067a4c574c
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Hello SalleDeMariageController!";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -85,13 +84,14 @@ class __TwigTemplate_6f07d81d8dd2dd0007c6ec47a5f187b82b916d715000dd083067a4c574c
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo " <div class=\"card-wrap \"  style=\"margin-top:100px;\">
+        echo "<body>
+ <div class=\"card-wrap \"  style=\"margin-top:100px;\">
 ";
-        // line 7
-        $this->loadTemplate("centre_de_beaute/_filtre.html.twig", "centre_de_beaute/index.html.twig", 7)->display(twig_to_array(["form" => (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 7, $this->source); })())]));
         // line 8
+        $this->loadTemplate("centre_de_beaute/_filtre.html.twig", "centre_de_beaute/index.html.twig", 8)->display(twig_to_array(["form" => (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 8, $this->source); })())]));
+        // line 9
         echo "</div>
-<div style=\"margin-top:100px;\"> 
+<div style=\"margin-top:50px;\"> 
 
 <h3>Votre robe de mariée</h3>
 <p style=\"text-align: center;\" >Préparez-vous pour le plus beau moment de votre vie en trouvant la robe de mariée parfaite,
@@ -103,39 +103,40 @@ class __TwigTemplate_6f07d81d8dd2dd0007c6ec47a5f187b82b916d715000dd083067a4c574c
 
 
 
-<section style=\"margin-bottom:1700px;\">
+<section style=\"margin-bottom:1600px;\">
  ";
-        // line 22
+        // line 23
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["centredebeaute"]) || array_key_exists("centredebeaute", $context) ? $context["centredebeaute"] : (function () { throw new RuntimeError('Variable "centredebeaute" does not exist.', 22, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["centredebeaute"]) || array_key_exists("centredebeaute", $context) ? $context["centredebeaute"] : (function () { throw new RuntimeError('Variable "centredebeaute" does not exist.', 23, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
-            // line 23
+            // line 24
             echo "          <div class=\"pic\">
 \t\t\t<div class=\"mask\"> 
 \t\t\t\t<h3 class=\"title\">";
-            // line 25
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "nom", [], "any", false, false, false, 25), "html", null, true);
+            // line 26
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "nom", [], "any", false, false, false, 26), "html", null, true);
             echo "</h3>
 \t\t\t<br>
 \t\t\t\t<a href=\"";
-            // line 27
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home_detail_centre", ["id" => twig_get_attribute($this->env, $this->source, $context["item"], "id", [], "any", false, false, false, 27)]), "html", null, true);
+            // line 28
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home_detail_centre", ["id" => twig_get_attribute($this->env, $this->source, $context["item"], "id", [], "any", false, false, false, 28)]), "html", null, true);
             echo "\" class=\"readMore\">READ MORE</a>
 \t\t\t</div>
 \t\t\t<img src=\"/imgcentre/";
-            // line 29
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "image", [], "any", false, false, false, 29), "html", null, true);
+            // line 30
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "image", [], "any", false, false, false, 30), "html", null, true);
             echo "\" class=\"picture1\" >
+      
 \t\t</div>
 \t\t";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 32
+        // line 34
         echo "    </section> 
     
-    
+    <div style=\"text-align: center;\"><img src=\"https://cdn.pixabay.com/photo/2020/03/06/08/23/divider-4906386_960_720.png\" alt=\"\" style=\"height: 100px;width: 500px;text-align: center;\"></div>
     <section style=\"margin-top:100px;\">
 <div>
   <h3>Votre robe de mariée par style</h3>
@@ -151,7 +152,7 @@ class __TwigTemplate_6f07d81d8dd2dd0007c6ec47a5f187b82b916d715000dd083067a4c574c
         <div class=\"col-xs-12 col-sm-6 col-md-3\">
             <div class=\"image-block\">
                 <a href=\"#\"><img src=\"";
-        // line 49
+        // line 51
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/cover-robes-romantiques-2020-victoire-vermeulen.jpg"), "html", null, true);
         echo "\" /></a>
               </div>
@@ -160,7 +161,7 @@ class __TwigTemplate_6f07d81d8dd2dd0007c6ec47a5f187b82b916d715000dd083067a4c574c
           <div class=\"col-xs-12 col-sm-6 col-md-3\">
             <div class=\"image-block\">
                 <a href=\"#\"><img src=\"";
-        // line 55
+        // line 57
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/ELISE_MARTIMORT_Robe_de_mariee_sur_mesure_paris_bordeaux_Collection_Empowerment-Robe-SIMONE-2-BD.jpeg"), "html", null, true);
         echo "\" /></a>
               </div>
@@ -169,7 +170,7 @@ class __TwigTemplate_6f07d81d8dd2dd0007c6ec47a5f187b82b916d715000dd083067a4c574c
           <div class=\"col-xs-12 col-sm-6 col-md-3\">
             <div class=\"image-block\">
                 <a href=\"#\"><img src=\"";
-        // line 61
+        // line 63
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/robe-petrus-civile-dentelle-laure-de-sagazan-.jpg"), "html", null, true);
         echo "\" /></a>
               </div>
@@ -178,7 +179,7 @@ class __TwigTemplate_6f07d81d8dd2dd0007c6ec47a5f187b82b916d715000dd083067a4c574c
           <div class=\"col-xs-12 col-sm-6 col-md-3\">
             <div class=\"image-block\">
                 <a href=\"#\"><img src=\"";
-        // line 67
+        // line 69
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/cover-original-CALIFA-valerio-luna.jpg"), "html", null, true);
         echo "\" /></a>
               </div>
@@ -199,7 +200,7 @@ class __TwigTemplate_6f07d81d8dd2dd0007c6ec47a5f187b82b916d715000dd083067a4c574c
               <div class=\"col-xs-12 col-sm-6 col-md-3\">
                   <div class=\"image-block\">
                       <a href=\"#\"><img src=\"";
-        // line 85
+        // line 87
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/nicole-spose-NCA20031-NicoleCouture-moda-sposa-2020-710.jpg"), "html", null, true);
         echo "\" /></a>
                     </div>
@@ -208,7 +209,7 @@ class __TwigTemplate_6f07d81d8dd2dd0007c6ec47a5f187b82b916d715000dd083067a4c574c
                 <div class=\"col-xs-12 col-sm-6 col-md-3\">
                   <div class=\"image-block\">
                       <a href=\"#\"><img src=\"";
-        // line 91
+        // line 93
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/top-singuliere-jupe-couleur-de-lune-elsa-gary-2022-robe-de-mariee-elegante-6.jpeg"), "html", null, true);
         echo "\" /></a>
                     </div>
@@ -217,7 +218,7 @@ class __TwigTemplate_6f07d81d8dd2dd0007c6ec47a5f187b82b916d715000dd083067a4c574c
                 <div class=\"col-xs-12 col-sm-6 col-md-3\">
                   <div class=\"image-block\">
                       <a href=\"#\"><img src=\"";
-        // line 97
+        // line 99
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/alleyn_d.jpeg"), "html", null, true);
         echo "\" /></a>
                     </div>
@@ -226,19 +227,21 @@ class __TwigTemplate_6f07d81d8dd2dd0007c6ec47a5f187b82b916d715000dd083067a4c574c
                 <div class=\"col-xs-12 col-sm-6 col-md-3\">
                   <div class=\"image-block\">
                       <a href=\"#\"><img src=\"";
-        // line 103
+        // line 105
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/2020_LINZ_LUNA_NOVIAS_1.jpg"), "html", null, true);
         echo "\" /></a>
                     </div>
                    
                 </div>
             </div>
-<!-------->
+</body>
 <style>
  
-
+body{
+ background-image:url(\"http://alijafarian.com/demos/responsive-jquery-accordions/images/texture_old_map.png\");
+}
 .pic {
-\twidth: 320px;
+\twidth: 360px;
 \theight: 360px;
 \tfloat: left;
 \tborder: 10px solid #fff;
@@ -463,20 +466,21 @@ h3{
 
     public function getDebugInfo()
     {
-        return array (  230 => 103,  221 => 97,  212 => 91,  203 => 85,  182 => 67,  173 => 61,  164 => 55,  155 => 49,  136 => 32,  127 => 29,  122 => 27,  117 => 25,  113 => 23,  109 => 22,  93 => 8,  91 => 7,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  231 => 105,  222 => 99,  213 => 93,  204 => 87,  183 => 69,  174 => 63,  165 => 57,  156 => 51,  137 => 34,  127 => 30,  122 => 28,  117 => 26,  113 => 24,  109 => 23,  93 => 9,  91 => 8,  87 => 6,  77 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Hello SalleDeMariageController!{% endblock %}
+{% block title %}{% endblock %}
  
 {% block body %}
+<body>
  <div class=\"card-wrap \"  style=\"margin-top:100px;\">
 {% include 'centre_de_beaute/_filtre.html.twig' with{form:form} only %}
 </div>
-<div style=\"margin-top:100px;\"> 
+<div style=\"margin-top:50px;\"> 
 
 <h3>Votre robe de mariée</h3>
 <p style=\"text-align: center;\" >Préparez-vous pour le plus beau moment de votre vie en trouvant la robe de mariée parfaite,
@@ -488,7 +492,7 @@ h3{
 
 
 
-<section style=\"margin-bottom:1700px;\">
+<section style=\"margin-bottom:1600px;\">
  {% for item in centredebeaute %}
           <div class=\"pic\">
 \t\t\t<div class=\"mask\"> 
@@ -497,11 +501,12 @@ h3{
 \t\t\t\t<a href=\"{{path('home_detail_centre',{'id':item.id})}}\" class=\"readMore\">READ MORE</a>
 \t\t\t</div>
 \t\t\t<img src=\"/imgcentre/{{ item.image }}\" class=\"picture1\" >
+      
 \t\t</div>
 \t\t{% endfor %}
     </section> 
     
-    
+    <div style=\"text-align: center;\"><img src=\"https://cdn.pixabay.com/photo/2020/03/06/08/23/divider-4906386_960_720.png\" alt=\"\" style=\"height: 100px;width: 500px;text-align: center;\"></div>
     <section style=\"margin-top:100px;\">
 <div>
   <h3>Votre robe de mariée par style</h3>
@@ -575,12 +580,14 @@ h3{
                    
                 </div>
             </div>
-<!-------->
+</body>
 <style>
  
-
+body{
+ background-image:url(\"http://alijafarian.com/demos/responsive-jquery-accordions/images/texture_old_map.png\");
+}
 .pic {
-\twidth: 320px;
+\twidth: 360px;
 \theight: 360px;
 \tfloat: left;
 \tborder: 10px solid #fff;

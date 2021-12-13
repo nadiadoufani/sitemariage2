@@ -65,7 +65,6 @@ class __TwigTemplate_5e522a704c2b4f05d67ba1a0e8f9e57612c8baf0b4586ce6094d3401ab2
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Calendar";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -155,18 +154,36 @@ class __TwigTemplate_5e522a704c2b4f05d67ba1a0e8f9e57612c8baf0b4586ce6094d3401ab2
         </tbody>
     </table>
 
-    <a href=\"";
-        // line 49
+    <a style=\"border-radius: 4px;
+    
+    color: aqua;
+    background: #666;
+    padding: 10px;
+    width: 20%;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px 3px #823579;
+    margin: 0 auto;
+    \" href=\"";
+        // line 58
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("calendar_index");
         echo "\">back to list</a>
 
-    <a href=\"";
-        // line 51
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("calendar_edit", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["calendar"]) || array_key_exists("calendar", $context) ? $context["calendar"] : (function () { throw new RuntimeError('Variable "calendar" does not exist.', 51, $this->source); })()), "id", [], "any", false, false, false, 51)]), "html", null, true);
+    <a style=\"border-radius: 4px;
+    
+    color: aqua;
+    background: #666;
+    padding: 10px;
+    width: 20%;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px 3px #823579;
+    margin: 0 auto;
+    \" href=\"";
+        // line 69
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("calendar_edit", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["calendar"]) || array_key_exists("calendar", $context) ? $context["calendar"] : (function () { throw new RuntimeError('Variable "calendar" does not exist.', 69, $this->source); })()), "id", [], "any", false, false, false, 69)]), "html", null, true);
         echo "\">edit</a>
 
     ";
-        // line 53
+        // line 71
         echo twig_include($this->env, $context, "calendar/_delete_form.html.twig");
         echo "
 ";
@@ -190,14 +207,14 @@ class __TwigTemplate_5e522a704c2b4f05d67ba1a0e8f9e57612c8baf0b4586ce6094d3401ab2
 
     public function getDebugInfo()
     {
-        return array (  170 => 53,  165 => 51,  160 => 49,  152 => 44,  145 => 40,  138 => 36,  131 => 32,  124 => 28,  117 => 24,  110 => 20,  103 => 16,  96 => 12,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  187 => 71,  182 => 69,  168 => 58,  151 => 44,  144 => 40,  137 => 36,  130 => 32,  123 => 28,  116 => 24,  109 => 20,  102 => 16,  95 => 12,  87 => 6,  77 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Calendar{% endblock %}
+{% block title %}{% endblock %}
 
 {% block body %}
     <h1 style=\"margin-top:100px;\">Calendar</h1>
@@ -243,9 +260,27 @@ class __TwigTemplate_5e522a704c2b4f05d67ba1a0e8f9e57612c8baf0b4586ce6094d3401ab2
         </tbody>
     </table>
 
-    <a href=\"{{ path('calendar_index') }}\">back to list</a>
+    <a style=\"border-radius: 4px;
+    
+    color: aqua;
+    background: #666;
+    padding: 10px;
+    width: 20%;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px 3px #823579;
+    margin: 0 auto;
+    \" href=\"{{ path('calendar_index') }}\">back to list</a>
 
-    <a href=\"{{ path('calendar_edit', {'id': calendar.id}) }}\">edit</a>
+    <a style=\"border-radius: 4px;
+    
+    color: aqua;
+    background: #666;
+    padding: 10px;
+    width: 20%;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px 3px #823579;
+    margin: 0 auto;
+    \" href=\"{{ path('calendar_edit', {'id': calendar.id}) }}\">edit</a>
 
     {{ include('calendar/_delete_form.html.twig') }}
 {% endblock %}

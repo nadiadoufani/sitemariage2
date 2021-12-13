@@ -65,7 +65,6 @@ class __TwigTemplate_c471323eeda86e83f36056645ba396d5a972ff591f4672ceac4886bd439
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Edit Calendar";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -90,15 +89,24 @@ class __TwigTemplate_c471323eeda86e83f36056645ba396d5a972ff591f4672ceac4886bd439
     ";
         // line 8
         echo twig_include($this->env, $context, "calendar/_form.html.twig", ["button_label" => "Update"]);
-        echo "
+        echo "<br><br>
 
-    <a href=\"";
-        // line 10
+    <a style=\"border-radius: 4px;
+    
+    color: aqua;
+    background: #666;
+    padding: 10px;
+    width: 20%;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px 3px #823579;
+    margin: 0 auto;
+    \" href=\"";
+        // line 19
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("calendar_index");
         echo "\">back to list</a>
 
     ";
-        // line 12
+        // line 21
         echo twig_include($this->env, $context, "calendar/_delete_form.html.twig");
         echo "
 ";
@@ -122,21 +130,30 @@ class __TwigTemplate_c471323eeda86e83f36056645ba396d5a972ff591f4672ceac4886bd439
 
     public function getDebugInfo()
     {
-        return array (  102 => 12,  97 => 10,  92 => 8,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  110 => 21,  105 => 19,  91 => 8,  87 => 6,  77 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Edit Calendar{% endblock %}
+{% block title %}{% endblock %}
 
 {% block body %}
     <h1 style=\"margin-top:100px;\">Edit Calendar</h1>
 
-    {{ include('calendar/_form.html.twig', {'button_label': 'Update'}) }}
+    {{ include('calendar/_form.html.twig', {'button_label': 'Update'}) }}<br><br>
 
-    <a href=\"{{ path('calendar_index') }}\">back to list</a>
+    <a style=\"border-radius: 4px;
+    
+    color: aqua;
+    background: #666;
+    padding: 10px;
+    width: 20%;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px 3px #823579;
+    margin: 0 auto;
+    \" href=\"{{ path('calendar_index') }}\">back to list</a>
 
     {{ include('calendar/_delete_form.html.twig') }}
 {% endblock %}

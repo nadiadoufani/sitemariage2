@@ -29,16 +29,9 @@ class Admin
      */
     private $mot_passe;
 
-    /**
-     * @ORM\OneToMany(targetEntity=Costume::class, mappedBy="admin")
-     */
-    private $costumes;
+    
 
-    public function __construct()
-    {
-        $this->costumes = new ArrayCollection();
-    }
-
+   
     public function getId(): ?int
     {
         return $this->id;
@@ -68,33 +61,5 @@ class Admin
         return $this;
     }
 
-    /**
-     * @return Collection|Costume[]
-     */
-    public function getCostumes(): Collection
-    {
-        return $this->costumes;
-    }
-
-    public function addCostume(Costume $costume): self
-    {
-        if (!$this->costumes->contains($costume)) {
-            $this->costumes[] = $costume;
-            $costume->setAdmin($this);
-        }
-
-        return $this;
-    }
-
-    public function removeCostume(Costume $costume): self
-    {
-        if ($this->costumes->removeElement($costume)) {
-            // set the owning side to null (unless already changed)
-            if ($costume->getAdmin() === $this) {
-                $costume->setAdmin(null);
-            }
-        }
-
-        return $this;
-    }
+   
 }

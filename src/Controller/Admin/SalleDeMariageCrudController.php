@@ -26,7 +26,7 @@ class SalleDeMariageCrudController extends AbstractCrudController
             TextField::new('description'),
             TextField::new('emplacement'),
             AssociationField::new('categorie'),
-            MoneyField::new('prix')->setCurrency('EUR'),
+            IntegerField::new('prix'),
             IntegerField::new('capacite'),
             NumberField::new('lon'),
             NumberField::new('lat'),

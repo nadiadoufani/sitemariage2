@@ -155,9 +155,10 @@ class __TwigTemplate_ed90b40aa4bb7bfbb6b0a9e4610786945c98c9aa0bd60dd20ee930251b4
       <div class=\"else\">
         <input id=\"remember\" type=\"checkbox\">
         <label for=\"remember\">Remember me</label>
-        <span>Forgot password?</span>
+        <span>Forget password</span>
       </div>
       <input type=\"submit\" value=\"Login\">
+       <a href=\"\"><input type=\"submit\" value=\"S'inscrir\"></a>
     </div>
   </div>
 </div>
@@ -166,7 +167,19 @@ class __TwigTemplate_ed90b40aa4bb7bfbb6b0a9e4610786945c98c9aa0bd60dd20ee930251b4
   <style>
   @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
-
+.insc{
+  background-color: #149ad1;
+  border: none;
+  color: #fff;
+  padding: 1.1em 2.5em;
+  border-radius: 100px;
+  margin: 1.2em auto;
+  cursor: pointer;
+  box-shadow: 2px 3px 10px rgba(0,0,0,.25),
+  inset -2px -3px 10px rgba(0,0,0,.35),
+  inset 2px 3px 10px rgba(255,255,255,.5);
+  letter-spacing: 1.25px;
+}
 
 .sex {
     margin-bottom:150px;
@@ -427,9 +440,10 @@ section::before {
       <div class=\"else\">
         <input id=\"remember\" type=\"checkbox\">
         <label for=\"remember\">Remember me</label>
-        <span>Forgot password?</span>
+        <span>Forget password</span>
       </div>
       <input type=\"submit\" value=\"Login\">
+       <a href=\"\"><input type=\"submit\" value=\"S'inscrir\"></a>
     </div>
   </div>
 </div>
@@ -438,7 +452,19 @@ section::before {
   <style>
   @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
-
+.insc{
+  background-color: #149ad1;
+  border: none;
+  color: #fff;
+  padding: 1.1em 2.5em;
+  border-radius: 100px;
+  margin: 1.2em auto;
+  cursor: pointer;
+  box-shadow: 2px 3px 10px rgba(0,0,0,.25),
+  inset -2px -3px 10px rgba(0,0,0,.35),
+  inset 2px 3px 10px rgba(255,255,255,.5);
+  letter-spacing: 1.25px;
+}
 
 .sex {
     margin-bottom:150px;
@@ -623,6 +649,6 @@ section::before {
 }
   </style>
 {% endblock %}
-", "security/login.html.twig", "/opt/lampp/htdocs/sitemariage/templates/security/login.html.twig");
+", "security/login.html.twig", "/opt/lampp/htdocs/sitemariage2/templates/security/login.html.twig");
     }
 }

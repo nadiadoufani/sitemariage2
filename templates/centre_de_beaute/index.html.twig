@@ -1,12 +1,13 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello SalleDeMariageController!{% endblock %}
+{% block title %}{% endblock %}
  
 {% block body %}
+<body>
  <div class="card-wrap "  style="margin-top:100px;">
 {% include 'centre_de_beaute/_filtre.html.twig' with{form:form} only %}
 </div>
-<div style="margin-top:100px;"> 
+<div style="margin-top:50px;"> 
 
 <h3>Votre robe de mariée</h3>
 <p style="text-align: center;" >Préparez-vous pour le plus beau moment de votre vie en trouvant la robe de mariée parfaite,
@@ -18,7 +19,7 @@
 
 
 
-<section style="margin-bottom:1700px;">
+<section style="margin-bottom:1600px;">
  {% for item in centredebeaute %}
           <div class="pic">
 			<div class="mask"> 
@@ -27,11 +28,12 @@
 				<a href="{{path('home_detail_centre',{'id':item.id})}}" class="readMore">READ MORE</a>
 			</div>
 			<img src="/imgcentre/{{ item.image }}" class="picture1" >
+      
 		</div>
 		{% endfor %}
     </section> 
     
-    
+    <div style="text-align: center;"><img src="https://cdn.pixabay.com/photo/2020/03/06/08/23/divider-4906386_960_720.png" alt="" style="height: 100px;width: 500px;text-align: center;"></div>
     <section style="margin-top:100px;">
 <div>
   <h3>Votre robe de mariée par style</h3>
@@ -105,12 +107,14 @@
                    
                 </div>
             </div>
-<!-------->
+</body>
 <style>
  
-
+body{
+ background-image:url("http://alijafarian.com/demos/responsive-jquery-accordions/images/texture_old_map.png");
+}
 .pic {
-	width: 320px;
+	width: 360px;
 	height: 360px;
 	float: left;
 	border: 10px solid #fff;

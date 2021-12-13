@@ -26,14 +26,20 @@ return [
         '/comment/add4' => [[['_route' => 'comment_add4', '_controller' => 'App\\Controller\\CommentaireController::add4'], null, null, null, false, false, null]],
         '/contact' => [[['_route' => 'contact', '_controller' => 'App\\Controller\\ContactController::index'], null, null, null, false, false, null]],
         '/costume' => [[['_route' => 'costume', '_controller' => 'App\\Controller\\CostumeController::index'], null, null, null, false, false, null]],
-        '/' => [[['_route' => 'home', '_controller' => 'App\\Controller\\HomeController::index'], null, null, null, false, false, null]],
+        '/' => [
+            [['_route' => 'home', '_controller' => 'App\\Controller\\HomeController::index'], null, null, null, false, false, null],
+            [['_route' => 'index', '_controller' => 'App\\Controller\\PayementController::success_url'], null, null, null, false, false, null],
+        ],
         '/musique/de/mariage' => [[['_route' => 'musique_de_mariage', '_controller' => 'App\\Controller\\MusiqueDeMariageController::index'], null, null, null, false, false, null]],
+        '/payement' => [[['_route' => 'payement', '_controller' => 'App\\Controller\\PayementController::index'], null, null, null, false, false, null]],
+        '/checkout' => [[['_route' => 'checkout', '_controller' => 'App\\Controller\\PayementController::checkout'], null, null, null, false, false, null]],
         '/photographe' => [[['_route' => 'photographe', '_controller' => 'App\\Controller\\PhotographeController::index'], null, null, null, false, false, null]],
         '/publicite1' => [[['_route' => 'publicite1', '_controller' => 'App\\Controller\\Publicite1Controller::index'], null, null, null, false, false, null]],
         '/publicite3' => [[['_route' => 'publicite3', '_controller' => 'App\\Controller\\Publicite3Controller::index'], null, null, null, false, false, null]],
         '/publicite' => [[['_route' => 'publicite', '_controller' => 'App\\Controller\\PubliciteController::index'], null, null, null, false, false, null]],
         '/inscription' => [[['_route' => 'register', '_controller' => 'App\\Controller\\RegisterController::index'], null, null, null, false, false, null]],
         '/rendez/vous' => [[['_route' => 'rendez_vous', '_controller' => 'App\\Controller\\RendezVousController::index'], null, null, null, false, false, null]],
+        '/reservation' => [[['_route' => 'reservation', '_controller' => 'App\\Controller\\ReservationController::index'], null, null, null, false, false, null]],
         '/salle/de/mariage' => [[['_route' => 'salle_de_mariage', '_controller' => 'App\\Controller\\SalleDeMariageController::index'], null, null, null, false, false, null]],
         '/connexion' => [[['_route' => 'app_login', '_controller' => 'App\\Controller\\SecurityController::login'], null, null, null, false, false, null]],
         '/deconnexion' => [[['_route' => 'app_logout', '_controller' => 'App\\Controller\\SecurityController::logout'], null, null, null, false, false, null]],
@@ -66,13 +72,17 @@ return [
                 .'|/home/(?'
                     .'|detail(?'
                         .'|/(?'
-                            .'|musique/([^/]++)(*:284)'
-                            .'|centre/([^/]++)(*:307)'
-                            .'|([^/]++)(*:323)'
+                            .'|voyage/de/noce/([^/]++)(*:291)'
+                            .'|c(?'
+                                .'|oiffure/([^/]++)(*:319)'
+                                .'|entre/([^/]++)(*:341)'
+                            .')'
+                            .'|musique/([^/]++)(*:366)'
+                            .'|([^/]++)(*:382)'
                         .')'
-                        .'|s/([^/]++)(*:342)'
+                        .'|s/([^/]++)(*:401)'
                     .')'
-                    .'|([^/]++)(*:359)'
+                    .'|([^/]++)(*:418)'
                 .')'
             .')/?$}sD',
     ],
@@ -88,11 +98,13 @@ return [
         216 => [[['_route' => 'calendar_show', '_controller' => 'App\\Controller\\CalendarController::show'], ['id'], ['GET' => 0], null, false, true, null]],
         229 => [[['_route' => 'calendar_edit', '_controller' => 'App\\Controller\\CalendarController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
         237 => [[['_route' => 'calendar_delete', '_controller' => 'App\\Controller\\CalendarController::delete'], ['id'], ['DELETE' => 0], null, false, true, null]],
-        284 => [[['_route' => 'home_detail_musique', '_controller' => 'App\\Controller\\HomeController::detailmusique'], ['id'], null, null, false, true, null]],
-        307 => [[['_route' => 'home_detail_centre', '_controller' => 'App\\Controller\\HomeController::detailcentre'], ['id'], null, null, false, true, null]],
-        323 => [[['_route' => 'home_detail', '_controller' => 'App\\Controller\\HomeController::detail'], ['id'], null, null, false, true, null]],
-        342 => [[['_route' => 'home_details', '_controller' => 'App\\Controller\\HomeController::details'], ['id'], null, null, false, true, null]],
-        359 => [
+        291 => [[['_route' => 'home_detail_voyage', '_controller' => 'App\\Controller\\HomeController::detailvoyagedenoce'], ['id'], null, null, false, true, null]],
+        319 => [[['_route' => 'home_detail_coiffure', '_controller' => 'App\\Controller\\HomeController::detailcoiffure'], ['id'], null, null, false, true, null]],
+        341 => [[['_route' => 'home_detail_centre', '_controller' => 'App\\Controller\\HomeController::detailcentre'], ['id'], null, null, false, true, null]],
+        366 => [[['_route' => 'home_detail_musique', '_controller' => 'App\\Controller\\HomeController::detailmusique'], ['id'], null, null, false, true, null]],
+        382 => [[['_route' => 'home_detail', '_controller' => 'App\\Controller\\HomeController::detail'], ['id'], null, null, false, true, null]],
+        401 => [[['_route' => 'home_details', '_controller' => 'App\\Controller\\HomeController::details'], ['id'], null, null, false, true, null]],
+        418 => [
             [['_route' => 'home_show', '_controller' => 'App\\Controller\\HomeController::show'], ['id'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],

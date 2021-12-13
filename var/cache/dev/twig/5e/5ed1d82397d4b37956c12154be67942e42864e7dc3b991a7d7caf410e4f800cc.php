@@ -84,13 +84,14 @@ class __TwigTemplate_099d033ce03814358096071452c1cd5144435a361b09dfdd0197f321ebe
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "<div class=\"card-wrap \"  style=\"margin-top:100px;\">
+        echo "<body>
+<div class=\"card-wrap \"  style=\"margin-top:100px;\">
 ";
-        // line 7
-        $this->loadTemplate("costume/_filtre.html.twig", "costume/index.html.twig", 7)->display(twig_to_array(["form" => (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 7, $this->source); })())]));
         // line 8
+        $this->loadTemplate("costume/_filtre.html.twig", "costume/index.html.twig", 8)->display(twig_to_array(["form" => (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 8, $this->source); })())]));
+        // line 9
         echo "</div>
-<section style=\"margin-top:100px;\">
+<section style=\"margin-top:20px;\">
 <h3 >Tenue du marié</h3>
 <p style=\"text-align: center;\" >Le jour du mariage, la tenue du marié est synonyme d’élégance.
 <br> Pour mettre en valeur votre personnalité tout en ayant une touche d’originalité, découvrez nos conseils,
@@ -99,45 +100,50 @@ class __TwigTemplate_099d033ce03814358096071452c1cd5144435a361b09dfdd0197f321ebe
 </section>
 <div class=\"grid\">
 ";
-        // line 17
+        // line 18
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["costume"]) || array_key_exists("costume", $context) ? $context["costume"] : (function () { throw new RuntimeError('Variable "costume" does not exist.', 17, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["costume"]) || array_key_exists("costume", $context) ? $context["costume"] : (function () { throw new RuntimeError('Variable "costume" does not exist.', 18, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
-            // line 18
+            // line 19
             echo "<div class=\"cardcontainer\">
 <img src=\"/imgcostume/";
-            // line 19
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "image", [], "any", false, false, false, 19), "html", null, true);
+            // line 20
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "image", [], "any", false, false, false, 20), "html", null, true);
             echo "\">
 <h1>";
-            // line 20
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "titre", [], "any", false, false, false, 20), "html", null, true);
+            // line 21
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "titre", [], "any", false, false, false, 21), "html", null, true);
             echo "</h1>
 <br>
   <p>";
-            // line 22
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "description", [], "any", false, false, false, 22), "html", null, true);
+            // line 23
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "description", [], "any", false, false, false, 23), "html", null, true);
             echo "</p>
-  
+  <a href=\"";
+            // line 24
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("contact");
+            echo "\"<button type=\"submit\" class=\"btn btn-success \" style=\"border-radius: 30%;\">Contactez!!!</button></a>
   </div>
   ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 26
+        // line 27
         echo "</div>
+    <div style=\"text-align: center;\"><img src=\"https://cdn.pixabay.com/photo/2020/03/06/08/23/divider-4906386_960_720.png\" alt=\"\" style=\"height: 100px;width: 500px;text-align: center;\"></div>
+
 <section>
 \t<div class=\"circle circle-one\">
 \t\t<img src=\"";
-        // line 29
+        // line 32
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/costume-marie-morphologie-cover-faubourg-saint-sulpice2019-696x387.jpg"), "html", null, true);
         echo "\" alt=\"\" title=\"\">
 \t</div>
 \t
 \t<div class=\"circle circle-two\">
 \t\t<img src=\"";
-        // line 33
+        // line 36
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/samson-sur-mesure-Mariage-Smoking-sur-mesure.jpg"), "html", null, true);
         echo "\" alt=\"\">
 \t</div>
@@ -158,30 +164,12 @@ Pour éviter les faux-pas, revoyons, tout d’abord, quelques règles à respect
 <li>La veste ne doit pas former de faux-plis dans le dos</li></ul>
 <p>Bien entendu, au moment des essayages, vous allez être confronté à une multitude de modèles, aux coupes diverses et variées.
 Sachez donc qu’il est essentiel de porter un costume adapté à votre morphologie. Voici quelques conseils à suivre pour que votre costume de mariage épouse parfaitement votre corps et vous mette en valeur.</p>
-<p style=\"margin-left:30px;\">
- <b> Vous êtes petit</b><br>
-Privilégiez alors la coupe slim. Pour paraître plus grand, optez pour un pantalon ajusté et une veste cintrée
-  qui ne descend pas
-   plus bas que les fesses. Astuce : un costume avec des rayures fines verticales allongera votre silhouette.<br>
 
-Si vous êtes costaud, jouez avec la longueur du pantalon pour donner l’illusion que vos jambes sont allongées.
- Pour ne pas casser la dynamique de jambes longues, la veste doit être courte.<br> Portez de préférence un costume sombre et/ou à fines rayures verticales.<br>
-
-<b>Vous avez une taille moyenne</b><br>
-Vous avez l’avantage de pouvoir porter de nombreux modèles. Pantalon à coupe droite ou slim,
-<br> costume de couleurs ou à motifs… vous avez l’embarras du choix !<br> Notre coup de coeur pour vous : une veste à deux boutons. <br> 
-
-<b>Vous êtes grand</b><br>
-Optez pour une veste cintrée et assez longue pour paraître moins grand et vous mettre en valeur.
-Privilégiez le costume croisé qui va venir casser la verticalité naturelle de votre silhouette
-et va structurer votre corps. A bannir : les lignes verticales ! Si vous êtes fin, pensez aux lignes horizontales qui apporteront un peu de volume.
-Si vous êtes fort, le costume trois pièces sera parfait ! <br>
-</p>
 
 \t</div>
 </section>
 
-
+</body>
 
 
 
@@ -190,6 +178,9 @@ Si vous êtes fort, le costume trois pièces sera parfait ! <br>
 
 
 <style>
+body{
+ background-image:url(\"http://alijafarian.com/demos/responsive-jquery-accordions/images/texture_old_map.png\");
+}
 *:focus {
   outline: 0;
 }
@@ -421,7 +412,7 @@ box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 
     public function getDebugInfo()
     {
-        return array (  141 => 33,  134 => 29,  129 => 26,  119 => 22,  114 => 20,  110 => 19,  107 => 18,  103 => 17,  92 => 8,  90 => 7,  87 => 6,  77 => 5,  59 => 3,  36 => 1,);
+        return array (  147 => 36,  140 => 32,  133 => 27,  124 => 24,  120 => 23,  115 => 21,  111 => 20,  108 => 19,  104 => 18,  93 => 9,  91 => 8,  87 => 6,  77 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -431,10 +422,11 @@ box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 {% block title %}{% endblock %}
 
 {% block body %}
+<body>
 <div class=\"card-wrap \"  style=\"margin-top:100px;\">
 {% include 'costume/_filtre.html.twig' with{form:form} only %}
 </div>
-<section style=\"margin-top:100px;\">
+<section style=\"margin-top:20px;\">
 <h3 >Tenue du marié</h3>
 <p style=\"text-align: center;\" >Le jour du mariage, la tenue du marié est synonyme d’élégance.
 <br> Pour mettre en valeur votre personnalité tout en ayant une touche d’originalité, découvrez nos conseils,
@@ -448,10 +440,12 @@ box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 <h1>{{ item.titre}}</h1>
 <br>
   <p>{{ item.description}}</p>
-  
+  <a href=\"{{ path('contact')}}\"<button type=\"submit\" class=\"btn btn-success \" style=\"border-radius: 30%;\">Contactez!!!</button></a>
   </div>
   {% endfor %}
 </div>
+    <div style=\"text-align: center;\"><img src=\"https://cdn.pixabay.com/photo/2020/03/06/08/23/divider-4906386_960_720.png\" alt=\"\" style=\"height: 100px;width: 500px;text-align: center;\"></div>
+
 <section>
 \t<div class=\"circle circle-one\">
 \t\t<img src=\"{{asset('imgcomment/costume-marie-morphologie-cover-faubourg-saint-sulpice2019-696x387.jpg')}}\" alt=\"\" title=\"\">
@@ -477,30 +471,12 @@ Pour éviter les faux-pas, revoyons, tout d’abord, quelques règles à respect
 <li>La veste ne doit pas former de faux-plis dans le dos</li></ul>
 <p>Bien entendu, au moment des essayages, vous allez être confronté à une multitude de modèles, aux coupes diverses et variées.
 Sachez donc qu’il est essentiel de porter un costume adapté à votre morphologie. Voici quelques conseils à suivre pour que votre costume de mariage épouse parfaitement votre corps et vous mette en valeur.</p>
-<p style=\"margin-left:30px;\">
- <b> Vous êtes petit</b><br>
-Privilégiez alors la coupe slim. Pour paraître plus grand, optez pour un pantalon ajusté et une veste cintrée
-  qui ne descend pas
-   plus bas que les fesses. Astuce : un costume avec des rayures fines verticales allongera votre silhouette.<br>
 
-Si vous êtes costaud, jouez avec la longueur du pantalon pour donner l’illusion que vos jambes sont allongées.
- Pour ne pas casser la dynamique de jambes longues, la veste doit être courte.<br> Portez de préférence un costume sombre et/ou à fines rayures verticales.<br>
-
-<b>Vous avez une taille moyenne</b><br>
-Vous avez l’avantage de pouvoir porter de nombreux modèles. Pantalon à coupe droite ou slim,
-<br> costume de couleurs ou à motifs… vous avez l’embarras du choix !<br> Notre coup de coeur pour vous : une veste à deux boutons. <br> 
-
-<b>Vous êtes grand</b><br>
-Optez pour une veste cintrée et assez longue pour paraître moins grand et vous mettre en valeur.
-Privilégiez le costume croisé qui va venir casser la verticalité naturelle de votre silhouette
-et va structurer votre corps. A bannir : les lignes verticales ! Si vous êtes fin, pensez aux lignes horizontales qui apporteront un peu de volume.
-Si vous êtes fort, le costume trois pièces sera parfait ! <br>
-</p>
 
 \t</div>
 </section>
 
-
+</body>
 
 
 
@@ -509,6 +485,9 @@ Si vous êtes fort, le costume trois pièces sera parfait ! <br>
 
 
 <style>
+body{
+ background-image:url(\"http://alijafarian.com/demos/responsive-jquery-accordions/images/texture_old_map.png\");
+}
 *:focus {
   outline: 0;
 }

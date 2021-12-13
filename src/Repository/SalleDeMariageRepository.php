@@ -38,7 +38,7 @@ class SalleDeMariageRepository extends ServiceEntityRepository
 
          if (!empty($search->q)) {
             $query = $query
-                ->andWhere('p.nom LIKE :q')
+                ->andWhere('p.emplacement LIKE :q')
                 ->setParameter('q', "%{$search->q}%");
         }
 
@@ -66,7 +66,7 @@ class SalleDeMariageRepository extends ServiceEntityRepository
         return $this->paginator->paginate(
             $query,
             $search->page,
-           12
+           6
         );
     }
 

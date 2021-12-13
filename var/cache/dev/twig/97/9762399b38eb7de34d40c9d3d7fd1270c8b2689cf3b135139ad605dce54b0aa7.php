@@ -92,7 +92,7 @@ class __TwigTemplate_d8bbc8d70199d5f42b723faea11acca09d3a7991818c6e90604dca560e9
         $this->loadTemplate("traiteurs/_filtre.html.twig", "traiteurs/index.html.twig", 8)->display(twig_to_array(["form" => (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 8, $this->source); })())]));
         // line 9
         echo "</div>
-<div class=\"traiteurs\" style=\"margin-top:100px;\">
+<div class=\"traiteurs\" style=\"margin-top:50px;\">
 <h3>Traiteurs de mariage</h3>
 <p>Venez découvrir notre sélection d’inspirations et d’idées concernant les plus 
  <br> beaux lieux de réception de mariage. Nous vous proposons toutes nos idées de salles de mariage originales afin de vous offrir un lieu atypique et romantique 
@@ -129,19 +129,20 @@ class __TwigTemplate_d8bbc8d70199d5f42b723faea11acca09d3a7991818c6e90604dca560e9
         echo "</div>
 </div>
 
-   
+      <div style=\"text-align: center;\"><img src=\"https://cdn.pixabay.com/photo/2020/03/06/08/23/divider-4906386_960_720.png\" alt=\"\" style=\"height: 100px;width: 500px;text-align: center;\"></div>
+ 
 
 <section>
 \t<div class=\"circle circle-one\">
 \t\t<img src=\"";
-        // line 33
+        // line 34
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgtraiteurs/655c7b0ed51d327b589077a7cd322768.jpg"), "html", null, true);
         echo "\" alt=\"\" title=\"\">
 \t</div>
 \t
 \t<div class=\"circle circle-two\">
 \t\t<img src=\"";
-        // line 37
+        // line 38
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgtraiteurs/70b35d25f3fbae8010b72cc71df78e65.jpg"), "html", null, true);
         echo "\" alt=\"\">
 \t</div>
@@ -157,21 +158,10 @@ class __TwigTemplate_d8bbc8d70199d5f42b723faea11acca09d3a7991818c6e90604dca560e9
       <br> Un bon traiteur vous demandera un maximum de détails pour construire une offre personnalisée qui vous corresponde.
       <br> Souhaitez-vous un repas assis ou un buffet ? Quels plats souhaitez-vous ? Quels sont les horaires de la réception 
       <br>(pour pouvoir intégrer le bon chiffrage sur le temps de présence des serveurs) ? Comment est équipé l’office de la salle de réception ? 
-      <br>Oui c’est un petit détail qui a toute son importance puisqu’il y a tout le matériel de cuisine à prévoir, et cela sera une charge en plus dans votre budget.
-      <br> Il faut donc anticiper un maximum à l’avance. Et capital : il vous demandera votre budget ! Suite à votre long brief, il va vous vous envoyer une proposition 
-      <br>qui colle à vos attentes. Si après cela il vous envoie une plaquette « standardisée », il n’a donc rien compris !
+      
       
       </p>
-      <h3>Testez le menu avant le mariage</h3>
-      <p>
-      Avant de vous engager avec un traiteur, il est important de pouvoir le tester. Tout bon traiteur proposera une dégustation 
-      <br>qui sera payante et très certainement déduite de votre facture si vous faites appel à ce traiteur. Idéalement, si vous le pouvez,
-      <br> choisissez les plats qui vous intéressent pour votre mariage car en plus de tester la bonne qualité des produits, il s’agit aussi de tester votre futur repas de mariage.
-      <br> Peut-être que finalement, sur le papier vous aviez une autre idée de ce que vous alliez déguster et changerez de plat ou demanderez des modifications (moins épicé, plus épicé, plus sucré, etc…).
-      </p>
       
-       
-</p>
 
 \t</div>
 </section>
@@ -179,6 +169,9 @@ class __TwigTemplate_d8bbc8d70199d5f42b723faea11acca09d3a7991818c6e90604dca560e9
 
 
 <style>
+body{
+ background-image:url(\"http://alijafarian.com/demos/responsive-jquery-accordions/images/texture_old_map.png\");
+}
   *:focus {
   outline: 0;
 }
@@ -518,7 +511,7 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
 
     public function getDebugInfo()
     {
-        return array (  145 => 37,  138 => 33,  129 => 26,  119 => 22,  112 => 20,  108 => 18,  104 => 17,  94 => 9,  92 => 8,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  146 => 38,  139 => 34,  129 => 26,  119 => 22,  112 => 20,  108 => 18,  104 => 17,  94 => 9,  92 => 8,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -532,7 +525,7 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
 <div class=\"card-wrap \"  style=\"margin-top:100px;\">
 {% include 'traiteurs/_filtre.html.twig' with{form:form} only %}
 </div>
-<div class=\"traiteurs\" style=\"margin-top:100px;\">
+<div class=\"traiteurs\" style=\"margin-top:50px;\">
 <h3>Traiteurs de mariage</h3>
 <p>Venez découvrir notre sélection d’inspirations et d’idées concernant les plus 
  <br> beaux lieux de réception de mariage. Nous vous proposons toutes nos idées de salles de mariage originales afin de vous offrir un lieu atypique et romantique 
@@ -551,7 +544,8 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
 </div>
 </div>
 
-   
+      <div style=\"text-align: center;\"><img src=\"https://cdn.pixabay.com/photo/2020/03/06/08/23/divider-4906386_960_720.png\" alt=\"\" style=\"height: 100px;width: 500px;text-align: center;\"></div>
+ 
 
 <section>
 \t<div class=\"circle circle-one\">
@@ -573,21 +567,10 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
       <br> Un bon traiteur vous demandera un maximum de détails pour construire une offre personnalisée qui vous corresponde.
       <br> Souhaitez-vous un repas assis ou un buffet ? Quels plats souhaitez-vous ? Quels sont les horaires de la réception 
       <br>(pour pouvoir intégrer le bon chiffrage sur le temps de présence des serveurs) ? Comment est équipé l’office de la salle de réception ? 
-      <br>Oui c’est un petit détail qui a toute son importance puisqu’il y a tout le matériel de cuisine à prévoir, et cela sera une charge en plus dans votre budget.
-      <br> Il faut donc anticiper un maximum à l’avance. Et capital : il vous demandera votre budget ! Suite à votre long brief, il va vous vous envoyer une proposition 
-      <br>qui colle à vos attentes. Si après cela il vous envoie une plaquette « standardisée », il n’a donc rien compris !
+      
       
       </p>
-      <h3>Testez le menu avant le mariage</h3>
-      <p>
-      Avant de vous engager avec un traiteur, il est important de pouvoir le tester. Tout bon traiteur proposera une dégustation 
-      <br>qui sera payante et très certainement déduite de votre facture si vous faites appel à ce traiteur. Idéalement, si vous le pouvez,
-      <br> choisissez les plats qui vous intéressent pour votre mariage car en plus de tester la bonne qualité des produits, il s’agit aussi de tester votre futur repas de mariage.
-      <br> Peut-être que finalement, sur le papier vous aviez une autre idée de ce que vous alliez déguster et changerez de plat ou demanderez des modifications (moins épicé, plus épicé, plus sucré, etc…).
-      </p>
       
-       
-</p>
 
 \t</div>
 </section>
@@ -595,6 +578,9 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
 
 
 <style>
+body{
+ background-image:url(\"http://alijafarian.com/demos/responsive-jquery-accordions/images/texture_old_map.png\");
+}
   *:focus {
   outline: 0;
 }

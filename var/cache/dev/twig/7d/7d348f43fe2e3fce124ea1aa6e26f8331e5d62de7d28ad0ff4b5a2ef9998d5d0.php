@@ -65,7 +65,6 @@ class __TwigTemplate_a9663c8ef269d2ec45c28ea258aa98b5815bc74854a86b9e077d89ed550
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Hello CoiffureController!";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -96,6 +95,14 @@ class __TwigTemplate_a9663c8ef269d2ec45c28ea258aa98b5815bc74854a86b9e077d89ed550
 
 
 <style>
+body{
+ background-image:url(\"http://alijafarian.com/demos/responsive-jquery-accordions/images/texture_old_map.png\");
+}
+.sec{
+    box-shadow:0 5px 10px rgba(0,0,0,.8);
+  border-radius:50px;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -106,12 +113,13 @@ class __TwigTemplate_a9663c8ef269d2ec45c28ea258aa98b5815bc74854a86b9e077d89ed550
     position:relative;
     width:100%;
     height:auto;
-    margin:80px auto 0;
-    margin-bottom: 50px;
+    margin:50px auto 0;
+    
+   
 }
 .coiffure .box {
     position:relative;
-    width:calc(400px - 60px);
+    width:calc(400px - 5px);
     height:calc(450px - 30px);
     background:#000;
     float:left;
@@ -286,77 +294,90 @@ section p {
 \tcolor: black;
 }
 </style>
+<body>
 <div class=\"card-wrap \"  style=\"margin-top:100px;\">
 ";
-        // line 208
-        $this->loadTemplate("coiffure/_filtre.html.twig", "coiffure/index.html.twig", 208)->display(twig_to_array(["form" => (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 208, $this->source); })())]));
-        // line 209
+        // line 218
+        $this->loadTemplate("coiffure/_filtre.html.twig", "coiffure/index.html.twig", 218)->display(twig_to_array(["form" => (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 218, $this->source); })())]));
+        // line 219
         echo "</div>
 
 
-<div style=\"margin-top:300px;\">
+<div style=\"margin-top:50px;\">
 <h3 >Coiffure mariage</h3>
 <p style=\"text-align: center;\" >
 Vous vous mariez prochainement et êtes en plein dans les préparatifs du plus beau jour de votre vie… 
 <br>Vous venez de trouver votre magnifique robe de mariée et avez choisi les accessoires qui la sublimeront.
-<br> Il est désormais temps de vous préoccuper de votre mise en beauté. À commencer par votre coiffure de mariée !
+Il est désormais temps de vous <br>préoccuper de votre mise en beauté. À commencer par votre coiffure de mariée !
 
 Mais alors, comment se coiffer quand on a les cheveux longs ou bien très courts ?
-<br> Quelle coupe choisir avec un visage rond, carré ou allongé ? Quand faire son premier essai dans un salon avant le mariage ? Quand se faire coiffer pour le jour J ? Comment respecter son budget beauté ? Découvrez tous nos avis,
+<br> Quelle coupe choisir avec un visage rond, carré ou allongé ? Quand faire son premier essai dans un salon avant le mariage ? Quand se faire coiffer pour le jour J ?<br> Comment respecter son budget beauté ? Découvrez tous nos avis,
 <br> conseils et inspirations pour une coiffure de mariage réussie ! 
 </p>
 </div>
+<section style=\"margin-top:5px;\">
 <div class=\"coiffure\" >
 ";
-        // line 225
+        // line 236
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["coiffure"]) || array_key_exists("coiffure", $context) ? $context["coiffure"] : (function () { throw new RuntimeError('Variable "coiffure" does not exist.', 225, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["coiffure"]) || array_key_exists("coiffure", $context) ? $context["coiffure"] : (function () { throw new RuntimeError('Variable "coiffure" does not exist.', 236, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
-            // line 226
-            echo "    <div class=\"box\">
+            // line 237
+            echo "
+    <div class=\"box\">
+    <a href=\"";
+            // line 239
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home_detail_coiffure", ["id" => twig_get_attribute($this->env, $this->source, $context["item"], "id", [], "any", false, false, false, 239)]), "html", null, true);
+            echo "\" >
         <div class=\"imgBox\">
-            <img src=\"/imgcoiffure/";
-            // line 228
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "image", [], "any", false, false, false, 228), "html", null, true);
+        
+           <img src=\"/imgcoiffure/";
+            // line 242
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "image", [], "any", false, false, false, 242), "html", null, true);
             echo "\">
         </div>
         <div class=\"content\">
             <h2>";
-            // line 231
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "nom", [], "any", false, false, false, 231), "html", null, true);
+            // line 245
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "nom", [], "any", false, false, false, 245), "html", null, true);
             echo "</h2>
             <p>";
-            // line 232
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "description", [], "any", false, false, false, 232), "html", null, true);
+            // line 246
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "description", [], "any", false, false, false, 246), "html", null, true);
             echo "</p>
+           
         </div>
+      
     </div>
+    </a>
     ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 236
+        // line 253
         echo "</div>
+</section>
+<div style=\"text-align: center;\"><img src=\"https://cdn.pixabay.com/photo/2020/03/06/08/23/divider-4906386_960_720.png\" alt=\"\" style=\"height: 100px;width: 500px;text-align: center;\"></div>
 
-<section>
+<section style=\"margin-top:20px;\">
 \t<div class=\"circle circle-one\">
 \t\t<img src=\"";
-        // line 240
+        // line 259
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/11108871.webp"), "html", null, true);
         echo "\" alt=\"\" title=\"\">
 \t</div>
 \t
 \t<div class=\"circle circle-two\">
 \t\t<img src=\"";
-        // line 244
+        // line 263
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/institut-beauty-moment-maquillage-mariage-1030x687 (1).jpg"), "html", null, true);
         echo "\" alt=\"\">
 \t</div>
 \t
 \t<div>
 \t\t
-        <h2 > maquilleuse de mariage</h2>\t
+        <h2> maquilleuse de mariage</h2>\t
 \t\t
 \t\t
 \t\t<p >Puisque vous serez la star de votre journée de célébration, vous devez accorder une grande importance à votre mise en beauté et rayonner tout au long de votre événement.
@@ -367,15 +388,12 @@ Mais alors, comment se coiffer quand on a les cheveux longs ou bien très courts
             <br> leurs forfaits, leurs méthodes, les produits utilisés, et prendre contact avec eux 4 à 6 mois à l’avance afin d’obtenir des demandes de devis détaillées
             <br> en fonction de vos besoins.
             
-            Un bon professionnel saura vous conseiller et vous aider dans la mission de trouver la coiffure et le maquillage correspondant à vos désirs mais
-            <br> aussi à la forme de votre visage, votre teint, votre robe de mariée et vos envies d’accessoires.
-            
-            <br>Cette personne ou cette équipe devra également vous proposer des soins en adéquation avec votre peau et votre type de cheveu et vous garantir
-            <br> une tenue durable du maquillage et de la coiffure, avec des retouches regulières si besoin.</p>
+       
+            </p>
 
 \t</div>
 </section>
-
+</body>
 
 ";
         
@@ -398,14 +416,14 @@ Mais alors, comment se coiffer quand on a les cheveux longs ou bien très courts
 
     public function getDebugInfo()
     {
-        return array (  353 => 244,  346 => 240,  340 => 236,  330 => 232,  326 => 231,  320 => 228,  316 => 226,  312 => 225,  294 => 209,  292 => 208,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  374 => 263,  367 => 259,  359 => 253,  346 => 246,  342 => 245,  336 => 242,  330 => 239,  326 => 237,  322 => 236,  303 => 219,  301 => 218,  87 => 6,  77 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Hello CoiffureController!{% endblock %}
+{% block title %}{% endblock %}
 
 {% block body %}
 
@@ -419,6 +437,14 @@ Mais alors, comment se coiffer quand on a les cheveux longs ou bien très courts
 
 
 <style>
+body{
+ background-image:url(\"http://alijafarian.com/demos/responsive-jquery-accordions/images/texture_old_map.png\");
+}
+.sec{
+    box-shadow:0 5px 10px rgba(0,0,0,.8);
+  border-radius:50px;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -429,12 +455,13 @@ Mais alors, comment se coiffer quand on a les cheveux longs ou bien très courts
     position:relative;
     width:100%;
     height:auto;
-    margin:80px auto 0;
-    margin-bottom: 50px;
+    margin:50px auto 0;
+    
+   
 }
 .coiffure .box {
     position:relative;
-    width:calc(400px - 60px);
+    width:calc(400px - 5px);
     height:calc(450px - 30px);
     background:#000;
     float:left;
@@ -609,38 +636,48 @@ section p {
 \tcolor: black;
 }
 </style>
+<body>
 <div class=\"card-wrap \"  style=\"margin-top:100px;\">
 {% include 'coiffure/_filtre.html.twig' with{form:form} only %}
 </div>
 
 
-<div style=\"margin-top:300px;\">
+<div style=\"margin-top:50px;\">
 <h3 >Coiffure mariage</h3>
 <p style=\"text-align: center;\" >
 Vous vous mariez prochainement et êtes en plein dans les préparatifs du plus beau jour de votre vie… 
 <br>Vous venez de trouver votre magnifique robe de mariée et avez choisi les accessoires qui la sublimeront.
-<br> Il est désormais temps de vous préoccuper de votre mise en beauté. À commencer par votre coiffure de mariée !
+Il est désormais temps de vous <br>préoccuper de votre mise en beauté. À commencer par votre coiffure de mariée !
 
 Mais alors, comment se coiffer quand on a les cheveux longs ou bien très courts ?
-<br> Quelle coupe choisir avec un visage rond, carré ou allongé ? Quand faire son premier essai dans un salon avant le mariage ? Quand se faire coiffer pour le jour J ? Comment respecter son budget beauté ? Découvrez tous nos avis,
+<br> Quelle coupe choisir avec un visage rond, carré ou allongé ? Quand faire son premier essai dans un salon avant le mariage ? Quand se faire coiffer pour le jour J ?<br> Comment respecter son budget beauté ? Découvrez tous nos avis,
 <br> conseils et inspirations pour une coiffure de mariage réussie ! 
 </p>
 </div>
+<section style=\"margin-top:5px;\">
 <div class=\"coiffure\" >
 {% for item in coiffure%}
+
     <div class=\"box\">
+    <a href=\"{{path('home_detail_coiffure',{'id':item.id})}}\" >
         <div class=\"imgBox\">
-            <img src=\"/imgcoiffure/{{ item.image }}\">
+        
+           <img src=\"/imgcoiffure/{{ item.image }}\">
         </div>
         <div class=\"content\">
             <h2>{{ item.nom}}</h2>
             <p>{{ item.description}}</p>
+           
         </div>
+      
     </div>
+    </a>
     {% endfor %}
 </div>
+</section>
+<div style=\"text-align: center;\"><img src=\"https://cdn.pixabay.com/photo/2020/03/06/08/23/divider-4906386_960_720.png\" alt=\"\" style=\"height: 100px;width: 500px;text-align: center;\"></div>
 
-<section>
+<section style=\"margin-top:20px;\">
 \t<div class=\"circle circle-one\">
 \t\t<img src=\"{{asset('imgcomment/11108871.webp')}}\" alt=\"\" title=\"\">
 \t</div>
@@ -651,7 +688,7 @@ Mais alors, comment se coiffer quand on a les cheveux longs ou bien très courts
 \t
 \t<div>
 \t\t
-        <h2 > maquilleuse de mariage</h2>\t
+        <h2> maquilleuse de mariage</h2>\t
 \t\t
 \t\t
 \t\t<p >Puisque vous serez la star de votre journée de célébration, vous devez accorder une grande importance à votre mise en beauté et rayonner tout au long de votre événement.
@@ -662,15 +699,12 @@ Mais alors, comment se coiffer quand on a les cheveux longs ou bien très courts
             <br> leurs forfaits, leurs méthodes, les produits utilisés, et prendre contact avec eux 4 à 6 mois à l’avance afin d’obtenir des demandes de devis détaillées
             <br> en fonction de vos besoins.
             
-            Un bon professionnel saura vous conseiller et vous aider dans la mission de trouver la coiffure et le maquillage correspondant à vos désirs mais
-            <br> aussi à la forme de votre visage, votre teint, votre robe de mariée et vos envies d’accessoires.
-            
-            <br>Cette personne ou cette équipe devra également vous proposer des soins en adéquation avec votre peau et votre type de cheveu et vous garantir
-            <br> une tenue durable du maquillage et de la coiffure, avec des retouches regulières si besoin.</p>
+       
+            </p>
 
 \t</div>
 </section>
-
+</body>
 
 {% endblock %}", "coiffure/index.html.twig", "/opt/lampp/htdocs/sitemariage2/templates/coiffure/index.html.twig");
     }

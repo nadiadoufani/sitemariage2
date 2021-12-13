@@ -107,7 +107,12 @@ class __TwigTemplate_745c2f5cb9b4fb88f14939ceef2e76f3e53c11274f4830451b45c7b2014
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 9
-        echo "<section style=\"width: 50%;height:600px;margin-top:80px;\">
+        echo "<div class=\"container mt-5\">
+
+
+  <div class=\"row\">
+    <div class=\"col-lg-6 col-md-10 col-sm-12\">
+<section style=\"margin-top:80px;\">
     <div id=\"calendrier\" style=\" 
             
             
@@ -129,7 +134,7 @@ class __TwigTemplate_745c2f5cb9b4fb88f14939ceef2e76f3e53c11274f4830451b45c7b2014
 
     }
 
-    // line 24
+    // line 29
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -139,19 +144,45 @@ class __TwigTemplate_745c2f5cb9b4fb88f14939ceef2e76f3e53c11274f4830451b45c7b2014
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 25
+        // line 30
         echo "  <div style=\" 
  text-align:left;\">
  <a href=\"";
-        // line 27
+        // line 32
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("calendar_index");
-        echo "\"><button>Demande Reservation</button></a>
+        echo "\"><button style=\"border-radius: 4px;
+    
+    color: aqua;
+    background: #666;
+    padding: 20px;
+    
+    cursor: pointer;
+    box-shadow: 4px 4px 4px 3px #823579;
+    margin: 0 auto;
+    \" >Demande Reservation</button></a>
   <a href=\"";
-        // line 28
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("salle_de_mariage");
-        echo "\"><button>Back</button></a>
+        // line 42
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("centre_de_beaute");
+        echo "\"><button style=\"border-radius: 4px;
+    
+    color: aqua;
+    background: #666;
+    padding: 20px;
+   
+    cursor: pointer;
+    box-shadow: 4px 4px 4px 3px #823579;
+    margin: 0 auto;
+    \">Back</button></a>
 
 </div> 
+</div>
+ <div class=\"col-lg-6 col-md-10 col-sm-12\" style=\"margin-top:50px;\">
+<img src=\"";
+        // line 56
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgsalles/bride-and-groom-2145374_960_720.png"), "html", null, true);
+        echo "\">
+</div>
+</div></div>
 <script>
     window.onload = () => {
         let calendarElt = document.querySelector(\"#calendrier\")
@@ -165,8 +196,8 @@ class __TwigTemplate_745c2f5cb9b4fb88f14939ceef2e76f3e53c11274f4830451b45c7b2014
                 end: 'dayGridMonth,timeGridWeek'
             },
             events: ";
-        // line 43
-        echo (isset($context["data"]) || array_key_exists("data", $context) ? $context["data"] : (function () { throw new RuntimeError('Variable "data" does not exist.', 43, $this->source); })());
+        // line 71
+        echo (isset($context["data"]) || array_key_exists("data", $context) ? $context["data"] : (function () { throw new RuntimeError('Variable "data" does not exist.', 71, $this->source); })());
         echo ",
             editable: true,
             eventResizableFromStart: true
@@ -213,7 +244,7 @@ class __TwigTemplate_745c2f5cb9b4fb88f14939ceef2e76f3e53c11274f4830451b45c7b2014
 
     public function getDebugInfo()
     {
-        return array (  169 => 43,  151 => 28,  147 => 27,  143 => 25,  133 => 24,  110 => 9,  100 => 8,  89 => 6,  79 => 5,  61 => 3,  38 => 1,);
+        return array (  200 => 71,  182 => 56,  165 => 42,  152 => 32,  148 => 30,  138 => 29,  110 => 9,  100 => 8,  89 => 6,  79 => 5,  61 => 3,  38 => 1,);
     }
 
     public function getSourceContext()
@@ -226,7 +257,12 @@ class __TwigTemplate_745c2f5cb9b4fb88f14939ceef2e76f3e53c11274f4830451b45c7b2014
     
 {% endblock %}
 {% block body %}
-<section style=\"width: 50%;height:600px;margin-top:80px;\">
+<div class=\"container mt-5\">
+
+
+  <div class=\"row\">
+    <div class=\"col-lg-6 col-md-10 col-sm-12\">
+<section style=\"margin-top:80px;\">
     <div id=\"calendrier\" style=\" 
             
             
@@ -244,10 +280,33 @@ class __TwigTemplate_745c2f5cb9b4fb88f14939ceef2e76f3e53c11274f4830451b45c7b2014
 {% block javascripts %}
   <div style=\" 
  text-align:left;\">
- <a href=\"{{path('calendar_index')}}\"><button>Demande Reservation</button></a>
-  <a href=\"{{path('salle_de_mariage')}}\"><button>Back</button></a>
+ <a href=\"{{path('calendar_index')}}\"><button style=\"border-radius: 4px;
+    
+    color: aqua;
+    background: #666;
+    padding: 20px;
+    
+    cursor: pointer;
+    box-shadow: 4px 4px 4px 3px #823579;
+    margin: 0 auto;
+    \" >Demande Reservation</button></a>
+  <a href=\"{{path('centre_de_beaute')}}\"><button style=\"border-radius: 4px;
+    
+    color: aqua;
+    background: #666;
+    padding: 20px;
+   
+    cursor: pointer;
+    box-shadow: 4px 4px 4px 3px #823579;
+    margin: 0 auto;
+    \">Back</button></a>
 
 </div> 
+</div>
+ <div class=\"col-lg-6 col-md-10 col-sm-12\" style=\"margin-top:50px;\">
+<img src=\"{{asset('imgsalles/bride-and-groom-2145374_960_720.png')}}\">
+</div>
+</div></div>
 <script>
     window.onload = () => {
         let calendarElt = document.querySelector(\"#calendrier\")

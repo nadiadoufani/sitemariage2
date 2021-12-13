@@ -140,7 +140,10 @@ class __TwigTemplate_c349ed71998a4a35746129cce01a543348967e4f65d765f03437c279c3c
         // line 42
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["photographe"]) || array_key_exists("photographe", $context) ? $context["photographe"] : (function () { throw new RuntimeError('Variable "photographe" does not exist.', 42, $this->source); })()), "description", [], "any", false, false, false, 42), "html", null, true);
         echo "</p>
-          <a href=\"#\"<button type=\"submit\" class=\"btn btn-success \" style=\"border-radius: 30%;\">reserver</button></a>
+          <a href=\"";
+        // line 43
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("contact");
+        echo "\"<button type=\"submit\" class=\"btn btn-success \" style=\"border-radius: 30%;\">Contactez!!!</button></a>
           <a href=\"";
         // line 44
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("photographe");
@@ -193,7 +196,7 @@ class __TwigTemplate_c349ed71998a4a35746129cce01a543348967e4f65d765f03437c279c3c
         } else {
             // line 76
             echo "                    <a href=\"";
-            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("security_login");
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
             echo "\" class=\"btn btn-link\">Connectez vous pour commenter</a>
                 ";
         }
@@ -536,7 +539,7 @@ main{
 
     public function getDebugInfo()
     {
-        return array (  229 => 88,  218 => 83,  212 => 82,  208 => 80,  204 => 79,  201 => 78,  195 => 76,  187 => 71,  183 => 70,  169 => 60,  167 => 59,  162 => 57,  146 => 44,  141 => 42,  137 => 41,  130 => 37,  126 => 36,  105 => 18,  99 => 15,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  232 => 88,  221 => 83,  215 => 82,  211 => 80,  207 => 79,  204 => 78,  198 => 76,  190 => 71,  186 => 70,  172 => 60,  170 => 59,  165 => 57,  149 => 44,  145 => 43,  141 => 42,  137 => 41,  130 => 37,  126 => 36,  105 => 18,  99 => 15,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -583,7 +586,7 @@ main{
       <div data-aos=\"flip-left\" data-aos-easing=\"ease-out-cubic\" data-aos-duration=\"1000\" class=\"card-r\" id=\"\">
         <h2 style=\"font-family: 'Yeon Sung', cursive;\">{{ photographe.nom}}</h2>
           <p> {{ photographe.description}}</p>
-          <a href=\"#\"<button type=\"submit\" class=\"btn btn-success \" style=\"border-radius: 30%;\">reserver</button></a>
+          <a href=\"{{ path('contact')}}\"<button type=\"submit\" class=\"btn btn-success \" style=\"border-radius: 30%;\">Contactez!!!</button></a>
           <a href=\"{{ path('photographe')}}\"<button type=\"submit\" class=\"btn btn-success \" style=\"border-radius: 30%;\">Back</button></a>
       </div>
      
@@ -616,7 +619,7 @@ main{
                 </form>
                 <hr>
                 {% else %}
-                    <a href=\"{{path('security_login')}}\" class=\"btn btn-link\">Connectez vous pour commenter</a>
+                    <a href=\"{{path('app_login')}}\" class=\"btn btn-link\">Connectez vous pour commenter</a>
                 {% endif %}
                 <!-- show comments -->
                 {% for commentaire in photographe.getCommentaire %}
@@ -917,6 +920,6 @@ main{
 
 </style>
 
-{% endblock %}", "home/detail.html.twig", "/opt/lampp/htdocs/sitemariage/templates/home/detail.html.twig");
+{% endblock %}", "home/detail.html.twig", "/opt/lampp/htdocs/sitemariage2/templates/home/detail.html.twig");
     }
 }

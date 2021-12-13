@@ -89,8 +89,8 @@ class __TwigTemplate_869ab34dd49822d4797f94aa16dcf836fefe01fdbd4cc8f872d61d09385
         // line 6
         echo "  <br>
     <br>
-
-    <section class=\"form\">
+<div  class=\"back\">
+    <section class=\"form1\">
         <div class=\"container\">
 
             ";
@@ -161,8 +161,14 @@ class __TwigTemplate_869ab34dd49822d4797f94aa16dcf836fefe01fdbd4cc8f872d61d09385
         // line 38
         echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 38, $this->source); })()), 'form_end');
         echo "
+                    <a href=\"";
+        // line 39
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
+        echo "\"><button type=\"submit\" style=\"float: inline-start;\">login</button></a>
                 </div>
-                <div class=\"col\"></div>
+                <div class=\"col\">
+                  
+                </div>
             </div>
         </div>
     </section>
@@ -175,18 +181,28 @@ class __TwigTemplate_869ab34dd49822d4797f94aa16dcf836fefe01fdbd4cc8f872d61d09385
   box-sizing: border-box;
 }
 
+.back{
+   background-image:url(\"";
+        // line 57
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("https://cdn.pixabay.com/photo/2021/04/25/15/41/flower-6206819__340.jpg"), "html", null, true);
+        echo "\");
+   background-size: 100% 60%;
+   background-repeat: no-repeat;
+   
+}
 
 
 form{
 width: 500px;
+
 box-shadow: 1px -4px  21px 20px #d4d4d4;
   border-radius: 8px;
   padding: 50px;
-  background: linear-gradient(to top, black,orange,orangered);
+  background: linear-gradient(to top, black,rgb(129, 110, 75),rgb(235, 145, 187));
   
 }
 
-label{
+labelz{
   position: relative;
   display: block;
   margin-bottom: 25px;
@@ -214,7 +230,7 @@ strong{
   display: block;
 }
 
-.btn{
+.btn,button{
   display: inline-block;
   width: 180px;
   height: 50px;
@@ -232,7 +248,7 @@ strong{
   text-transform: uppercase;
 }
 
-.btn:hover{
+.btn:hover,button:hover{
   box-shadow: 0 20px 30px;
   letter-spacing: 1px;
   outline: none;
@@ -259,7 +275,7 @@ strong{
 
     public function getDebugInfo()
     {
-        return array (  162 => 38,  157 => 36,  152 => 34,  148 => 33,  144 => 32,  140 => 31,  135 => 29,  131 => 28,  125 => 25,  121 => 24,  115 => 21,  109 => 17,  103 => 14,  100 => 13,  98 => 12,  90 => 6,  80 => 5,  62 => 3,  51 => 1,  49 => 2,  36 => 1,);
+        return array (  187 => 57,  166 => 39,  162 => 38,  157 => 36,  152 => 34,  148 => 33,  144 => 32,  140 => 31,  135 => 29,  131 => 28,  125 => 25,  121 => 24,  115 => 21,  109 => 17,  103 => 14,  100 => 13,  98 => 12,  90 => 6,  80 => 5,  62 => 3,  51 => 1,  49 => 2,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -271,8 +287,8 @@ strong{
 {% block body %}
   <br>
     <br>
-
-    <section class=\"form\">
+<div  class=\"back\">
+    <section class=\"form1\">
         <div class=\"container\">
 
             {% if notification %}
@@ -302,8 +318,11 @@ strong{
                     {{ form_row(form.password) }}
 
                     {{ form_end(form) }}
+                    <a href=\"{{path('app_login')}}\"><button type=\"submit\" style=\"float: inline-start;\">login</button></a>
                 </div>
-                <div class=\"col\"></div>
+                <div class=\"col\">
+                  
+                </div>
             </div>
         </div>
     </section>
@@ -316,18 +335,25 @@ strong{
   box-sizing: border-box;
 }
 
+.back{
+   background-image:url(\"{{asset('https://cdn.pixabay.com/photo/2021/04/25/15/41/flower-6206819__340.jpg')}}\");
+   background-size: 100% 60%;
+   background-repeat: no-repeat;
+   
+}
 
 
 form{
 width: 500px;
+
 box-shadow: 1px -4px  21px 20px #d4d4d4;
   border-radius: 8px;
   padding: 50px;
-  background: linear-gradient(to top, black,orange,orangered);
+  background: linear-gradient(to top, black,rgb(129, 110, 75),rgb(235, 145, 187));
   
 }
 
-label{
+labelz{
   position: relative;
   display: block;
   margin-bottom: 25px;
@@ -355,7 +381,7 @@ strong{
   display: block;
 }
 
-.btn{
+.btn,button{
   display: inline-block;
   width: 180px;
   height: 50px;
@@ -373,7 +399,7 @@ strong{
   text-transform: uppercase;
 }
 
-.btn:hover{
+.btn:hover,button:hover{
   box-shadow: 0 20px 30px;
   letter-spacing: 1px;
   outline: none;

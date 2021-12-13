@@ -86,63 +86,64 @@ class __TwigTemplate_236e4c2c014799f8086e6a60d49a907caf97f439a42afdfb71aff3ac1b7
             <li><a href=\"";
         // line 32
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home");
-        echo "\"> Acceuil</a></li>
+        echo "\"><i class=\"fas fa-home\"></i> Acceuil</a></li>
             <li><a href=\"";
         // line 33
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("musique_de_mariage");
-        echo "\"> Musique De Mariage</a></li>
-            <li class=\"sub-menus\"><a href=\"#\"> centre de beaute</a>
+        echo "\"><i class=\"fas fa-music\"></i> Musique De Mariage</a></li>
+            <li class=\"sub-menus\"><a href=\"#\"><i class=\"fas fa-list\"></i> Centre De Beaute</a>
                 <ul>
                     <li><a href=\"";
         // line 36
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("centre_de_beaute");
-        echo "\">Robe De Mariage </a></li>
+        echo "\"><i class=\"fa fa-female\" aria-hidden=\"true\"></i>Robe De Mariage </a></li>
                     <li><a href=\"";
         // line 37
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("coiffure");
-        echo "\"> Coiffure</a></li>
+        echo "\"><i class=\"fas fa-spa\"></i> Coiffure</a></li>
                     <li><a href=\"";
         // line 38
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("costume");
-        echo "\"> Costumes De Marrié</a></li>
+        echo "\"><i class=\"fas fa-user-tie\"></i> Costumes De Marrié</a></li>
                 </ul>
                 </li>
-                <li class=\"sub-menus\"><a href=\"#\"> Reception</a>
+                <li class=\"sub-menus\"><a href=\"#\"><i class=\"fas fa-list\"></i>
+                  Reception</a>
                 <ul>
                     <li><a href=\"";
-        // line 43
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("salle_de_mariage");
-        echo "\"></i>Salle De Beauté </a></li>
-                    <li><a href=\"";
         // line 44
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("salle_de_mariage");
+        echo "\"><i class=\"fas fa-table\"></i>Salle De Mariage </a></li>
+                    <li><a href=\"";
+        // line 45
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("traiteurs");
-        echo "\"> Traiteurs</a></li>
+        echo "\"><i class=\"far fa-soup\"></i> Traiteurs</a></li>
                   </ul>
            </li>
             <li><a href=\"";
-        // line 47
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("photographe");
-        echo "\">photographe</a></li>
-            <li><a href=\"";
         // line 48
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("voyage_de_noce");
-        echo "\"> voyage de noce</a></li>
-        ";
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("photographe");
+        echo "\"><i class=\"fas fa-camera\"></i>Photographe</a></li>
+            <li><a href=\"";
         // line 49
-        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 49, $this->source); })()), "user", [], "any", false, false, false, 49)) {
-            // line 50
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("voyage_de_noce");
+        echo "\"><i class=\"fas fa-plane-departure\"></i> Voyage De Noce</a></li>
+        ";
+        // line 50
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 50, $this->source); })()), "user", [], "any", false, false, false, 50)) {
+            // line 51
             echo "
        <li class=\"nav-item \">
-        <a class=\"nav-link\" >";
-            // line 52
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 52, $this->source); })()), "user", [], "any", false, false, false, 52), "nom", [], "any", false, false, false, 52), "html", null, true);
+        <a class=\"nav-link\" ><i class=\"fas fa-user\"></i>";
+            // line 53
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 53, $this->source); })()), "user", [], "any", false, false, false, 53), "nom", [], "any", false, false, false, 53), "html", null, true);
             echo " ";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 52, $this->source); })()), "user", [], "any", false, false, false, 52), "prenom", [], "any", false, false, false, 52), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 53, $this->source); })()), "user", [], "any", false, false, false, 53), "prenom", [], "any", false, false, false, 53), "html", null, true);
             echo "</a>
       </li>
       <li class=\"nav-item\">
         <a class=\"nav-link\"  href=\"";
-            // line 55
+            // line 56
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
             echo "\" >Déconnexion</a>
       </li>
@@ -150,65 +151,65 @@ class __TwigTemplate_236e4c2c014799f8086e6a60d49a907caf97f439a42afdfb71aff3ac1b7
 
        ";
         } else {
-            // line 60
+            // line 61
             echo "        <li class=\"navbar-dropdown\">
           <a href=\"";
-            // line 61
+            // line 62
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("register");
-            echo "\">Inscription</a>
+            echo "\"><i class=\"fas fa-user\"></i>Inscription</a>
 
         </li>
           </li>
         <li class=\"navbar-dropdown\">
           <a href=\"";
-            // line 66
+            // line 67
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
-            echo "\">Connexion</a>
+            echo "\"><i class=\"fas fa-user\"></i>Connexion</a>
 
         </li>
         ";
         }
-        // line 70
+        // line 71
         echo "         
         </nav>
     </div>
 </header>
 <!-- End Header -->
 ";
-        // line 75
-        $this->displayBlock('body', $context, $blocks);
         // line 76
+        $this->displayBlock('body', $context, $blocks);
+        // line 77
         echo "        
      <script src=\"";
-        // line 77
+        // line 78
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/bootstrap.min.js.map"), "html", null, true);
         echo "\"></script>
       <script src=\"";
-        // line 78
+        // line 79
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/bootstrap.bundle.min.js"), "html", null, true);
         echo "\"></script>
       <script src=\"";
-        // line 79
+        // line 80
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/index.js"), "html", null, true);
         echo "\"></script>
       <script src=\"";
-        // line 80
+        // line 81
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("popper/popper.min.js"), "html", null, true);
         echo "\"></script> 
       <script src=\"";
-        // line 81
+        // line 82
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("jquery/jquery.slim.min.js"), "html", null, true);
         echo "\"></script>
       
     <script src=\"https://cdn.jsdelivr.net/npm/fullcalendar@5.3.0/main.min.js\" integrity=\"sha256-DBxkGZLxKsLKhz054qUpBqtotG00r9AELGpSigJujLg=\" crossorigin=\"anonymous\"></script>
 <script src=\"";
-        // line 84
+        // line 85
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("popper/popper-base.min.js.map_2.4.4/cdnjs/popper-base.min.js.map"), "html", null, true);
         echo "\"></script>
      ";
-        // line 85
-        $this->displayBlock('javascripts', $context, $blocks);
         // line 86
+        $this->displayBlock('javascripts', $context, $blocks);
+        // line 87
         echo "      
       <div class=\"page-wrapper\">
     <div id=\"waterdrop\"></div>
@@ -251,7 +252,7 @@ sur nos réseaux sociaux.
                         <div class=\"gem-pp-posts-text\">
                           <div class=\"gem-pp-posts-item\">
                             <a href=\"";
-        // line 127
+        // line 128
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
         echo "\">Sinscrire
                             </a>
@@ -327,55 +328,55 @@ sur nos réseaux sociaux.
                 <ul class=\"magnific-image\">
 
                   <li><a href=\"";
-        // line 200
+        // line 201
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("salle_de_mariage");
         echo "\" class=\"magnific-anchor\"><img src=\"";
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgsalles/fa1f4e29f92680f0ef26b8117ffdcfe4.jpg"), "html", null, true);
         echo "\" alt=\"\"  style=\"height:87px;width:80px;\"></a></li>
                   <li><a href=\"";
-        // line 201
+        // line 202
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("musique_de_mariage");
         echo "\" class=\"magnific-anchor\"><img src=\"";
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgphotographes/6867e12a4a55f7e392bdc65b1fe91058.jpg"), "html", null, true);
         echo "\" alt=\"\" style=\"height:87px;width:80px;\"></a></li>
                   <li><a href=\"";
-        // line 202
+        // line 203
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("photographe");
         echo "\"class=\"magnific-anchor\"><img src=\"";
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgphotographes/044f6d45d83f6eedeca1d9634bd7238f.jpg"), "html", null, true);
         echo "\" alt=\"\" style=\"height:87px;width:80px;\"></a></li>
                   <li><a href=\"";
-        // line 203
+        // line 204
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("costume");
         echo "\"class=\"magnific-anchor\"><img src=\"";
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcostume/b173a3cc7bdd7a328284f89214f18ca6.jpg"), "html", null, true);
         echo "\" alt=\"\" style=\"height:87px;width:80px;\"></a></li>
                   <li><a href=\"";
-        // line 204
+        // line 205
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("coiffure");
         echo "\"class=\"magnific-anchor\"><img src=\"";
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcoiffure/1d4a44923c6d9ef7b57568ee87605ff847e8b0e9.jpeg"), "html", null, true);
         echo "\" alt=\"\" style=\"height:87px;width:80px;\"></a></li>
                   <li><a href=\"";
-        // line 205
+        // line 206
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("centre_de_beaute");
         echo "\"class=\"magnific-anchor\"><img src=\"";
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcentre/200822dc729c0a43d952b734803562e3.jpg"), "html", null, true);
         echo "\" alt=\"\" style=\"height:87px;width:80px;\"></a></li>
                   <li><a href=\"";
-        // line 206
+        // line 207
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("traiteurs");
         echo "\"class=\"magnific-anchor\"><img src=\"";
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgtraiteurs/eef359b07a71dbedd593ab808a614000.jpg"), "html", null, true);
         echo "\" alt=\"\" style=\"height:87px;width:80px;\"></a></li>
                   <li><a href=\"";
-        // line 207
+        // line 208
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("voyage_de_noce");
         echo "\"class=\"magnific-anchor\"><img src=\"";
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgvoyages/e916d6672cd31e4a6a3a03e83023fd2d.jpg"), "html", null, true);
         echo "\" alt=\"\" style=\"height:87px;width:80px;\"></a></li>
                   <li><a href=\"";
-        // line 208
+        // line 209
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home");
         echo "\"class=\"magnific-anchor\"><img src=\"";
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcoiffure/5d7bc1596bbfa919d43527a1addf5af5f7cb1824.jpeg"), "html", null, true);
@@ -414,8 +415,6 @@ sur nos réseaux sociaux.
     padding: 0;
     box-sizing: border-box;
 }
-
-
   
 .wrapper {
    
@@ -428,9 +427,6 @@ sur nos réseaux sociaux.
     
     
 } 
-
-
-
 /*-- Navbar CSS --*/
 .nav-menus {
     float: right;
@@ -450,11 +446,11 @@ sur nos réseaux sociaux.
     position: relative;
     font-size: 17px;
     text-decoration: none;
-    padding: 15px 12px;
+    padding: 15px 1px;
     z-index: 1;
 }
 .nav-menus li:hover {
-    color: #c79826;
+    color: #c7267e;
 }
 .nav-menus a:after {
     content: \"\";
@@ -490,7 +486,7 @@ sur nos réseaux sociaux.
 /*-- Sub Menus CSS--*/
 .sub-menus ul {
     position: absolute;
-    top: 80px;
+    margin-bottom: -80px;
     background-color: #fff;
     padding: 5px 0px;
     min-width: 150px;
@@ -561,7 +557,6 @@ sur nos réseaux sociaux.
 footer p, footer strong, footer b, footer {
     color: #fff;
 }
-
 .footer-top {
     background: white;
     background-size: cover;
@@ -571,20 +566,15 @@ footer p, footer strong, footer b, footer {
   padding-top:30px;
   
 }
-
 .footer-top, .footer-bottom {
     background-color: #1c1f2f;
 }
-
 .footer-bottom {
     padding: 15px 0;
     border-top: 1px solid #313646;
     background-color: #181828 !important;
     color: #b0b0b0;
     font-family: rubik;
-}
-color: #99a9b5;
-    padding-top: 15px;
 }
 
 .footer-site-info {
@@ -593,12 +583,10 @@ color: #99a9b5;
 #footer-navigation, #footer-navigation li a:hover, .custom-footer, .custom-footer li a:hover {
     color: white;
 }
-
 #footer-navigation, #footer-navigation li a, .custom-footer, .custom-footer li a {
     color: #99a9b5;
     padding-top: 15px;
 }
-
 .footer-bottom ul {
     margin: 0;
 }
@@ -616,12 +604,10 @@ color: #99a9b5;
     position: relative;
     line-height: 1;
 }
-
 #footer-navigation, #footer-navigation li a, .custom-footer, .custom-footer li a {
     color: #99a9b5;
     padding-top: 15px;
 }
-
 #footer-navigation, #footer-navigation li a, .custom-footer, .custom-footer li a {
     color: #99a9b5;
     padding-top: 15px;
@@ -637,24 +623,19 @@ color: #99a9b5;
     border-left: 1px solid #232234;
     border-right: 1px solid #333146;
 }
-
-
-navigation li a, .custom-footer, .custom-footer li a {
+ li a, .custom-footer, .custom-footer li a {
     color: #99a9b5;
     padding-top: 15px;
 }
-
 #footer-socials {
     text-align: right;
 }
-
 #footer-socials .socials {
     text-align: right;
     margin: 0 -7px;
     display: inline-block;
     vertical-align: middle;
 }
-
 a.socials-item {
     display: inline-block;
     vertical-align: top;
@@ -670,7 +651,6 @@ a.socials-item {
     border: 1px solid #2e2e4c;
     box-shadow: 3px 9px 16px rgb(0,0,0,0.4), -3px -3px 10px rgba(255,255,255, 0.06), inset 14px 14px 26px rgb(0,0,0,0.3), inset -3px -3px 15px rgba(255,255,255, 0.05);
 }
-
 .socials-item i {
     display: inline-block;
     font-weight: normal;
@@ -691,11 +671,9 @@ a.socials-item {
     font-weight: normal;
     text-rendering: auto;
 }
-
 .facebook {
     color: #4e64b5;
 }
-
 .twitter {
     color: #00aced;
 }
@@ -705,33 +683,24 @@ a.socials-item {
 .youtube {
     color: #c82929;
 }
-
 .telegram {
     color: #2ca5e0;
 }
-
-
 a.socials-item:hover {
     box-shadow: 0 0px 20px rgba(84, 1, 74, 0.7);
     border-color: rgba(255, 6, 224, 0.61);
     background: linear-gradient(to right, rgba(255, 9, 9, 0.12941176470588237), #c000ffb5, rgba(255, 0, 94, 0.14));
 }
-
 .footer-bottom a:hover {
     color: white;
 }
-
-
 footer p, footer li {
     font-size: 15px;
     line-height: 22px;
 }
-
-
 .widget {
     margin-bottom: 50px;
 }
-
 .footer-title {
     margin-bottom: 40px;
     color: #fff;
@@ -741,7 +710,6 @@ footer p, footer li {
     font-size: 16px;
     position: relative;
 }
-
 .footer-title:after {
     width: 50px;
     background: #fff;
@@ -752,47 +720,38 @@ footer p, footer li {
     bottom: 0;
     left: 0;
 }
-
 .gem-contacts-item {
     padding-top: 10px;
     font-size: 15px;
 }
-
 .gem-contacts-item i {
     padding-right: 10px;
 }
-
 footer .widget ul {
     list-style: none;
     margin-top: 5px;
 }
-
 .posts li {
     border-bottom: 1px solid #393d50;
     padding-bottom: 12px;
     padding-top: 6px;
 }
-
 footer p, footer li {
     font-size: 15px;
     line-height: 22px;
 }
-
 .gem-pp-posts-date {
     color: #00bcd4;
     font-size: 89.5%;
 }
-
 footer p {
     line-height: 24px;
     margin-bottom: 10px;font-size: 15px;
 }
-
 .wpcf7-form-control-wrap .wpcf7-form-control {
     padding: 7px!important;
     width: 100%;
 }
-
 .wpcf7-form-control-wrap input {
     background: #1c1f2f;
     overflow: hidden;
@@ -802,26 +761,22 @@ footer p {
     border-radius: 5px;
     transition: all 0.3s ease-in-out 0s;
 }
-
 .wpcf7-form-control-wrap input:hover {
     background-color: transparent;
     box-shadow: 10px 10px 36px rgb(0,0,0,0.5), -13px -13px 23px rgba(255,255,255, 0.03), inset 14px 14px 70px rgb(0,0,0,0.2), inset -15px -15px 30px rgba(255,255,255, 0.04);
     border-color: rgba(255, 255, 255, 0.2);
     color: white;
 }
-
 .wpcf7 .wpcf7-form .contact-form-footer textarea {
     height: 160px;
     width: 100%;
 }
-
 .wpcf7-form-control-wrap textarea:hover {
     background-color: transparent;
     box-shadow: 10px 10px 36px rgb(0,0,0,0.5), -13px -13px 23px rgba(255,255,255, 0.03), inset 14px 14px 70px rgb(0,0,0,0.2), inset -15px -15px 30px rgba(255,255,255, 0.04);
     border-color: rgba(255, 255, 255, 0.2);
     color: white;
 }
-
 .wpcf7-form-control-wrap textarea {
     background: #1c1f2f;
     overflow: hidden;
@@ -831,12 +786,10 @@ footer p {
     border-radius: 5px;
     transition: all 0.3s ease-in-out 0s;
 }
-
 textarea {
     overflow: auto;
     resize: vertical;
 }
-
 .wpcf7 .wpcf7-form .contact-form-footer .wpcf7-submit {
     width: 100%;
     padding: 11px;
@@ -867,25 +820,21 @@ textarea {
     border-color: #2e344d;
     transition: all 0.3s ease-in-out 0s;
 }
-
 .wpcf7-form input[type=submit] {
     height: 40px;
     line-height: 21px;
     padding: 10px 40px;
     font-size: 14px;
 }
-
 .posts li a {
     color: #99a9b5;
 }
-
 .wpcf7-form .contact-form-footer .wpcf7-submit:hover {
     box-shadow: 0 0px 20px rgba(84, 1, 74, 0.7);
     border-color: rgba(255, 6, 224, 0.61);
     background: linear-gradient(to right, rgba(255, 9, 9, 0.12941176470588237), #c000ffb5, rgba(255, 0, 94, 0.14));
     color: white;
 }
-
 img {
     border-style: none;
     height: auto;
@@ -903,7 +852,6 @@ footer .widget ul {
     padding-left: 0;
     display: table;
 }
-
 .widget_gallery li {
     display: inline-block;
     width: 33.33%;
@@ -914,26 +862,19 @@ footer .widget ul {
     -o-transition: all 0.5s;
     padding: 2px;
 }
-
 .widget_gallery.gallery-grid-4 li {
     width: 30%;
 }
-
-
 #waterdrop {
     height: 30px;
 }
-
 #waterdrop canvas {
     bottom: -70px !important;
 }
-
 .footer-site-info
 {
   padding-top: 10px;
 }
-
-
 </style>
   <!-- Toggle jQuery for Small Devices -->
 <script type=\"text/javascript\">
@@ -941,8 +882,7 @@ footer .widget ul {
         \$(this).toggleClass(\"fa-times\");
         \$(\".nav-menus\").toggleClass(\"active\");
     });
-</script>
-";
+</script>";
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
 
@@ -970,7 +910,7 @@ footer .widget ul {
 
     }
 
-    // line 75
+    // line 76
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -988,7 +928,7 @@ footer .widget ul {
 
     }
 
-    // line 85
+    // line 86
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -1018,7 +958,7 @@ footer .widget ul {
 
     public function getDebugInfo()
     {
-        return array (  992 => 85,  974 => 75,  955 => 5,  379 => 208,  373 => 207,  367 => 206,  361 => 205,  355 => 204,  349 => 203,  343 => 202,  337 => 201,  331 => 200,  255 => 127,  212 => 86,  210 => 85,  206 => 84,  200 => 81,  196 => 80,  192 => 79,  188 => 78,  184 => 77,  181 => 76,  179 => 75,  172 => 70,  165 => 66,  157 => 61,  154 => 60,  146 => 55,  138 => 52,  134 => 50,  132 => 49,  128 => 48,  124 => 47,  118 => 44,  114 => 43,  106 => 38,  102 => 37,  98 => 36,  92 => 33,  88 => 32,  81 => 28,  62 => 12,  52 => 5,  46 => 1,);
+        return array (  932 => 86,  914 => 76,  895 => 5,  380 => 209,  374 => 208,  368 => 207,  362 => 206,  356 => 205,  350 => 204,  344 => 203,  338 => 202,  332 => 201,  256 => 128,  213 => 87,  211 => 86,  207 => 85,  201 => 82,  197 => 81,  193 => 80,  189 => 79,  185 => 78,  182 => 77,  180 => 76,  173 => 71,  166 => 67,  158 => 62,  155 => 61,  147 => 56,  139 => 53,  135 => 51,  133 => 50,  129 => 49,  125 => 48,  119 => 45,  115 => 44,  106 => 38,  102 => 37,  98 => 36,  92 => 33,  88 => 32,  81 => 28,  62 => 12,  52 => 5,  46 => 1,);
     }
 
     public function getSourceContext()
@@ -1054,27 +994,28 @@ footer .widget ul {
         <i class=\"toggle-btn fas fa-bars\"></i>
         <!-- Navbar -->
         <nav class=\"nav-menus \">
-            <li><a href=\"{{path('home')}}\"> Acceuil</a></li>
-            <li><a href=\"{{ path('musique_de_mariage')}}\"> Musique De Mariage</a></li>
-            <li class=\"sub-menus\"><a href=\"#\"> centre de beaute</a>
+            <li><a href=\"{{path('home')}}\"><i class=\"fas fa-home\"></i> Acceuil</a></li>
+            <li><a href=\"{{ path('musique_de_mariage')}}\"><i class=\"fas fa-music\"></i> Musique De Mariage</a></li>
+            <li class=\"sub-menus\"><a href=\"#\"><i class=\"fas fa-list\"></i> Centre De Beaute</a>
                 <ul>
-                    <li><a href=\"{{ path('centre_de_beaute')}}\">Robe De Mariage </a></li>
-                    <li><a href=\"{{ path('coiffure')}}\"> Coiffure</a></li>
-                    <li><a href=\"{{ path('costume')}}\"> Costumes De Marrié</a></li>
+                    <li><a href=\"{{ path('centre_de_beaute')}}\"><i class=\"fa fa-female\" aria-hidden=\"true\"></i>Robe De Mariage </a></li>
+                    <li><a href=\"{{ path('coiffure')}}\"><i class=\"fas fa-spa\"></i> Coiffure</a></li>
+                    <li><a href=\"{{ path('costume')}}\"><i class=\"fas fa-user-tie\"></i> Costumes De Marrié</a></li>
                 </ul>
                 </li>
-                <li class=\"sub-menus\"><a href=\"#\"> Reception</a>
+                <li class=\"sub-menus\"><a href=\"#\"><i class=\"fas fa-list\"></i>
+                  Reception</a>
                 <ul>
-                    <li><a href=\"{{ path('salle_de_mariage')}}\"></i>Salle De Beauté </a></li>
-                    <li><a href=\"{{ path('traiteurs')}}\"> Traiteurs</a></li>
+                    <li><a href=\"{{ path('salle_de_mariage')}}\"><i class=\"fas fa-table\"></i>Salle De Mariage </a></li>
+                    <li><a href=\"{{ path('traiteurs')}}\"><i class=\"far fa-soup\"></i> Traiteurs</a></li>
                   </ul>
            </li>
-            <li><a href=\"{{ path('photographe')}}\">photographe</a></li>
-            <li><a href=\"{{ path('voyage_de_noce')}}\"> voyage de noce</a></li>
+            <li><a href=\"{{ path('photographe')}}\"><i class=\"fas fa-camera\"></i>Photographe</a></li>
+            <li><a href=\"{{ path('voyage_de_noce')}}\"><i class=\"fas fa-plane-departure\"></i> Voyage De Noce</a></li>
         {% if app.user %}
 
        <li class=\"nav-item \">
-        <a class=\"nav-link\" >{{ app.user.nom }} {{ app.user.prenom }}</a>
+        <a class=\"nav-link\" ><i class=\"fas fa-user\"></i>{{ app.user.nom }} {{ app.user.prenom }}</a>
       </li>
       <li class=\"nav-item\">
         <a class=\"nav-link\"  href=\"{{path('app_logout')}}\" >Déconnexion</a>
@@ -1083,12 +1024,12 @@ footer .widget ul {
 
        {% else %}
         <li class=\"navbar-dropdown\">
-          <a href=\"{{path('register')}}\">Inscription</a>
+          <a href=\"{{path('register')}}\"><i class=\"fas fa-user\"></i>Inscription</a>
 
         </li>
           </li>
         <li class=\"navbar-dropdown\">
-          <a href=\"{{path('app_login')}}\">Connexion</a>
+          <a href=\"{{path('app_login')}}\"><i class=\"fas fa-user\"></i>Connexion</a>
 
         </li>
         {% endif %}
@@ -1265,8 +1206,6 @@ sur nos réseaux sociaux.
     padding: 0;
     box-sizing: border-box;
 }
-
-
   
 .wrapper {
    
@@ -1279,9 +1218,6 @@ sur nos réseaux sociaux.
     
     
 } 
-
-
-
 /*-- Navbar CSS --*/
 .nav-menus {
     float: right;
@@ -1301,11 +1237,11 @@ sur nos réseaux sociaux.
     position: relative;
     font-size: 17px;
     text-decoration: none;
-    padding: 15px 12px;
+    padding: 15px 1px;
     z-index: 1;
 }
 .nav-menus li:hover {
-    color: #c79826;
+    color: #c7267e;
 }
 .nav-menus a:after {
     content: \"\";
@@ -1341,7 +1277,7 @@ sur nos réseaux sociaux.
 /*-- Sub Menus CSS--*/
 .sub-menus ul {
     position: absolute;
-    top: 80px;
+    margin-bottom: -80px;
     background-color: #fff;
     padding: 5px 0px;
     min-width: 150px;
@@ -1412,7 +1348,6 @@ sur nos réseaux sociaux.
 footer p, footer strong, footer b, footer {
     color: #fff;
 }
-
 .footer-top {
     background: white;
     background-size: cover;
@@ -1422,20 +1357,15 @@ footer p, footer strong, footer b, footer {
   padding-top:30px;
   
 }
-
 .footer-top, .footer-bottom {
     background-color: #1c1f2f;
 }
-
 .footer-bottom {
     padding: 15px 0;
     border-top: 1px solid #313646;
     background-color: #181828 !important;
     color: #b0b0b0;
     font-family: rubik;
-}
-color: #99a9b5;
-    padding-top: 15px;
 }
 
 .footer-site-info {
@@ -1444,12 +1374,10 @@ color: #99a9b5;
 #footer-navigation, #footer-navigation li a:hover, .custom-footer, .custom-footer li a:hover {
     color: white;
 }
-
 #footer-navigation, #footer-navigation li a, .custom-footer, .custom-footer li a {
     color: #99a9b5;
     padding-top: 15px;
 }
-
 .footer-bottom ul {
     margin: 0;
 }
@@ -1467,12 +1395,10 @@ color: #99a9b5;
     position: relative;
     line-height: 1;
 }
-
 #footer-navigation, #footer-navigation li a, .custom-footer, .custom-footer li a {
     color: #99a9b5;
     padding-top: 15px;
 }
-
 #footer-navigation, #footer-navigation li a, .custom-footer, .custom-footer li a {
     color: #99a9b5;
     padding-top: 15px;
@@ -1488,24 +1414,19 @@ color: #99a9b5;
     border-left: 1px solid #232234;
     border-right: 1px solid #333146;
 }
-
-
-navigation li a, .custom-footer, .custom-footer li a {
+ li a, .custom-footer, .custom-footer li a {
     color: #99a9b5;
     padding-top: 15px;
 }
-
 #footer-socials {
     text-align: right;
 }
-
 #footer-socials .socials {
     text-align: right;
     margin: 0 -7px;
     display: inline-block;
     vertical-align: middle;
 }
-
 a.socials-item {
     display: inline-block;
     vertical-align: top;
@@ -1521,7 +1442,6 @@ a.socials-item {
     border: 1px solid #2e2e4c;
     box-shadow: 3px 9px 16px rgb(0,0,0,0.4), -3px -3px 10px rgba(255,255,255, 0.06), inset 14px 14px 26px rgb(0,0,0,0.3), inset -3px -3px 15px rgba(255,255,255, 0.05);
 }
-
 .socials-item i {
     display: inline-block;
     font-weight: normal;
@@ -1542,11 +1462,9 @@ a.socials-item {
     font-weight: normal;
     text-rendering: auto;
 }
-
 .facebook {
     color: #4e64b5;
 }
-
 .twitter {
     color: #00aced;
 }
@@ -1556,33 +1474,24 @@ a.socials-item {
 .youtube {
     color: #c82929;
 }
-
 .telegram {
     color: #2ca5e0;
 }
-
-
 a.socials-item:hover {
     box-shadow: 0 0px 20px rgba(84, 1, 74, 0.7);
     border-color: rgba(255, 6, 224, 0.61);
     background: linear-gradient(to right, rgba(255, 9, 9, 0.12941176470588237), #c000ffb5, rgba(255, 0, 94, 0.14));
 }
-
 .footer-bottom a:hover {
     color: white;
 }
-
-
 footer p, footer li {
     font-size: 15px;
     line-height: 22px;
 }
-
-
 .widget {
     margin-bottom: 50px;
 }
-
 .footer-title {
     margin-bottom: 40px;
     color: #fff;
@@ -1592,7 +1501,6 @@ footer p, footer li {
     font-size: 16px;
     position: relative;
 }
-
 .footer-title:after {
     width: 50px;
     background: #fff;
@@ -1603,47 +1511,38 @@ footer p, footer li {
     bottom: 0;
     left: 0;
 }
-
 .gem-contacts-item {
     padding-top: 10px;
     font-size: 15px;
 }
-
 .gem-contacts-item i {
     padding-right: 10px;
 }
-
 footer .widget ul {
     list-style: none;
     margin-top: 5px;
 }
-
 .posts li {
     border-bottom: 1px solid #393d50;
     padding-bottom: 12px;
     padding-top: 6px;
 }
-
 footer p, footer li {
     font-size: 15px;
     line-height: 22px;
 }
-
 .gem-pp-posts-date {
     color: #00bcd4;
     font-size: 89.5%;
 }
-
 footer p {
     line-height: 24px;
     margin-bottom: 10px;font-size: 15px;
 }
-
 .wpcf7-form-control-wrap .wpcf7-form-control {
     padding: 7px!important;
     width: 100%;
 }
-
 .wpcf7-form-control-wrap input {
     background: #1c1f2f;
     overflow: hidden;
@@ -1653,26 +1552,22 @@ footer p {
     border-radius: 5px;
     transition: all 0.3s ease-in-out 0s;
 }
-
 .wpcf7-form-control-wrap input:hover {
     background-color: transparent;
     box-shadow: 10px 10px 36px rgb(0,0,0,0.5), -13px -13px 23px rgba(255,255,255, 0.03), inset 14px 14px 70px rgb(0,0,0,0.2), inset -15px -15px 30px rgba(255,255,255, 0.04);
     border-color: rgba(255, 255, 255, 0.2);
     color: white;
 }
-
 .wpcf7 .wpcf7-form .contact-form-footer textarea {
     height: 160px;
     width: 100%;
 }
-
 .wpcf7-form-control-wrap textarea:hover {
     background-color: transparent;
     box-shadow: 10px 10px 36px rgb(0,0,0,0.5), -13px -13px 23px rgba(255,255,255, 0.03), inset 14px 14px 70px rgb(0,0,0,0.2), inset -15px -15px 30px rgba(255,255,255, 0.04);
     border-color: rgba(255, 255, 255, 0.2);
     color: white;
 }
-
 .wpcf7-form-control-wrap textarea {
     background: #1c1f2f;
     overflow: hidden;
@@ -1682,12 +1577,10 @@ footer p {
     border-radius: 5px;
     transition: all 0.3s ease-in-out 0s;
 }
-
 textarea {
     overflow: auto;
     resize: vertical;
 }
-
 .wpcf7 .wpcf7-form .contact-form-footer .wpcf7-submit {
     width: 100%;
     padding: 11px;
@@ -1718,25 +1611,21 @@ textarea {
     border-color: #2e344d;
     transition: all 0.3s ease-in-out 0s;
 }
-
 .wpcf7-form input[type=submit] {
     height: 40px;
     line-height: 21px;
     padding: 10px 40px;
     font-size: 14px;
 }
-
 .posts li a {
     color: #99a9b5;
 }
-
 .wpcf7-form .contact-form-footer .wpcf7-submit:hover {
     box-shadow: 0 0px 20px rgba(84, 1, 74, 0.7);
     border-color: rgba(255, 6, 224, 0.61);
     background: linear-gradient(to right, rgba(255, 9, 9, 0.12941176470588237), #c000ffb5, rgba(255, 0, 94, 0.14));
     color: white;
 }
-
 img {
     border-style: none;
     height: auto;
@@ -1754,7 +1643,6 @@ footer .widget ul {
     padding-left: 0;
     display: table;
 }
-
 .widget_gallery li {
     display: inline-block;
     width: 33.33%;
@@ -1765,26 +1653,19 @@ footer .widget ul {
     -o-transition: all 0.5s;
     padding: 2px;
 }
-
 .widget_gallery.gallery-grid-4 li {
     width: 30%;
 }
-
-
 #waterdrop {
     height: 30px;
 }
-
 #waterdrop canvas {
     bottom: -70px !important;
 }
-
 .footer-site-info
 {
   padding-top: 10px;
 }
-
-
 </style>
   <!-- Toggle jQuery for Small Devices -->
 <script type=\"text/javascript\">
@@ -1792,7 +1673,6 @@ footer .widget ul {
         \$(this).toggleClass(\"fa-times\");
         \$(\".nav-menus\").toggleClass(\"active\");
     });
-</script>
-", "base.html.twig", "/opt/lampp/htdocs/sitemariage2/templates/base.html.twig");
+</script>", "base.html.twig", "/opt/lampp/htdocs/sitemariage2/templates/base.html.twig");
     }
 }

@@ -36,7 +36,7 @@ class Commentaire
 
     /**
      * @ORM\ManyToOne(targetEntity=SalleDeMariage::class)
-     * @ORM\JoinColumn(nullable=false)
+     * @ORM\JoinColumn(nullable=true)
      */
     private $salledemariage;
 
@@ -48,46 +48,47 @@ class Commentaire
 
     /**
      * @ORM\ManyToOne(targetEntity=Traiteurs::class)
-     * @ORM\JoinColumn(nullable=false)
+     * @ORM\JoinColumn(nullable=true)
      */
     private $traiteurs;
 
     /**
      * @ORM\ManyToOne(targetEntity=MusiqueDeMariage::class)
-     * @ORM\JoinColumn(nullable=false)
+     * @ORM\JoinColumn(nullable=true)
      */
     private $musiquedemariage;
 
     /**
      * @ORM\ManyToOne(targetEntity=Photographe::class)
-     * @ORM\JoinColumn(nullable=false)
+     * @ORM\JoinColumn(nullable=true)
      */
     private $photographe;
 
     /**
      * @ORM\ManyToOne(targetEntity=Costume::class)
-     * @ORM\JoinColumn(nullable=false)
+     * @ORM\JoinColumn(nullable=true)
      */
     private $costume;
 
     /**
      * @ORM\ManyToOne(targetEntity=Coiffure::class)
-     * @ORM\JoinColumn(nullable=false)
+     * @ORM\JoinColumn(nullable=true)
      */
     private $coiffure;
 
     /**
      * @ORM\ManyToOne(targetEntity=CentreDeBeaute::class)
-     * @ORM\JoinColumn(nullable=false)
+     * @ORM\JoinColumn(nullable=true)
      */
     private $centredebeaute;
 
     /**
      * @ORM\ManyToOne(targetEntity=VoyageDeNoce::class)
-     * @ORM\JoinColumn(nullable=false)
+     * @ORM\JoinColumn(nullable=true)
      */
     private $voyagedenoce;
 
+   
     public function getId(): ?int
     {
         return $this->id;

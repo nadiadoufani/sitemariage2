@@ -65,7 +65,6 @@ class __TwigTemplate_2fb688772a0d138c086910acd58b23c10785c761949f4d2a7d435a67541
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "New Calendar";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -92,8 +91,18 @@ class __TwigTemplate_2fb688772a0d138c086910acd58b23c10785c761949f4d2a7d435a67541
         echo twig_include($this->env, $context, "calendar/_form.html.twig");
         echo "
 
-    <a href=\"";
-        // line 10
+    <a style=\"border-radius: 4px;
+    
+    color: aqua;
+    background: #666;
+    padding: 10px;
+    width: 20%;
+    cursor: pointer;
+    display:inline-block;
+    box-shadow: 4px 4px 4px 3px #823579;
+    margin: 0 auto;
+    \" href=\"";
+        // line 20
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("calendar_index");
         echo "\">back to list</a>
 ";
@@ -117,21 +126,31 @@ class __TwigTemplate_2fb688772a0d138c086910acd58b23c10785c761949f4d2a7d435a67541
 
     public function getDebugInfo()
     {
-        return array (  97 => 10,  92 => 8,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  106 => 20,  91 => 8,  87 => 6,  77 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}New Calendar{% endblock %}
+{% block title %}{% endblock %}
 
 {% block body %}
     <h1 style=\"margin-top:100px;\">Create new Calendar</h1>
 
     {{ include('calendar/_form.html.twig') }}
 
-    <a href=\"{{ path('calendar_index') }}\">back to list</a>
+    <a style=\"border-radius: 4px;
+    
+    color: aqua;
+    background: #666;
+    padding: 10px;
+    width: 20%;
+    cursor: pointer;
+    display:inline-block;
+    box-shadow: 4px 4px 4px 3px #823579;
+    margin: 0 auto;
+    \" href=\"{{ path('calendar_index') }}\">back to list</a>
 {% endblock %}
 ", "calendar/new.html.twig", "/opt/lampp/htdocs/sitemariage2/templates/calendar/new.html.twig");
     }

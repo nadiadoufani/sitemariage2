@@ -28,12 +28,12 @@ class ContactController extends AbstractController
             ->setFrom($contact['email'])
 
             // On attribue le destinateure
-            ->setTo('nadiadoufanip4@gmail.com')
+            ->setTo('raja@gmail.com')
 
             // On crée le message avec la vue twig
             ->setBody(
                 $this->renderView(
-                   'home/index.html.twig' , compact('contact')
+                   'emails/contact.html.twig' , compact('contact')
                 ),
                 'text/html'
             )
@@ -43,11 +43,10 @@ class ContactController extends AbstractController
             $mailer->send($message);
 
             $this->addFlash('message', 'Le message a bien été envoyé');
-            return $this->redirectToRoute('contact');
+            return $this->redirectToRoute('home');
         }
         return $this->render('contact/index.html.twig', [
             'contactForm' => $form->createview()
         ]);
     }
 }
-

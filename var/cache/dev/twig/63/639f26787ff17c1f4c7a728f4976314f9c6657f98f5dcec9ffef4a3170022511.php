@@ -139,7 +139,10 @@ class __TwigTemplate_2649b97ebf0ec0fd8fbc70d6797253bf366a41b37bf1edf212fd6d72479
         // line 42
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["traiteurs"]) || array_key_exists("traiteurs", $context) ? $context["traiteurs"] : (function () { throw new RuntimeError('Variable "traiteurs" does not exist.', 42, $this->source); })()), "description", [], "any", false, false, false, 42), "html", null, true);
         echo "</p>
-          <a href=\"#\"<button type=\"submit\" class=\"btn btn-success \" style=\"border-radius: 30%;\">rendez-vous!!!</button></a>
+          <a href=\"";
+        // line 43
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("contact");
+        echo "\"<button type=\"submit\" class=\"btn btn-success \" style=\"border-radius: 30%;\">contactez-nous!!!</button></a>
           <a href=\"";
         // line 44
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("traiteurs");
@@ -530,7 +533,7 @@ main{
 
     public function getDebugInfo()
     {
-        return array (  230 => 90,  217 => 83,  211 => 82,  207 => 80,  203 => 79,  200 => 78,  194 => 76,  186 => 71,  182 => 70,  167 => 59,  165 => 58,  160 => 56,  145 => 44,  140 => 42,  136 => 41,  129 => 37,  125 => 36,  104 => 18,  98 => 15,  87 => 6,  77 => 5,  59 => 3,  36 => 1,);
+        return array (  233 => 90,  220 => 83,  214 => 82,  210 => 80,  206 => 79,  203 => 78,  197 => 76,  189 => 71,  185 => 70,  170 => 59,  168 => 58,  163 => 56,  148 => 44,  144 => 43,  140 => 42,  136 => 41,  129 => 37,  125 => 36,  104 => 18,  98 => 15,  87 => 6,  77 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -577,7 +580,7 @@ main{
       <div data-aos=\"flip-left\" data-aos-easing=\"ease-out-cubic\" data-aos-duration=\"1000\" class=\"card-r\" id=\"\">
         <h2 style=\"font-family: 'Yeon Sung', cursive;\">{{ traiteurs.nom}}</h2>
           <p> {{ traiteurs.description}}</p>
-          <a href=\"#\"<button type=\"submit\" class=\"btn btn-success \" style=\"border-radius: 30%;\">rendez-vous!!!</button></a>
+          <a href=\"{{path('contact')}}\"<button type=\"submit\" class=\"btn btn-success \" style=\"border-radius: 30%;\">contactez-nous!!!</button></a>
           <a href=\"{{ path('traiteurs')}}\"<button type=\"submit\" class=\"btn btn-success \" style=\"border-radius: 30%;\">Back</button></a>
       </div>
      
@@ -906,6 +909,6 @@ main{
 
 </style>
 
-{% endblock %}", "home/details.html.twig", "/opt/lampp/htdocs/sitemariage/templates/home/details.html.twig");
+{% endblock %}", "home/details.html.twig", "/opt/lampp/htdocs/sitemariage2/templates/home/details.html.twig");
     }
 }

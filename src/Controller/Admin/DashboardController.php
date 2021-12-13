@@ -2,6 +2,7 @@
 
 namespace App\Controller\Admin;
 
+use App\Entity\User;
 use App\Entity\Costume;
 use App\Entity\Coiffure;
 use App\Entity\Categorie;
@@ -54,6 +55,8 @@ class DashboardController extends AbstractDashboardController
         yield MenuItem::linkToCrud('voyage de noce', 'fas fa-list', VoyageDeNoce::class);
         yield MenuItem::linkToCrud('publicite1', 'fas fa-list', Publicite1::class);
         yield MenuItem::linkToCrud('publicite3', 'fas fa-list', Publicite3::class);
+        yield MenuItem::linkToCrud('user', 'fas fa-list', User::class);
+
     }
 
 }

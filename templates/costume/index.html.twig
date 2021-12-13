@@ -3,10 +3,11 @@
 {% block title %}{% endblock %}
 
 {% block body %}
+<body>
 <div class="card-wrap "  style="margin-top:100px;">
 {% include 'costume/_filtre.html.twig' with{form:form} only %}
 </div>
-<section style="margin-top:100px;">
+<section style="margin-top:20px;">
 <h3 >Tenue du marié</h3>
 <p style="text-align: center;" >Le jour du mariage, la tenue du marié est synonyme d’élégance.
 <br> Pour mettre en valeur votre personnalité tout en ayant une touche d’originalité, découvrez nos conseils,
@@ -20,10 +21,12 @@
 <h1>{{ item.titre}}</h1>
 <br>
   <p>{{ item.description}}</p>
-  
+  <a href="{{ path('contact')}}"<button type="submit" class="btn btn-success " style="border-radius: 30%;">Contactez!!!</button></a>
   </div>
   {% endfor %}
 </div>
+    <div style="text-align: center;"><img src="https://cdn.pixabay.com/photo/2020/03/06/08/23/divider-4906386_960_720.png" alt="" style="height: 100px;width: 500px;text-align: center;"></div>
+
 <section>
 	<div class="circle circle-one">
 		<img src="{{asset('imgcomment/costume-marie-morphologie-cover-faubourg-saint-sulpice2019-696x387.jpg')}}" alt="" title="">
@@ -49,30 +52,12 @@ Pour éviter les faux-pas, revoyons, tout d’abord, quelques règles à respect
 <li>La veste ne doit pas former de faux-plis dans le dos</li></ul>
 <p>Bien entendu, au moment des essayages, vous allez être confronté à une multitude de modèles, aux coupes diverses et variées.
 Sachez donc qu’il est essentiel de porter un costume adapté à votre morphologie. Voici quelques conseils à suivre pour que votre costume de mariage épouse parfaitement votre corps et vous mette en valeur.</p>
-<p style="margin-left:30px;">
- <b> Vous êtes petit</b><br>
-Privilégiez alors la coupe slim. Pour paraître plus grand, optez pour un pantalon ajusté et une veste cintrée
-  qui ne descend pas
-   plus bas que les fesses. Astuce : un costume avec des rayures fines verticales allongera votre silhouette.<br>
 
-Si vous êtes costaud, jouez avec la longueur du pantalon pour donner l’illusion que vos jambes sont allongées.
- Pour ne pas casser la dynamique de jambes longues, la veste doit être courte.<br> Portez de préférence un costume sombre et/ou à fines rayures verticales.<br>
-
-<b>Vous avez une taille moyenne</b><br>
-Vous avez l’avantage de pouvoir porter de nombreux modèles. Pantalon à coupe droite ou slim,
-<br> costume de couleurs ou à motifs… vous avez l’embarras du choix !<br> Notre coup de coeur pour vous : une veste à deux boutons. <br> 
-
-<b>Vous êtes grand</b><br>
-Optez pour une veste cintrée et assez longue pour paraître moins grand et vous mettre en valeur.
-Privilégiez le costume croisé qui va venir casser la verticalité naturelle de votre silhouette
-et va structurer votre corps. A bannir : les lignes verticales ! Si vous êtes fin, pensez aux lignes horizontales qui apporteront un peu de volume.
-Si vous êtes fort, le costume trois pièces sera parfait ! <br>
-</p>
 
 	</div>
 </section>
 
-
+</body>
 
 
 
@@ -81,6 +66,9 @@ Si vous êtes fort, le costume trois pièces sera parfait ! <br>
 
 
 <style>
+body{
+ background-image:url("http://alijafarian.com/demos/responsive-jquery-accordions/images/texture_old_map.png");
+}
 *:focus {
   outline: 0;
 }

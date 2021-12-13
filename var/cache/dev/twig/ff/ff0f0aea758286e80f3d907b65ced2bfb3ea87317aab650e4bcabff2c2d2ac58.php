@@ -85,145 +85,277 @@ class __TwigTemplate_f9335042aae5f8ab0c9e567dc72f3bfd2cd70b3572085a61dbf9834d968
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 7
-        echo "
+        echo "<body>
 <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, \">
-        <img class=\"card\" src=\"";
-        // line 9
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/téléchargement.jpeg"), "html", null, true);
-        echo "\" alt=\"\" style=\"margin-top:100px;\">
-        
-        
-        <br>
-    <div>
-    
-    <h6>Les meilleurs centres de beauté pour les mariées</h6>
-    <p style=\"text-align: center;\">La saison des mariages et le choix du salon de coiffure est le plus difficile pour les nouvelles mariées.
-    <br> Alors si vous n’avez pas encore choisi votre <span style=\" color:hotpink;;
-             text-decoration: none;
-             font-size: 25px;\"><a href=\"";
-        // line 19
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("centre_de_beaute");
-        echo "\"> centre de beauté </a></span> pour le grand jour .</p>
-    </div>
+
+       <body>
+
+
+          
+      
         <div class=\"slide\" >
        
             <!-- First slide -->
             <div class=\"banner1\">
-              <img class=\"image\"
-                src=\"https://www.marhba.com/images/mariage/mariagejean.jpg\"
-              />
+              <img class=\"image\" src=\"https://cdn.pixabay.com/photo/2016/06/06/08/05/video-media-production-1439008__340.jpg\"/>
              
             </div>
         
             <!-- Second slide -->
             <div class=\"banner2\">
-              <img class=\"image\"
-                src=\"";
-        // line 34
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/mariageviolette.jpg"), "html", null, true);
-        echo "\"
-              />
+              <img class=\"image\"src=\"https://cdn.pixabay.com/photo/2020/02/07/13/08/wedding-4827128__340.jpg\"/>
               
             </div>
         
             <!-- Third slide -->
             <div class=\"banner3\">
-              <img class=\"image\"
-                src=\"";
-        // line 42
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/mariagelobna.jpg"), "html", null, true);
-        echo "\"
-              />
-             
+              <img class=\"image\" src=\"https://cdn.pixabay.com/photo/2015/02/06/12/47/wedding-626020__340.jpg\">
             </div>
         
             <!-- Fourth slide -->
             <div class=\"banner4\">
-              <img class=\"image\"
-                src=\"";
-        // line 50
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/mariageferyelstudio.jpg"), "html", null, true);
-        echo "\"
-              />
+              <img class=\"image\" src=\"https://cdn.pixabay.com/photo/2017/10/29/14/44/wedding-2899892__340.jpg\"/>
               
             </div>
           
         </div>   
+</div>  
+        
+        
+        
+      
+        
+        
+        <br>
+        <div style=\"margin-top:600px;text-align: center;color:grey;\">
+\t<h1>Les meilleurs prestataires pour organisez votre mariage!!</h1>
+\t
 </div>
 
+<!--/.content-->
 
-<div style=\"margin-top:700px;\">
-    
-    <h6>Les troupes musicales pour votre mariage</h6>
-    <p style=\"text-align: center;\">
-    On vous facilite la tâche et on partage avec vous<span style=\" color:hotpink;;
-             text-decoration: none;
-             font-size: 25px;\"><a href=\"";
-        // line 65
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("musique_de_mariage");
-        echo "\" > des troupes musicales </a></span>bien réputées en Tunisie
-     <br> pour une ambiance de mariage exceptionnelle le Jour J.
-</p>
-    </div>
-
- <!-- 3D Slideshow Section --> 
-<div id=\"slideshow\" style=\"margin-top:30px;\">
-\t\t\t<div class=\"entire-content\">
-\t\t\t<a href=\"";
-        // line 73
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("musique_de_mariage");
-        echo "\">\t<div class=\"content-carrousel\">
-\t\t\t\t\t<figure class=\"shadow\"><img src=\"";
-        // line 74
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgmusiques/9b3088f1fd3d8e42f4b6874d7c31dd1f529765cb.jpeg"), "html", null, true);
-        echo "\"/></figure>
-\t\t\t\t\t<figure class=\"shadow\"><img src=\"";
-        // line 75
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgmusiques/22b2556fd677d8baee846be04be0182946665793.jpeg"), "html", null, true);
-        echo "\"/></figure>
-\t\t\t\t\t<figure class=\"shadow\"><img src=\"";
-        // line 76
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgmusiques/684acc6861ae42af9df31c32b5b6d49c87ad0d2b.jpeg"), "html", null, true);
-        echo "\"/></figure>
-\t\t\t\t\t<figure class=\"shadow\"><img src=\"";
-        // line 77
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgmusiques/171344a9fb14d6e40e20f0843748291b51a0d16c.jpeg"), "html", null, true);
-        echo "\"/></figure>
-\t\t\t\t\t<figure class=\"shadow\"><img src=\"";
-        // line 78
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgmusiques/ad9fcbd1578c037a34ac2e25800024ef291999d6.jpeg"), "html", null, true);
-        echo "\"/></figure>
-\t\t\t\t\t<figure class=\"shadow\"><img src=\"";
-        // line 79
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgmusiques/bd6f0bf08df7ed11d624cf457d54c22e5b0a558c.jpeg"), "html", null, true);
-        echo "\"/></figure>
-\t\t\t\t\t<figure class=\"shadow\"><img src=\"";
-        // line 80
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgmusiques/bd6f0bf08df7ed11d624cf457d54c22e5b0a558c.jpeg"), "html", null, true);
-        echo "\"/></figure>
-\t\t\t\t\t<figure class=\"shadow\"><img src=\"";
-        // line 81
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgmusiques/bd6f0bf08df7ed11d624cf457d54c22e5b0a558c.jpeg"), "html", null, true);
-        echo "\"/></figure>
-\t\t\t\t\t<figure class=\"shadow\"><img src=\"";
-        // line 82
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgmusiques/bd6f0bf08df7ed11d624cf457d54c22e5b0a558c.jpeg"), "html", null, true);
-        echo "\"/></figure>
-\t\t</div></a>
+<div class=\"content white\"style=\"background-image:url('https://cdn.pixabay.com/photo/2016/07/13/03/47/background-1513621__340.jpg');width: 100%;background-repeat:no-repeat;background-size:cover;\">
+\t
+\t<div class=\"accordion-container\">
+\t\t<a href=\"";
+        // line 59
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("traiteurs");
+        echo "\" class=\"accordion-toggle\">Traiteurs <span class=\"toggle-icon\"><i class=\"fa fa-plus-circle\"></i></span></a>
+\t\t<div class=\"accordion-content\">
+\t\t\t<img src=\"";
+        // line 61
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgtraiteurs/4b72b37e8b797b4466b8c2a3b67a4d1f107d565a.jpeg"), "html", null, true);
+        echo "\" />
+\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+\t\t\t
+\t\t</div>
+\t\t<!--/.accordion-content-->
 \t</div>
+\t<!--/.accordion-container-->
+\t<div class=\"accordion-container\">
+\t\t<a href=\"";
+        // line 69
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("photographe");
+        echo "\" class=\"accordion-toggle\">Photographes<span class=\"toggle-icon\"><i class=\"fa fa-plus-circle\"></i></span></a>
+\t\t<div class=\"accordion-content\">
+\t\t\t<img src=\"";
+        // line 71
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgphotographes/4dcfe5280c7e6f2ac53e9ed49ba20f725a0e7845.jpeg"), "html", null, true);
+        echo "\" />
+\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+\t\t
+\t\t</div>
+\t\t<!--/.accordion-content-->
+\t</div>
+\t<!--/.accordion-container-->
+\t<div class=\"accordion-container\">
+\t\t<a href=\"";
+        // line 79
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("salle_de_mariage");
+        echo "\" class=\"accordion-toggle\">Les salles de mariage <span class=\"toggle-icon\"><i class=\"fa fa-plus-circle\"></i></span></a>
+\t\t<div class=\"accordion-content\">
+\t\t\t<img src=\"";
+        // line 81
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgsalles/1f603f1d9b2fb82e95ead52e96705bc1.jpg"), "html", null, true);
+        echo "\" />
+\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+\t\t\t
+\t\t</div>
+\t\t<!--/.accordion-content-->
+\t</div>
+  <!--/.accordion-container-->
+\t<div class=\"accordion-container\">
+\t\t<a href=\"";
+        // line 89
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("musique_de_mariage");
+        echo "\" class=\"accordion-toggle\">Les musiques de mariage <span class=\"toggle-icon\"><i class=\"fa fa-plus-circle\"></i></span></a>
+\t\t<div class=\"accordion-content\">
+\t\t\t<img src=\"";
+        // line 91
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgmusiques/1c142dea8609f3130cc848bce8a397f1.jpg"), "html", null, true);
+        echo "\" />
+\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+\t\t\t
+\t\t</div>
+\t\t<!--/.accordion-content-->
+\t</div>
+  \t<!--/.accordion-container-->
+\t<div class=\"accordion-container\">
+\t\t<a href=\"";
+        // line 99
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("voyage_de_noce");
+        echo "\" class=\"accordion-toggle\">Voyage de noce <span class=\"toggle-icon\"><i class=\"fa fa-plus-circle\"></i></span></a>
+\t\t<div class=\"accordion-content\">
+\t\t\t<img src=\"";
+        // line 101
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgvoyages/e916d6672cd31e4a6a3a03e83023fd2d.jpg"), "html", null, true);
+        echo "\" />
+\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+\t\t</div>
+\t\t<!--/.accordion-content-->
+\t</div>
+\t<!--/.accordion-container-->
+\t<div class=\"accordion-container\">
+\t\t<a href=\"";
+        // line 109
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("centre_de_beaute");
+        echo "\" class=\"accordion-toggle\">Les centres de beautés <span class=\"toggle-icon\"><i class=\"fa fa-plus-circle\"></i></span></a>
+\t\t<div class=\"accordion-content\">
+\t\t\t<img src=\"";
+        // line 111
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcentre/a47ac509697db96e999653abf2e917e02ec67830.jpeg"), "html", null, true);
+        echo "\" />
+\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+\t\t\t
+\t\t</div>
+\t\t<!--/.accordion-content-->
+\t</div>
+\t<!--/.accordion-container-->
+\t<div class=\"accordion-container\">
+\t\t<a href=\"";
+        // line 119
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("costume");
+        echo "\" class=\"accordion-toggle\">Les costumes mariés <span class=\"toggle-icon\"><i class=\"fa fa-plus-circle\"></i></span></a>
+\t\t<div class=\"accordion-content\">
+\t\t\t<img src=\"";
+        // line 121
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcostume/1e721df6c01b1ba7928fdc18d2817e590eb8cfcd.jpeg"), "html", null, true);
+        echo "\" />
+\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+\t\t\t
+\t\t</div>
+\t\t<!--/.accordion-content-->
+\t</div>
+\t<!--/.accordion-container-->
 </div>
+
+
+<!-------------------- JS -------------------->
+<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js\" type=\"text/javascript\"></script>
+
+</script>
+</div>
+    
+    
+<br>
+        <div style=\"margin-top:70px;text-align: center;color:grey;\">
+\t<h1>Vrais mariages</h1>
+  <p>Inspirez-vous des mariages d'autres couples et s'ils vous plaisent contactez les prestataires qui les ont organisés.</p>
+\t
+</div>
+
 <div>
-    <div style=\" margin: 100px;
- text-align: center;\">
- <a class=\"btn-blink1\" href=\"\">les Nouveautés!</a>
+    
+ <img src=\"https://cdn.pixabay.com/photo/2020/03/12/10/21/bunting-4924629_960_720.png\" style=\"width: 100%;;\";\" alt=\"\">
 </div>
-    <h6> Forfait de Mariage</h6>
-    <p style=\"text-align: center;\">
-    Si vous voulez faire de votre mariage inoubliable en ayant un look idéal,
-    <br> notre centre est là pour répondre à tous vos besoins.
-     
-</p>
-    </div>
+ <div class=\"contenu_carou_auto\">
+<div class=\"caroussel-image\">
+<img src=\"";
+        // line 151
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgpublicite/t30_2199551.jpg"), "html", null, true);
+        echo "\" alt>
+<img src=\"";
+        // line 152
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgpublicite/t30_2188427.jpg"), "html", null, true);
+        echo "\" alt>
+<img src=\"";
+        // line 153
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgpublicite/t20_2200199.jpg"), "html", null, true);
+        echo "\" alt>
+<img src=\"";
+        // line 154
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgpublicite/t10_2123163.jpg"), "html", null, true);
+        echo "\" alt>
+<img src=\"";
+        // line 155
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgpublicite/df1232fb11a3e96017c68af66dd7ea58.jpg"), "html", null, true);
+        echo "\" alt>
+<img src=\"";
+        // line 156
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgpublicite/2a73a70bbf93b35072333e1ac3a8a8ab.jpg"), "html", null, true);
+        echo "\" alt>
+<img src=\"";
+        // line 157
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgpublicite/3c155d1ed4f4014b67b20f44e99089fd.jpg"), "html", null, true);
+        echo "\" alt>
+
+<img src=\"";
+        // line 159
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgpublicite/0dd6c7751e0f5dcd68fee50111352b0c.jpg"), "html", null, true);
+        echo "\" alt>
+</div>
+</div>
+
+    <section class=\"top\">
+      <div class=\"title\">
+        <h3> Pour organiser votre mariage</h3>
+        <h1>Happy Mariage</h1>
+      </div>
+    </section>
+    <section class=\"page\">
+      <div class=\"parallax1\"></div>
+      <div class=\"paragraph first\">
+        <p><span>P</span>
+     <br>L’Espace Lila Baya au RDC pouvant accueillir 300 personnes à l’intérieur. La mise en place de l'espace,
+     <br> pour la signature du contrat de mariage, inclue 100 chaises en style théâtre. Pour votre réception de mariage, un grand espace
+     <br> (espace couvert) est disponible pour partager les vœux de vos invités et célébrer votre réception de mariage dans un endroit enchanteur.</p>
+      </div>
+      <div class=\"parallax2\">
+        <div class=\"overlay\"></div>
+        <h2>Heni collection<br><span style=\"color:cornflowerblue;\">30%</span></h2>
+      </div>
+      <div class=\"paragraph second\">
+        <p><span>N</span>
+        <br> nos 10 idées de voyages, qui vous séduiront autant les unes que les autres. Envie de farniente,
+        <br> d’aventure, de culture ou de nature ? Suivez-nous, faites le tour du monde avec ces voyages 
+        <br>somptueux et, pour les plus chanceuses, transformez le rêve en réalité…</p>
+      </div>
+      <div class=\"parallax3\"></div>
+      <div class=\"paragraph third\">
+        <p><span>F</span>aisant suite à leur belle journée de mariage, le voyage de noces est,
+        <br> pour tout couple de jeunes mariés, un moment privilégié de détente et d’évasion à deux.
+        <br> Mais parmi toutes ces destinations possibles, comment choisir son type de</p>
+      </div>
+    </section>
+    <div>
+    
+      <img src=\"https://cdn.pixabay.com/photo/2020/03/12/10/21/bunting-4924629_960_720.png\" style=\"width: 100%;;\";\" alt=\"\">
+     </div>
+
+    <div>
+      <div style=\" margin: 0px;
+   text-align: center;\">
+   <a class=\"btn-blink1\" href=\"\">les Nouveautés!</a>
+  </div>
+      <h6 style=\" margin-top: 10px;\"> Forfait de Mariage</h6>
+      <p style=\"text-align: center;\">
+      Si vous voulez faire de votre mariage inoubliable en ayant un look idéal,
+      <br> notre centre est là pour répondre à tous vos besoins.
+       
+  </p>
+      </div>
+  
   <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\">
 <link href=\"https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap\" rel=\"stylesheet\">
  
@@ -231,32 +363,35 @@ class __TwigTemplate_f9335042aae5f8ab0c9e567dc72f3bfd2cd70b3572085a61dbf9834d968
   
   <div class=\"wrapi\">
   ";
-        // line 104
+        // line 218
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["publicite"]) || array_key_exists("publicite", $context) ? $context["publicite"] : (function () { throw new RuntimeError('Variable "publicite" does not exist.', 104, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["publicite"]) || array_key_exists("publicite", $context) ? $context["publicite"] : (function () { throw new RuntimeError('Variable "publicite" does not exist.', 218, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
-            // line 105
+            // line 219
             echo "  <a href=\"#\" class=\"ng\" title=\"\"><div> <img src=\"/imgpublicite/";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "image", [], "any", false, false, false, 105), "html", null, true);
-            echo "\"></div><span><h3>";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "nom", [], "any", false, false, false, 105), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "image", [], "any", false, false, false, 219), "html", null, true);
+            echo "\" style=\"height:600px;width:400px;\"></div><span><h3>";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "nom", [], "any", false, false, false, 219), "html", null, true);
             echo "</h3>";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "prix", [], "any", false, false, false, 105), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "prix", [], "any", false, false, false, 219), "html", null, true);
             echo " dt</span></a>
   ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 107
+        // line 221
         echo "  </div>
 
 
 
-  <div class=\"btn-blink1\" style=\" margin-top: 50px;
+  <a href=\"";
+        // line 225
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("contact");
+        echo "\"><div class=\"btn-blink1\" style=\" margin-top: 50px;
   text-align: center;margin-left: 400px;\">au lieu de <span style=\"font: size 0.15em;
     color: #e21941;
-    text-decoration: line-through;text-align: center;\">5300 dt</span> 5000 dt </div>
+    text-decoration: line-through;text-align: center;\">5300 dt</span> 5000 dt </div></a>
 
   
     
@@ -266,81 +401,540 @@ class __TwigTemplate_f9335042aae5f8ab0c9e567dc72f3bfd2cd70b3572085a61dbf9834d968
   width: 1200px;
   \">
   ";
-        // line 123
+        // line 237
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["publicite1"]) || array_key_exists("publicite1", $context) ? $context["publicite1"] : (function () { throw new RuntimeError('Variable "publicite1" does not exist.', 123, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["publicite1"]) || array_key_exists("publicite1", $context) ? $context["publicite1"] : (function () { throw new RuntimeError('Variable "publicite1" does not exist.', 237, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
-            // line 124
+            // line 238
             echo "  <a href=\"#\" class=\"ng\" title=\"\"><div> <img src=\"/imgpublicite1/";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "image", [], "any", false, false, false, 124), "html", null, true);
-            echo "\"></div><span><h3>";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "nom", [], "any", false, false, false, 124), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "image", [], "any", false, false, false, 238), "html", null, true);
+            echo "\" style=\"height:600px;width:400px;\"></div><span><h3>";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "nom", [], "any", false, false, false, 238), "html", null, true);
             echo "</h3>";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "prix", [], "any", false, false, false, 124), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "prix", [], "any", false, false, false, 238), "html", null, true);
             echo " dt</span></a>
   ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 126
+        // line 240
         echo "  </div>
        
-<div class=\"btn-blink1\" style=\"
+  <a href=\"";
+        // line 242
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("contact");
+        echo "\"><div class=\"btn-blink1\" style=\"
 text-align: center;margin-left: 400px;\">au lieu de <span style=\"font: size 0.15em;
   color: #e21941;text-decoration: line-through;
-  text-align: center;\">4200 dt</span> 3900 dt </div> 
+  text-align: center;\">4200 dt</span> 3900 dt </div> </a>
   
    <div class=\"wrapi\" style=\"
   width: 1200px;
   \">
   ";
-        // line 136
+        // line 250
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["publicite3"]) || array_key_exists("publicite3", $context) ? $context["publicite3"] : (function () { throw new RuntimeError('Variable "publicite3" does not exist.', 136, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["publicite3"]) || array_key_exists("publicite3", $context) ? $context["publicite3"] : (function () { throw new RuntimeError('Variable "publicite3" does not exist.', 250, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
-            // line 137
+            // line 251
             echo "  <a href=\"#\" class=\"ng\" title=\"\"><div> <img src=\"/imgpublicite3/";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "image", [], "any", false, false, false, 137), "html", null, true);
-            echo "\"></div><span><h3>";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "nom", [], "any", false, false, false, 137), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "image", [], "any", false, false, false, 251), "html", null, true);
+            echo "\" style=\"height:600px;width:400px;\"></div><span><h3>";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "nom", [], "any", false, false, false, 251), "html", null, true);
             echo "</h3>";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "prix", [], "any", false, false, false, 137), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "prix", [], "any", false, false, false, 251), "html", null, true);
             echo " dt</span></a>
   ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 139
+        // line 253
         echo "  </div>
        
-<div class=\"btn-blink1\" style=\" 
+<a href=\"";
+        // line 255
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("contact");
+        echo "\"><div class=\"btn-blink1\" style=\" 
 text-align: center;margin-left: 400px;\">au lieu de <span style=\"font: size 0.15em;
   color: #e21941;text-decoration: line-through;
-  text-align: center;\">3900 dt</span> 3500 dt </div> 
+  text-align: center;\">3900 dt</span> 3500 dt </div></a>
   
                    
  
-
             
-
+</body>
 <style>
+ :root {
+  --bc: #efeeee;
+  --white: #ffffff;
+\t--black: #000000;
+  --red: #da2c4d;
+\t--teal: #20c997;
+\t--cyan: #17a2b8;
+\t--primary: #f9c6cf;
+\t--font-family-sans-serif: -apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\",sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\";
+}
+* {
+\tbox-sizing: border-box;
+}
+body{
+ 
+ background-image:url(\"http://alijafarian.com/demos/responsive-jquery-accordions/images/texture_old_map.png\");
+}
 
+html{
+\tmargin: 0;
+  width: 100%;
+  min-height: 100vh;
+\toverflow-x: hidden;
+\tfont-family: var(--font-family-sans-serif);
+  scroll-behavior: smooth;
+\t-webkit-font-smoothing: antialiased;
+  background-color: var(--bc);
+}
+/* Classes */
+.top {
+  padding: 2em;
+  margin: 0 auto;
+  background-color: white;
+  text-align: center;
+}
+.title {
+  color: var(--black);
+}
+.title h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 35px;
+  font-weight: 400;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+.title h3 {
+  font-size: 14px; 
+  font-weight: 400; 
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase; 
+  letter-spacing: 8px;
+  line-height: 0;
+}
+/* Parallax */
+.parallax1 {
+  position: relative;
+  background-image: url(\"https://cdn.pixabay.com/photo/2016/03/27/20/54/wedding-reception-1284245__340.jpg\");
+  min-height: 50vh; 
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url(\"https://cdn.pixabay.com/photo/2016/11/22/22/25/groom-1850932__340.jpg\");
+  min-height: 50vh; 
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .4);
+  position: absolute;
+}
+.parallax2 h2 {
+  font-size: 5em;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: var(--white);
+  z-index: 1;
+}
+.parallax3 {
+  position: relative;
+  background-image: url(\"https://cdn.pixabay.com/photo/2014/07/31/23/29/wedding-cake-407170__340.jpg\");
+  min-height: 50vh; 
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Paragraph */
+.paragraph {
+  margin: 3em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.paragraph p {
+  width: 60%;
+  font-size: 1.05em;
+  line-height: 1.45em;
+  letter-spacing: .1em;
+  color: rgb(64, 64, 64);
+}
+.first span {
+  font-size: 4em;
+  color: var(--red);
+  float: left;
+  font-weight: 400;
+  line-height: 55px;
+  padding: .05em .2em 0 0;
+}
+.second span {
+  font-size: 4em;
+  color: var(--teal);
+  float: left;
+  font-weight: 400;
+  line-height: 55px;
+  padding: .05em .2em 0 0;
+}
+.third span {
+  font-size: 4em;
+  color: var(--cyan);
+  float: left;
+  font-weight: 400;
+  line-height: 55px;
+  padding: .05em .2em 0 0;
+}
+/* Selection */
+::selection {
+  color: var(--white);
+  background: rgba(161, 181, 201, .8);
+}
+/* SCROLLBAR */
+::-webkit-scrollbar-track {
+      background-color: #F5F5F5;
+}
+::-webkit-scrollbar {
+      width: 12px;
+      background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb {
+      background-color: rgba(161, 181, 201, .8);
+}
+*{box-sizing : border-box}
+
+img{max-width:100%}
+
+.contenu_carou_auto{
+
+margin:2rem auto;
+width:420px;
+height:279px;
+perspective:8000px
+\t
+\t}
+\t\t
+.caroussel-image{
+\t
+animation:rotation 24s infinite alternate linear;\t
+transform-style:preserve-3d;
+position:relative;\t
+
+}
+
+.caroussel-image img{
+\t
+position: absolute;
+top:0;
+left: 0;
+\t
+\t
+\t}
+
+
+\t\t
+.caroussel-image img{
+\t
+filter:drop-shadow(0 12px 5px hsla(0,0%,0%,.4));
+width:400px;
+height:266px;
+left:10px;
+outline:1px solid transparent;
+backface-visibility:hidden
+\t
+\t}
+\t\t
+.caroussel-image img:nth-child(1){
+\t
+transform:translate3d(0,0,495px)
+\t\t
+\t\t}
+\t\t
+.caroussel-image img:nth-child(2){
+\t
+transform:rotateY(45deg) translateZ(495px)
+\t
+\t\t}
+\t\t
+.caroussel-image img:nth-child(3){
+\t
+\ttransform:rotateY(90deg) translateZ(495px)
+\t
+\t}
+\t
+.caroussel-image img:nth-child(4){
+\t
+\ttransform:rotateY(135deg) translateZ(495px)
+\t
+\t}
+\t
+.caroussel-image img:nth-child(5){
+\t
+\ttransform:rotateY(180deg) translateZ(495px)
+\t
+\t}
+\t
+.caroussel-image img:nth-child(6){
+\t
+\ttransform:rotateY(225deg) translateZ(495px)
+\t
+\t}
+\t
+.caroussel-image img:nth-child(7){
+\t
+\ttransform:rotateY(270deg) translateZ(495px)
+\t
+\t}
+\t
+.caroussel-image img:nth-child(8){
+\t
+\ttransform:rotateY(315deg) translateZ(495px)
+\t
+\t}
+
+\t
+
+\t
+@keyframes rotation{
+from{transform:rotatey(0)}
+to{transform:rotatey(0.5turn)}}
+\t
+/*****fin carrousel 3d automatique*****/
+* {
+\t\tmargin: 0;
+\t\tpadding: 0;
+\t\tfont-family: 'Oswald', sans-serif;
+\t}
+\t
+\tbody {
+\t\tbackground: url(http://alijafarian.com/demos/responsive-jquery-accordions/images/texture_old_map.png);
+\t}
+\t
+\t.content {
+\t\twidth: 60%;
+\t\tmargin: 50px auto;
+\t\tpadding: 20px;
+    
+\t}
+\t.content h1 {
+\t\tfont-weight: 400;
+\t\ttext-transform: uppercase;
+\t\tmargin: 0;
+\t}
+\t.content h2 {
+\t\tfont-weight: 400;
+\t\ttext-transform: uppercase;
+\t\tcolor: #333;
+\t\tmargin: 0 0 20px;
+\t}
+\t.content p {
+\t\tfont-size: 1em;
+\t\tfont-weight: 300;
+\t\tline-height: 1.5em;
+\t\tmargin: 0 0 20px;
+\t}
+\t.content p:last-child {
+\t\tmargin: 0;
+\t}
+\t.content a.button {
+\t\tdisplay: inline-block;
+\t\tpadding: 10px 20px;
+\t\tbackground: #ff0;
+\t\tcolor: #000;
+\t\ttext-decoration: none;
+\t}
+\t.content a.button:hover {
+\t\tbackground: #000;
+\t\tcolor: #ff0;
+\t}
+\t.content.title {
+\t\tposition: relative;
+\t\tbackground: none;
+\t\tborder: 2px dashed #333;
+\t}
+\t.content.title h1 span.demo {
+\t\tdisplay: inline-block;
+\t\tfont-size: .5em;
+\t\tpadding: 5px 10px;
+\t\tbackground: #000;
+\t\tcolor: #fff;
+\t\tvertical-align: top;
+\t\tmargin: 7px 0 0;
+\t}
+\t.content.title .back-to-article {
+\t\tposition: absolute;
+\t\tbottom: -20px;
+\t\tleft: 20px;
+\t}
+\t.content.title .back-to-article a {
+\t\tpadding: 10px 20px;
+\t\tbackground: #f60;
+\t\tcolor: #fff;
+\t\ttext-decoration: none;
+\t}
+\t.content.title .back-to-article a:hover {
+\t\tbackground: #f90;
+\t}
+\t.content.title .back-to-article a i {
+\t\tmargin-left: 5px;
+\t}
+\t.content.white {
+\t\tbackground: #fff;
+\t\tbox-shadow: 0 0 10px #999;
+\t}
+\t.content.black {
+\t\tbackground: #000;
+\t}
+\t.content.black p {
+\t\tcolor: #999;
+\t}
+\t.content.black p a {
+\t\tcolor: #08c;
+\t}
+\t
+\t.accordion-container {
+\t\twidth: 100%;
+\t\tmargin: 0 0 20px;
+\t\tclear: both;
+\t}
+\t.accordion-toggle {
+\t\tposition: relative;
+\t\tdisplay: block;
+\t\tpadding: 20px;
+\t\tfont-size: 1.5em;
+\t\tfont-weight: 300;
+\t\tbackground: #999;
+\t\tcolor: #fff;
+\t\ttext-decoration: none;
+\t}
+\t.accordion-toggle.open {
+\t\tbackground: #333;
+\t\tcolor: #fff;
+\t}
+\t.accordion-toggle:hover {
+\t\tbackground: #666;
+\t}
+\t.accordion-toggle span.toggle-icon {
+\t\tposition: absolute;
+\t\ttop: 9px;
+\t\tright: 20px;
+\t\tfont-size: 1.5em;
+\t}
+\t.accordion-content {
+\t\tdisplay: none;
+\t\tpadding: 20px;
+\t\toverflow: auto;
+\t}
+\t.accordion-content img {
+\t\tdisplay: block;
+\t\tfloat: left;
+\t\tmargin: 0 15px 10px 0;
+\t\tmax-width: 100%;
+\t\theight: auto;
+\t}
+\t
+\t/* media query for mobile */
+\t@media (max-width: 767px) {
+\t\t.content {
+\t\t\twidth: auto;
+\t\t}
+\t\t.accordion-content {
+\t\t\tpadding: 10px 0;
+\t\t\toverflow: inherit;
+\t\t}
+\t}
+body{
+ background-image:url(\"http://alijafarian.com/demos/responsive-jquery-accordions/images/texture_old_map.png\");
+}
+
+#bs_bloc .bs_container {
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+#bs_bloc .bs_container .bs_container-liste {
+  height: 100vh;
+}
+
+#bs_bloc .bs_container .bs_container-liste ul {
+  margin: 0;
+  padding: 0;
+}
+
+#bs_bloc .bs_container .bs_container-liste ul li {
+  display: inline-block;
+  width: 33.33%;
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+
+#bs_bloc .bs_container .bs_container-liste ul li .bs_container-liste-bloc {
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+}
+
+#bs_bloc .bs_container .bs_container-liste ul li .bs_container-liste-bloc .bs_container-liste-fliter {
+  background-color: #00000080;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  transition: 1s background-color;
+}
+
+#bs_bloc .bs_container .bs_container-liste ul li .bs_container-liste-bloc .bs_container-liste-content {
+  background-color: #00000080;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  padding: 20px 10px;
+  user-select: none;
+}
+
+#bs_bloc .bs_container .bs_container-liste ul li .bs_container-liste-bloc .bs_container-liste-fliter:hover {
+  background-color: #00000010;
+  transition: .5s background-color;
+}
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 
 
 
-.wrapi {
-  
-}
+
 
 .ng {
   position: relative;
   float: left;
   width: 350px;
-  height: 210px;
+  height: 500px;
   overflow: visible;
   margin: 20px;
   display: block;
@@ -351,8 +945,8 @@ text-align: center;margin-left: 400px;\">au lieu de <span style=\"font: size 0.1
 .ng div {
   position: relative;
   z-index: 1;
-  width: 358px;
-  height: 218px;
+  width: 350px;
+  height: 500px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -375,8 +969,8 @@ text-align: center;margin-left: 400px;\">au lieu de <span style=\"font: size 0.1
 .ng div:before {
   content: \"\";
   display: block;
-  width: 600px;
-  height: 400px;
+  width: 350px;
+  height: 500px;
   position: absolute;
   z-index: 2;
   top: 0;
@@ -401,8 +995,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6000000', e
 }
 
 .ng:hover div {
-  width: 366px;
-  height: 226px;
+  width: 350px;
+  height: 500px;
   
   -webkit-box-shadow: 0 0 3px 4px rgba(0,0,0,0.2);
   box-shadow: 0 0 3px 4px rgba(0,0,0,0.2);
@@ -415,8 +1009,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6000000', e
 }
 
 .ng:active div {
-  width: 358px;
-  height: 218px;
+  width: 350px;
+  height: 500px;
   -webkit-box-shadow: none;
   box-shadow: none;
   -webkit-transform: translate(-4px,-4px);
@@ -441,9 +1035,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6000000', e
   text-transform: uppercase;
   margin: 0;
 }
-.ng:hover span h3 {
-  
-}
+
 .ng span p {
   font-size: 14px;
   color: rgba(255,255,255,0.7);
@@ -549,125 +1141,7 @@ div.three{
 
 
 
-/* 3D Slideshow */ 
-#slideshow {
-\tmargin: 0 auto;
-\tpadding-top: 50px;
-\theight: 400px;
-\twidth: 100%;
-\t
-\tbox-sizing: border-box;
-}
 
-.slideshow-title {
-\tfont-family: 'Allerta Stencil';
-\tfont-size: 62px;
-\tcolor: #fff;
-\tmargin: 0 auto;
-\ttext-align: center;
-\tmargin-top: 25%;
-\tletter-spacing: 3px;
-\tfont-weight: 300;
-}
-
-.sub-heading {
-\tpadding-top: 50px;
-\tfont-size: 18px;
-} .sub-heading-two {
-\tfont-size: 15px;
-} .sub-heading-three {
-\tfont-size: 13px;
-} .sub-heading-four {
-\tfont-size: 11px;
-} .sub-heading-five {
-\tfont-size: 9px;
-} .sub-heading-six {
-\tfont-size: 7px;
-} .sub-heading-seven {
-\tfont-size: 5px;
-} .sub-heading-eight {
-\tfont-size: 3px;
-} .sub-heading-nine {
-\tfont-size: 1px;
-}
-
-.entire-content {
-\tmargin: auto;
-\twidth: 190px;
-\tperspective: 1000px;
-\tposition: relative;
-\tpadding-top: 80px;
-}
-
-.content-carrousel {
-\twidth: 100%;
-\tposition: absolute;
-\tfloat: right;
-\tanimation: rotar 15s infinite linear;
-\ttransform-style: preserve-3d;
-}
-
-.content-carrousel:hover {
-\tanimation-play-state: paused;
-\tcursor: pointer;
-}
-
-.content-carrousel figure {
-\twidth: 100%;
-\theight: 120px;
-\tborder: 1px solid #3b444b;
-\toverflow: hidden;
-\tposition: absolute;
-}
-
-.content-carrousel figure:nth-child(1) {
-\ttransform: rotateY(0deg) translateZ(300px); 
-} .content-carrousel figure:nth-child(2) {
-\ttransform: rotateY(40deg) translateZ(300px); 
-} .content-carrousel figure:nth-child(3) {
-\ttransform: rotateY(80deg) translateZ(300px); 
-} .content-carrousel figure:nth-child(4) {
-\ttransform: rotateY(120deg) translateZ(300px); 
-} .content-carrousel figure:nth-child(5) {
-\ttransform: rotateY(160deg) translateZ(300px); 
-} .content-carrousel figure:nth-child(6) {
-\ttransform: rotateY(200deg) translateZ(300px); 
-} .content-carrousel figure:nth-child(7) {
-\ttransform: rotateY(240deg) translateZ(300px); 
-} .content-carrousel figure:nth-child(8) {
-\ttransform: rotateY(280deg) translateZ(300px); 
-} .content-carrousel figure:nth-child(9) {
-\ttransform: rotateY(320deg) translateZ(300px); 
-} .content-carrousel figure:nth-child(10) {
-\ttransform: rotateY(360deg) translateZ(300px); 
-} 
-
-.shadow {
-    position: absolute;
-    box-shadow: 0px 0px 20px 0px #000;
-    border-radius: 1px;
-}
-
-.content-carrousel img {
-\timage-rendering: auto;
-\ttransition: all 300ms;
-\twidth: 100%;
-\theight: 100%;
-}
-
-.content-carrousel img:hover {
-\ttransform: scale(1.2);
-\ttransition: all 300ms;
-}
-
-@keyframes rotar {
-\tfrom {
-\t\ttransform: rotateY(0deg);
-\t} to {
-\t\ttransform: rotateY(360deg);
-\t}
-}
-  
 
 
 
@@ -700,7 +1174,7 @@ margin-top:70px;
   
   
   animation: zoom-out 6s linear infinite;
-  border-radius:80px;
+  
   height:500px
 }
 
@@ -842,7 +1316,7 @@ margin-top:70px;
     width: 1300px;
     
     background: #000;
-    border-radius: 30px;
+    
     overflow: hidden;
     cursor: pointer;
     transition: all 0.5s ease;
@@ -947,13 +1421,32 @@ h6 {
     </style>
     
      <script src=\"";
-        // line 772
+        // line 1219
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("popper/popper.min.js"), "html", null, true);
         echo "\"></script> 
       <script src=\"";
-        // line 773
+        // line 1220
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("jquery/jquery.slim.min.js"), "html", null, true);
         echo "\"></script>
+      <script>    \$(document).ready(function () {
+    \$('.accordion-toggle').on('click', function(event){
+    event.preventDefault();
+    // create accordion variables
+    var accordion = \$(this);
+    var accordionContent = accordion.next('.accordion-content');
+    var accordionToggleIcon = \$(this).children('.toggle-icon');
+    // toggle accordion link open class
+    accordion.toggleClass(\"open\");
+    // toggle accordion content
+    accordionContent.slideToggle(250);
+    // change plus/minus icon
+    if (accordion.hasClass(\"open\")) {
+    accordionToggleIcon.html(\"<i class='fa fa-minus-circle'></i>\");
+    } else {
+    accordionToggleIcon.html(\"<i class='fa fa-plus-circle'></i>\");
+    }
+    });
+    });</script>
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -975,7 +1468,7 @@ h6 {
 
     public function getDebugInfo()
     {
-        return array (  955 => 773,  951 => 772,  316 => 139,  303 => 137,  299 => 136,  287 => 126,  274 => 124,  270 => 123,  252 => 107,  239 => 105,  235 => 104,  210 => 82,  206 => 81,  202 => 80,  198 => 79,  194 => 78,  190 => 77,  186 => 76,  182 => 75,  178 => 74,  174 => 73,  163 => 65,  145 => 50,  134 => 42,  123 => 34,  105 => 19,  92 => 9,  88 => 7,  78 => 6,  59 => 3,  36 => 1,);
+        return array (  1429 => 1220,  1425 => 1219,  458 => 255,  454 => 253,  441 => 251,  437 => 250,  426 => 242,  422 => 240,  409 => 238,  405 => 237,  390 => 225,  384 => 221,  371 => 219,  367 => 218,  305 => 159,  300 => 157,  296 => 156,  292 => 155,  288 => 154,  284 => 153,  280 => 152,  276 => 151,  243 => 121,  238 => 119,  227 => 111,  222 => 109,  211 => 101,  206 => 99,  195 => 91,  190 => 89,  179 => 81,  174 => 79,  163 => 71,  158 => 69,  147 => 61,  142 => 59,  88 => 7,  78 => 6,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -986,97 +1479,211 @@ h6 {
          
 
 {% block body %}
-
+<body>
 <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, \">
-        <img class=\"card\" src=\"{{asset('imgcomment/téléchargement.jpeg')}}\" alt=\"\" style=\"margin-top:100px;\">
-        
-        
-        <br>
-    <div>
-    
-    <h6>Les meilleurs centres de beauté pour les mariées</h6>
-    <p style=\"text-align: center;\">La saison des mariages et le choix du salon de coiffure est le plus difficile pour les nouvelles mariées.
-    <br> Alors si vous n’avez pas encore choisi votre <span style=\" color:hotpink;;
-             text-decoration: none;
-             font-size: 25px;\"><a href=\"{{path('centre_de_beaute')}}\"> centre de beauté </a></span> pour le grand jour .</p>
-    </div>
+
+       <body>
+
+
+          
+      
         <div class=\"slide\" >
        
             <!-- First slide -->
             <div class=\"banner1\">
-              <img class=\"image\"
-                src=\"https://www.marhba.com/images/mariage/mariagejean.jpg\"
-              />
+              <img class=\"image\" src=\"https://cdn.pixabay.com/photo/2016/06/06/08/05/video-media-production-1439008__340.jpg\"/>
              
             </div>
         
             <!-- Second slide -->
             <div class=\"banner2\">
-              <img class=\"image\"
-                src=\"{{asset('imgcomment/mariageviolette.jpg')}}\"
-              />
+              <img class=\"image\"src=\"https://cdn.pixabay.com/photo/2020/02/07/13/08/wedding-4827128__340.jpg\"/>
               
             </div>
         
             <!-- Third slide -->
             <div class=\"banner3\">
-              <img class=\"image\"
-                src=\"{{asset('imgcomment/mariagelobna.jpg')}}\"
-              />
-             
+              <img class=\"image\" src=\"https://cdn.pixabay.com/photo/2015/02/06/12/47/wedding-626020__340.jpg\">
             </div>
         
             <!-- Fourth slide -->
             <div class=\"banner4\">
-              <img class=\"image\"
-                src=\"{{asset('imgcomment/mariageferyelstudio.jpg')}}\"
-              />
+              <img class=\"image\" src=\"https://cdn.pixabay.com/photo/2017/10/29/14/44/wedding-2899892__340.jpg\"/>
               
             </div>
           
         </div>   
+</div>  
+        
+        
+        
+      
+        
+        
+        <br>
+        <div style=\"margin-top:600px;text-align: center;color:grey;\">
+\t<h1>Les meilleurs prestataires pour organisez votre mariage!!</h1>
+\t
 </div>
 
+<!--/.content-->
 
-<div style=\"margin-top:700px;\">
-    
-    <h6>Les troupes musicales pour votre mariage</h6>
-    <p style=\"text-align: center;\">
-    On vous facilite la tâche et on partage avec vous<span style=\" color:hotpink;;
-             text-decoration: none;
-             font-size: 25px;\"><a href=\"{{path('musique_de_mariage')}}\" > des troupes musicales </a></span>bien réputées en Tunisie
-     <br> pour une ambiance de mariage exceptionnelle le Jour J.
-</p>
-    </div>
-
- <!-- 3D Slideshow Section --> 
-<div id=\"slideshow\" style=\"margin-top:30px;\">
-\t\t\t<div class=\"entire-content\">
-\t\t\t<a href=\"{{path('musique_de_mariage')}}\">\t<div class=\"content-carrousel\">
-\t\t\t\t\t<figure class=\"shadow\"><img src=\"{{asset('imgmusiques/9b3088f1fd3d8e42f4b6874d7c31dd1f529765cb.jpeg')}}\"/></figure>
-\t\t\t\t\t<figure class=\"shadow\"><img src=\"{{asset('imgmusiques/22b2556fd677d8baee846be04be0182946665793.jpeg')}}\"/></figure>
-\t\t\t\t\t<figure class=\"shadow\"><img src=\"{{asset('imgmusiques/684acc6861ae42af9df31c32b5b6d49c87ad0d2b.jpeg')}}\"/></figure>
-\t\t\t\t\t<figure class=\"shadow\"><img src=\"{{asset('imgmusiques/171344a9fb14d6e40e20f0843748291b51a0d16c.jpeg')}}\"/></figure>
-\t\t\t\t\t<figure class=\"shadow\"><img src=\"{{asset('imgmusiques/ad9fcbd1578c037a34ac2e25800024ef291999d6.jpeg')}}\"/></figure>
-\t\t\t\t\t<figure class=\"shadow\"><img src=\"{{asset('imgmusiques/bd6f0bf08df7ed11d624cf457d54c22e5b0a558c.jpeg')}}\"/></figure>
-\t\t\t\t\t<figure class=\"shadow\"><img src=\"{{asset('imgmusiques/bd6f0bf08df7ed11d624cf457d54c22e5b0a558c.jpeg')}}\"/></figure>
-\t\t\t\t\t<figure class=\"shadow\"><img src=\"{{asset('imgmusiques/bd6f0bf08df7ed11d624cf457d54c22e5b0a558c.jpeg')}}\"/></figure>
-\t\t\t\t\t<figure class=\"shadow\"><img src=\"{{asset('imgmusiques/bd6f0bf08df7ed11d624cf457d54c22e5b0a558c.jpeg')}}\"/></figure>
-\t\t</div></a>
+<div class=\"content white\"style=\"background-image:url('https://cdn.pixabay.com/photo/2016/07/13/03/47/background-1513621__340.jpg');width: 100%;background-repeat:no-repeat;background-size:cover;\">
+\t
+\t<div class=\"accordion-container\">
+\t\t<a href=\"{{path('traiteurs')}}\" class=\"accordion-toggle\">Traiteurs <span class=\"toggle-icon\"><i class=\"fa fa-plus-circle\"></i></span></a>
+\t\t<div class=\"accordion-content\">
+\t\t\t<img src=\"{{asset('imgtraiteurs/4b72b37e8b797b4466b8c2a3b67a4d1f107d565a.jpeg')}}\" />
+\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+\t\t\t
+\t\t</div>
+\t\t<!--/.accordion-content-->
 \t</div>
+\t<!--/.accordion-container-->
+\t<div class=\"accordion-container\">
+\t\t<a href=\"{{path('photographe')}}\" class=\"accordion-toggle\">Photographes<span class=\"toggle-icon\"><i class=\"fa fa-plus-circle\"></i></span></a>
+\t\t<div class=\"accordion-content\">
+\t\t\t<img src=\"{{asset('imgphotographes/4dcfe5280c7e6f2ac53e9ed49ba20f725a0e7845.jpeg')}}\" />
+\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+\t\t
+\t\t</div>
+\t\t<!--/.accordion-content-->
+\t</div>
+\t<!--/.accordion-container-->
+\t<div class=\"accordion-container\">
+\t\t<a href=\"{{path('salle_de_mariage')}}\" class=\"accordion-toggle\">Les salles de mariage <span class=\"toggle-icon\"><i class=\"fa fa-plus-circle\"></i></span></a>
+\t\t<div class=\"accordion-content\">
+\t\t\t<img src=\"{{asset('imgsalles/1f603f1d9b2fb82e95ead52e96705bc1.jpg')}}\" />
+\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+\t\t\t
+\t\t</div>
+\t\t<!--/.accordion-content-->
+\t</div>
+  <!--/.accordion-container-->
+\t<div class=\"accordion-container\">
+\t\t<a href=\"{{path('musique_de_mariage')}}\" class=\"accordion-toggle\">Les musiques de mariage <span class=\"toggle-icon\"><i class=\"fa fa-plus-circle\"></i></span></a>
+\t\t<div class=\"accordion-content\">
+\t\t\t<img src=\"{{asset('imgmusiques/1c142dea8609f3130cc848bce8a397f1.jpg')}}\" />
+\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+\t\t\t
+\t\t</div>
+\t\t<!--/.accordion-content-->
+\t</div>
+  \t<!--/.accordion-container-->
+\t<div class=\"accordion-container\">
+\t\t<a href=\"{{path('voyage_de_noce')}}\" class=\"accordion-toggle\">Voyage de noce <span class=\"toggle-icon\"><i class=\"fa fa-plus-circle\"></i></span></a>
+\t\t<div class=\"accordion-content\">
+\t\t\t<img src=\"{{asset('imgvoyages/e916d6672cd31e4a6a3a03e83023fd2d.jpg')}}\" />
+\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+\t\t</div>
+\t\t<!--/.accordion-content-->
+\t</div>
+\t<!--/.accordion-container-->
+\t<div class=\"accordion-container\">
+\t\t<a href=\"{{path('centre_de_beaute')}}\" class=\"accordion-toggle\">Les centres de beautés <span class=\"toggle-icon\"><i class=\"fa fa-plus-circle\"></i></span></a>
+\t\t<div class=\"accordion-content\">
+\t\t\t<img src=\"{{asset('imgcentre/a47ac509697db96e999653abf2e917e02ec67830.jpeg')}}\" />
+\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+\t\t\t
+\t\t</div>
+\t\t<!--/.accordion-content-->
+\t</div>
+\t<!--/.accordion-container-->
+\t<div class=\"accordion-container\">
+\t\t<a href=\"{{path('costume')}}\" class=\"accordion-toggle\">Les costumes mariés <span class=\"toggle-icon\"><i class=\"fa fa-plus-circle\"></i></span></a>
+\t\t<div class=\"accordion-content\">
+\t\t\t<img src=\"{{asset('imgcostume/1e721df6c01b1ba7928fdc18d2817e590eb8cfcd.jpeg')}}\" />
+\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+\t\t\t
+\t\t</div>
+\t\t<!--/.accordion-content-->
+\t</div>
+\t<!--/.accordion-container-->
 </div>
+
+
+<!-------------------- JS -------------------->
+<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js\" type=\"text/javascript\"></script>
+
+</script>
+</div>
+    
+    
+<br>
+        <div style=\"margin-top:70px;text-align: center;color:grey;\">
+\t<h1>Vrais mariages</h1>
+  <p>Inspirez-vous des mariages d'autres couples et s'ils vous plaisent contactez les prestataires qui les ont organisés.</p>
+\t
+</div>
+
 <div>
-    <div style=\" margin: 100px;
- text-align: center;\">
- <a class=\"btn-blink1\" href=\"\">les Nouveautés!</a>
+    
+ <img src=\"https://cdn.pixabay.com/photo/2020/03/12/10/21/bunting-4924629_960_720.png\" style=\"width: 100%;;\";\" alt=\"\">
 </div>
-    <h6> Forfait de Mariage</h6>
-    <p style=\"text-align: center;\">
-    Si vous voulez faire de votre mariage inoubliable en ayant un look idéal,
-    <br> notre centre est là pour répondre à tous vos besoins.
-     
-</p>
-    </div>
+ <div class=\"contenu_carou_auto\">
+<div class=\"caroussel-image\">
+<img src=\"{{asset('imgpublicite/t30_2199551.jpg')}}\" alt>
+<img src=\"{{asset('imgpublicite/t30_2188427.jpg')}}\" alt>
+<img src=\"{{asset('imgpublicite/t20_2200199.jpg')}}\" alt>
+<img src=\"{{asset('imgpublicite/t10_2123163.jpg')}}\" alt>
+<img src=\"{{asset('imgpublicite/df1232fb11a3e96017c68af66dd7ea58.jpg')}}\" alt>
+<img src=\"{{asset('imgpublicite/2a73a70bbf93b35072333e1ac3a8a8ab.jpg')}}\" alt>
+<img src=\"{{asset('imgpublicite/3c155d1ed4f4014b67b20f44e99089fd.jpg')}}\" alt>
+
+<img src=\"{{asset('imgpublicite/0dd6c7751e0f5dcd68fee50111352b0c.jpg')}}\" alt>
+</div>
+</div>
+
+    <section class=\"top\">
+      <div class=\"title\">
+        <h3> Pour organiser votre mariage</h3>
+        <h1>Happy Mariage</h1>
+      </div>
+    </section>
+    <section class=\"page\">
+      <div class=\"parallax1\"></div>
+      <div class=\"paragraph first\">
+        <p><span>P</span>
+     <br>L’Espace Lila Baya au RDC pouvant accueillir 300 personnes à l’intérieur. La mise en place de l'espace,
+     <br> pour la signature du contrat de mariage, inclue 100 chaises en style théâtre. Pour votre réception de mariage, un grand espace
+     <br> (espace couvert) est disponible pour partager les vœux de vos invités et célébrer votre réception de mariage dans un endroit enchanteur.</p>
+      </div>
+      <div class=\"parallax2\">
+        <div class=\"overlay\"></div>
+        <h2>Heni collection<br><span style=\"color:cornflowerblue;\">30%</span></h2>
+      </div>
+      <div class=\"paragraph second\">
+        <p><span>N</span>
+        <br> nos 10 idées de voyages, qui vous séduiront autant les unes que les autres. Envie de farniente,
+        <br> d’aventure, de culture ou de nature ? Suivez-nous, faites le tour du monde avec ces voyages 
+        <br>somptueux et, pour les plus chanceuses, transformez le rêve en réalité…</p>
+      </div>
+      <div class=\"parallax3\"></div>
+      <div class=\"paragraph third\">
+        <p><span>F</span>aisant suite à leur belle journée de mariage, le voyage de noces est,
+        <br> pour tout couple de jeunes mariés, un moment privilégié de détente et d’évasion à deux.
+        <br> Mais parmi toutes ces destinations possibles, comment choisir son type de</p>
+      </div>
+    </section>
+    <div>
+    
+      <img src=\"https://cdn.pixabay.com/photo/2020/03/12/10/21/bunting-4924629_960_720.png\" style=\"width: 100%;;\";\" alt=\"\">
+     </div>
+
+    <div>
+      <div style=\" margin: 0px;
+   text-align: center;\">
+   <a class=\"btn-blink1\" href=\"\">les Nouveautés!</a>
+  </div>
+      <h6 style=\" margin-top: 10px;\"> Forfait de Mariage</h6>
+      <p style=\"text-align: center;\">
+      Si vous voulez faire de votre mariage inoubliable en ayant un look idéal,
+      <br> notre centre est là pour répondre à tous vos besoins.
+       
+  </p>
+      </div>
+  
   <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\">
 <link href=\"https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap\" rel=\"stylesheet\">
  
@@ -1084,16 +1691,16 @@ h6 {
   
   <div class=\"wrapi\">
   {% for item in publicite %}
-  <a href=\"#\" class=\"ng\" title=\"\"><div> <img src=\"/imgpublicite/{{ item.image }}\"></div><span><h3>{{ item.nom}}</h3>{{ item.prix }} dt</span></a>
+  <a href=\"#\" class=\"ng\" title=\"\"><div> <img src=\"/imgpublicite/{{ item.image }}\" style=\"height:600px;width:400px;\"></div><span><h3>{{ item.nom}}</h3>{{ item.prix }} dt</span></a>
   {% endfor %}
   </div>
 
 
 
-  <div class=\"btn-blink1\" style=\" margin-top: 50px;
+  <a href=\"{{path('contact')}}\"><div class=\"btn-blink1\" style=\" margin-top: 50px;
   text-align: center;margin-left: 400px;\">au lieu de <span style=\"font: size 0.15em;
     color: #e21941;
-    text-decoration: line-through;text-align: center;\">5300 dt</span> 5000 dt </div>
+    text-decoration: line-through;text-align: center;\">5300 dt</span> 5000 dt </div></a>
 
   
     
@@ -1103,49 +1710,502 @@ h6 {
   width: 1200px;
   \">
   {% for item in publicite1 %}
-  <a href=\"#\" class=\"ng\" title=\"\"><div> <img src=\"/imgpublicite1/{{ item.image }}\"></div><span><h3>{{ item.nom}}</h3>{{ item.prix }} dt</span></a>
+  <a href=\"#\" class=\"ng\" title=\"\"><div> <img src=\"/imgpublicite1/{{ item.image }}\" style=\"height:600px;width:400px;\"></div><span><h3>{{ item.nom}}</h3>{{ item.prix }} dt</span></a>
   {% endfor %}
   </div>
        
-<div class=\"btn-blink1\" style=\"
+  <a href=\"{{path('contact')}}\"><div class=\"btn-blink1\" style=\"
 text-align: center;margin-left: 400px;\">au lieu de <span style=\"font: size 0.15em;
   color: #e21941;text-decoration: line-through;
-  text-align: center;\">4200 dt</span> 3900 dt </div> 
+  text-align: center;\">4200 dt</span> 3900 dt </div> </a>
   
    <div class=\"wrapi\" style=\"
   width: 1200px;
   \">
   {% for item in publicite3 %}
-  <a href=\"#\" class=\"ng\" title=\"\"><div> <img src=\"/imgpublicite3/{{ item.image }}\"></div><span><h3>{{ item.nom}}</h3>{{ item.prix }} dt</span></a>
+  <a href=\"#\" class=\"ng\" title=\"\"><div> <img src=\"/imgpublicite3/{{ item.image }}\" style=\"height:600px;width:400px;\"></div><span><h3>{{ item.nom}}</h3>{{ item.prix }} dt</span></a>
   {% endfor %}
   </div>
        
-<div class=\"btn-blink1\" style=\" 
+<a href=\"{{path('contact')}}\"><div class=\"btn-blink1\" style=\" 
 text-align: center;margin-left: 400px;\">au lieu de <span style=\"font: size 0.15em;
   color: #e21941;text-decoration: line-through;
-  text-align: center;\">3900 dt</span> 3500 dt </div> 
+  text-align: center;\">3900 dt</span> 3500 dt </div></a>
   
                    
  
-
             
-
+</body>
 <style>
+ :root {
+  --bc: #efeeee;
+  --white: #ffffff;
+\t--black: #000000;
+  --red: #da2c4d;
+\t--teal: #20c997;
+\t--cyan: #17a2b8;
+\t--primary: #f9c6cf;
+\t--font-family-sans-serif: -apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\",sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\";
+}
+* {
+\tbox-sizing: border-box;
+}
+body{
+ 
+ background-image:url(\"http://alijafarian.com/demos/responsive-jquery-accordions/images/texture_old_map.png\");
+}
 
+html{
+\tmargin: 0;
+  width: 100%;
+  min-height: 100vh;
+\toverflow-x: hidden;
+\tfont-family: var(--font-family-sans-serif);
+  scroll-behavior: smooth;
+\t-webkit-font-smoothing: antialiased;
+  background-color: var(--bc);
+}
+/* Classes */
+.top {
+  padding: 2em;
+  margin: 0 auto;
+  background-color: white;
+  text-align: center;
+}
+.title {
+  color: var(--black);
+}
+.title h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 35px;
+  font-weight: 400;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+.title h3 {
+  font-size: 14px; 
+  font-weight: 400; 
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase; 
+  letter-spacing: 8px;
+  line-height: 0;
+}
+/* Parallax */
+.parallax1 {
+  position: relative;
+  background-image: url(\"https://cdn.pixabay.com/photo/2016/03/27/20/54/wedding-reception-1284245__340.jpg\");
+  min-height: 50vh; 
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url(\"https://cdn.pixabay.com/photo/2016/11/22/22/25/groom-1850932__340.jpg\");
+  min-height: 50vh; 
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .4);
+  position: absolute;
+}
+.parallax2 h2 {
+  font-size: 5em;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: var(--white);
+  z-index: 1;
+}
+.parallax3 {
+  position: relative;
+  background-image: url(\"https://cdn.pixabay.com/photo/2014/07/31/23/29/wedding-cake-407170__340.jpg\");
+  min-height: 50vh; 
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Paragraph */
+.paragraph {
+  margin: 3em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.paragraph p {
+  width: 60%;
+  font-size: 1.05em;
+  line-height: 1.45em;
+  letter-spacing: .1em;
+  color: rgb(64, 64, 64);
+}
+.first span {
+  font-size: 4em;
+  color: var(--red);
+  float: left;
+  font-weight: 400;
+  line-height: 55px;
+  padding: .05em .2em 0 0;
+}
+.second span {
+  font-size: 4em;
+  color: var(--teal);
+  float: left;
+  font-weight: 400;
+  line-height: 55px;
+  padding: .05em .2em 0 0;
+}
+.third span {
+  font-size: 4em;
+  color: var(--cyan);
+  float: left;
+  font-weight: 400;
+  line-height: 55px;
+  padding: .05em .2em 0 0;
+}
+/* Selection */
+::selection {
+  color: var(--white);
+  background: rgba(161, 181, 201, .8);
+}
+/* SCROLLBAR */
+::-webkit-scrollbar-track {
+      background-color: #F5F5F5;
+}
+::-webkit-scrollbar {
+      width: 12px;
+      background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb {
+      background-color: rgba(161, 181, 201, .8);
+}
+*{box-sizing : border-box}
+
+img{max-width:100%}
+
+.contenu_carou_auto{
+
+margin:2rem auto;
+width:420px;
+height:279px;
+perspective:8000px
+\t
+\t}
+\t\t
+.caroussel-image{
+\t
+animation:rotation 24s infinite alternate linear;\t
+transform-style:preserve-3d;
+position:relative;\t
+
+}
+
+.caroussel-image img{
+\t
+position: absolute;
+top:0;
+left: 0;
+\t
+\t
+\t}
+
+
+\t\t
+.caroussel-image img{
+\t
+filter:drop-shadow(0 12px 5px hsla(0,0%,0%,.4));
+width:400px;
+height:266px;
+left:10px;
+outline:1px solid transparent;
+backface-visibility:hidden
+\t
+\t}
+\t\t
+.caroussel-image img:nth-child(1){
+\t
+transform:translate3d(0,0,495px)
+\t\t
+\t\t}
+\t\t
+.caroussel-image img:nth-child(2){
+\t
+transform:rotateY(45deg) translateZ(495px)
+\t
+\t\t}
+\t\t
+.caroussel-image img:nth-child(3){
+\t
+\ttransform:rotateY(90deg) translateZ(495px)
+\t
+\t}
+\t
+.caroussel-image img:nth-child(4){
+\t
+\ttransform:rotateY(135deg) translateZ(495px)
+\t
+\t}
+\t
+.caroussel-image img:nth-child(5){
+\t
+\ttransform:rotateY(180deg) translateZ(495px)
+\t
+\t}
+\t
+.caroussel-image img:nth-child(6){
+\t
+\ttransform:rotateY(225deg) translateZ(495px)
+\t
+\t}
+\t
+.caroussel-image img:nth-child(7){
+\t
+\ttransform:rotateY(270deg) translateZ(495px)
+\t
+\t}
+\t
+.caroussel-image img:nth-child(8){
+\t
+\ttransform:rotateY(315deg) translateZ(495px)
+\t
+\t}
+
+\t
+
+\t
+@keyframes rotation{
+from{transform:rotatey(0)}
+to{transform:rotatey(0.5turn)}}
+\t
+/*****fin carrousel 3d automatique*****/
+* {
+\t\tmargin: 0;
+\t\tpadding: 0;
+\t\tfont-family: 'Oswald', sans-serif;
+\t}
+\t
+\tbody {
+\t\tbackground: url(http://alijafarian.com/demos/responsive-jquery-accordions/images/texture_old_map.png);
+\t}
+\t
+\t.content {
+\t\twidth: 60%;
+\t\tmargin: 50px auto;
+\t\tpadding: 20px;
+    
+\t}
+\t.content h1 {
+\t\tfont-weight: 400;
+\t\ttext-transform: uppercase;
+\t\tmargin: 0;
+\t}
+\t.content h2 {
+\t\tfont-weight: 400;
+\t\ttext-transform: uppercase;
+\t\tcolor: #333;
+\t\tmargin: 0 0 20px;
+\t}
+\t.content p {
+\t\tfont-size: 1em;
+\t\tfont-weight: 300;
+\t\tline-height: 1.5em;
+\t\tmargin: 0 0 20px;
+\t}
+\t.content p:last-child {
+\t\tmargin: 0;
+\t}
+\t.content a.button {
+\t\tdisplay: inline-block;
+\t\tpadding: 10px 20px;
+\t\tbackground: #ff0;
+\t\tcolor: #000;
+\t\ttext-decoration: none;
+\t}
+\t.content a.button:hover {
+\t\tbackground: #000;
+\t\tcolor: #ff0;
+\t}
+\t.content.title {
+\t\tposition: relative;
+\t\tbackground: none;
+\t\tborder: 2px dashed #333;
+\t}
+\t.content.title h1 span.demo {
+\t\tdisplay: inline-block;
+\t\tfont-size: .5em;
+\t\tpadding: 5px 10px;
+\t\tbackground: #000;
+\t\tcolor: #fff;
+\t\tvertical-align: top;
+\t\tmargin: 7px 0 0;
+\t}
+\t.content.title .back-to-article {
+\t\tposition: absolute;
+\t\tbottom: -20px;
+\t\tleft: 20px;
+\t}
+\t.content.title .back-to-article a {
+\t\tpadding: 10px 20px;
+\t\tbackground: #f60;
+\t\tcolor: #fff;
+\t\ttext-decoration: none;
+\t}
+\t.content.title .back-to-article a:hover {
+\t\tbackground: #f90;
+\t}
+\t.content.title .back-to-article a i {
+\t\tmargin-left: 5px;
+\t}
+\t.content.white {
+\t\tbackground: #fff;
+\t\tbox-shadow: 0 0 10px #999;
+\t}
+\t.content.black {
+\t\tbackground: #000;
+\t}
+\t.content.black p {
+\t\tcolor: #999;
+\t}
+\t.content.black p a {
+\t\tcolor: #08c;
+\t}
+\t
+\t.accordion-container {
+\t\twidth: 100%;
+\t\tmargin: 0 0 20px;
+\t\tclear: both;
+\t}
+\t.accordion-toggle {
+\t\tposition: relative;
+\t\tdisplay: block;
+\t\tpadding: 20px;
+\t\tfont-size: 1.5em;
+\t\tfont-weight: 300;
+\t\tbackground: #999;
+\t\tcolor: #fff;
+\t\ttext-decoration: none;
+\t}
+\t.accordion-toggle.open {
+\t\tbackground: #333;
+\t\tcolor: #fff;
+\t}
+\t.accordion-toggle:hover {
+\t\tbackground: #666;
+\t}
+\t.accordion-toggle span.toggle-icon {
+\t\tposition: absolute;
+\t\ttop: 9px;
+\t\tright: 20px;
+\t\tfont-size: 1.5em;
+\t}
+\t.accordion-content {
+\t\tdisplay: none;
+\t\tpadding: 20px;
+\t\toverflow: auto;
+\t}
+\t.accordion-content img {
+\t\tdisplay: block;
+\t\tfloat: left;
+\t\tmargin: 0 15px 10px 0;
+\t\tmax-width: 100%;
+\t\theight: auto;
+\t}
+\t
+\t/* media query for mobile */
+\t@media (max-width: 767px) {
+\t\t.content {
+\t\t\twidth: auto;
+\t\t}
+\t\t.accordion-content {
+\t\t\tpadding: 10px 0;
+\t\t\toverflow: inherit;
+\t\t}
+\t}
+body{
+ background-image:url(\"http://alijafarian.com/demos/responsive-jquery-accordions/images/texture_old_map.png\");
+}
+
+#bs_bloc .bs_container {
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+#bs_bloc .bs_container .bs_container-liste {
+  height: 100vh;
+}
+
+#bs_bloc .bs_container .bs_container-liste ul {
+  margin: 0;
+  padding: 0;
+}
+
+#bs_bloc .bs_container .bs_container-liste ul li {
+  display: inline-block;
+  width: 33.33%;
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+
+#bs_bloc .bs_container .bs_container-liste ul li .bs_container-liste-bloc {
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+}
+
+#bs_bloc .bs_container .bs_container-liste ul li .bs_container-liste-bloc .bs_container-liste-fliter {
+  background-color: #00000080;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  transition: 1s background-color;
+}
+
+#bs_bloc .bs_container .bs_container-liste ul li .bs_container-liste-bloc .bs_container-liste-content {
+  background-color: #00000080;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  padding: 20px 10px;
+  user-select: none;
+}
+
+#bs_bloc .bs_container .bs_container-liste ul li .bs_container-liste-bloc .bs_container-liste-fliter:hover {
+  background-color: #00000010;
+  transition: .5s background-color;
+}
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 
 
 
-.wrapi {
-  
-}
+
 
 .ng {
   position: relative;
   float: left;
   width: 350px;
-  height: 210px;
+  height: 500px;
   overflow: visible;
   margin: 20px;
   display: block;
@@ -1156,8 +2216,8 @@ text-align: center;margin-left: 400px;\">au lieu de <span style=\"font: size 0.1
 .ng div {
   position: relative;
   z-index: 1;
-  width: 358px;
-  height: 218px;
+  width: 350px;
+  height: 500px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1180,8 +2240,8 @@ text-align: center;margin-left: 400px;\">au lieu de <span style=\"font: size 0.1
 .ng div:before {
   content: \"\";
   display: block;
-  width: 600px;
-  height: 400px;
+  width: 350px;
+  height: 500px;
   position: absolute;
   z-index: 2;
   top: 0;
@@ -1206,8 +2266,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6000000', e
 }
 
 .ng:hover div {
-  width: 366px;
-  height: 226px;
+  width: 350px;
+  height: 500px;
   
   -webkit-box-shadow: 0 0 3px 4px rgba(0,0,0,0.2);
   box-shadow: 0 0 3px 4px rgba(0,0,0,0.2);
@@ -1220,8 +2280,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6000000', e
 }
 
 .ng:active div {
-  width: 358px;
-  height: 218px;
+  width: 350px;
+  height: 500px;
   -webkit-box-shadow: none;
   box-shadow: none;
   -webkit-transform: translate(-4px,-4px);
@@ -1246,9 +2306,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6000000', e
   text-transform: uppercase;
   margin: 0;
 }
-.ng:hover span h3 {
-  
-}
+
 .ng span p {
   font-size: 14px;
   color: rgba(255,255,255,0.7);
@@ -1354,125 +2412,7 @@ div.three{
 
 
 
-/* 3D Slideshow */ 
-#slideshow {
-\tmargin: 0 auto;
-\tpadding-top: 50px;
-\theight: 400px;
-\twidth: 100%;
-\t
-\tbox-sizing: border-box;
-}
 
-.slideshow-title {
-\tfont-family: 'Allerta Stencil';
-\tfont-size: 62px;
-\tcolor: #fff;
-\tmargin: 0 auto;
-\ttext-align: center;
-\tmargin-top: 25%;
-\tletter-spacing: 3px;
-\tfont-weight: 300;
-}
-
-.sub-heading {
-\tpadding-top: 50px;
-\tfont-size: 18px;
-} .sub-heading-two {
-\tfont-size: 15px;
-} .sub-heading-three {
-\tfont-size: 13px;
-} .sub-heading-four {
-\tfont-size: 11px;
-} .sub-heading-five {
-\tfont-size: 9px;
-} .sub-heading-six {
-\tfont-size: 7px;
-} .sub-heading-seven {
-\tfont-size: 5px;
-} .sub-heading-eight {
-\tfont-size: 3px;
-} .sub-heading-nine {
-\tfont-size: 1px;
-}
-
-.entire-content {
-\tmargin: auto;
-\twidth: 190px;
-\tperspective: 1000px;
-\tposition: relative;
-\tpadding-top: 80px;
-}
-
-.content-carrousel {
-\twidth: 100%;
-\tposition: absolute;
-\tfloat: right;
-\tanimation: rotar 15s infinite linear;
-\ttransform-style: preserve-3d;
-}
-
-.content-carrousel:hover {
-\tanimation-play-state: paused;
-\tcursor: pointer;
-}
-
-.content-carrousel figure {
-\twidth: 100%;
-\theight: 120px;
-\tborder: 1px solid #3b444b;
-\toverflow: hidden;
-\tposition: absolute;
-}
-
-.content-carrousel figure:nth-child(1) {
-\ttransform: rotateY(0deg) translateZ(300px); 
-} .content-carrousel figure:nth-child(2) {
-\ttransform: rotateY(40deg) translateZ(300px); 
-} .content-carrousel figure:nth-child(3) {
-\ttransform: rotateY(80deg) translateZ(300px); 
-} .content-carrousel figure:nth-child(4) {
-\ttransform: rotateY(120deg) translateZ(300px); 
-} .content-carrousel figure:nth-child(5) {
-\ttransform: rotateY(160deg) translateZ(300px); 
-} .content-carrousel figure:nth-child(6) {
-\ttransform: rotateY(200deg) translateZ(300px); 
-} .content-carrousel figure:nth-child(7) {
-\ttransform: rotateY(240deg) translateZ(300px); 
-} .content-carrousel figure:nth-child(8) {
-\ttransform: rotateY(280deg) translateZ(300px); 
-} .content-carrousel figure:nth-child(9) {
-\ttransform: rotateY(320deg) translateZ(300px); 
-} .content-carrousel figure:nth-child(10) {
-\ttransform: rotateY(360deg) translateZ(300px); 
-} 
-
-.shadow {
-    position: absolute;
-    box-shadow: 0px 0px 20px 0px #000;
-    border-radius: 1px;
-}
-
-.content-carrousel img {
-\timage-rendering: auto;
-\ttransition: all 300ms;
-\twidth: 100%;
-\theight: 100%;
-}
-
-.content-carrousel img:hover {
-\ttransform: scale(1.2);
-\ttransition: all 300ms;
-}
-
-@keyframes rotar {
-\tfrom {
-\t\ttransform: rotateY(0deg);
-\t} to {
-\t\ttransform: rotateY(360deg);
-\t}
-}
-  
 
 
 
@@ -1505,7 +2445,7 @@ margin-top:70px;
   
   
   animation: zoom-out 6s linear infinite;
-  border-radius:80px;
+  
   height:500px
 }
 
@@ -1647,7 +2587,7 @@ margin-top:70px;
     width: 1300px;
     
     background: #000;
-    border-radius: 30px;
+    
     overflow: hidden;
     cursor: pointer;
     transition: all 0.5s ease;
@@ -1753,7 +2693,26 @@ h6 {
     
      <script src=\"{{ asset('popper/popper.min.js')}}\"></script> 
       <script src=\"{{ asset('jquery/jquery.slim.min.js')}}\"></script>
+      <script>    \$(document).ready(function () {
+    \$('.accordion-toggle').on('click', function(event){
+    event.preventDefault();
+    // create accordion variables
+    var accordion = \$(this);
+    var accordionContent = accordion.next('.accordion-content');
+    var accordionToggleIcon = \$(this).children('.toggle-icon');
+    // toggle accordion link open class
+    accordion.toggleClass(\"open\");
+    // toggle accordion content
+    accordionContent.slideToggle(250);
+    // change plus/minus icon
+    if (accordion.hasClass(\"open\")) {
+    accordionToggleIcon.html(\"<i class='fa fa-minus-circle'></i>\");
+    } else {
+    accordionToggleIcon.html(\"<i class='fa fa-plus-circle'></i>\");
+    }
+    });
+    });</script>
 {% endblock %}
-", "home/index.html.twig", "/opt/lampp/htdocs/sitemariage/templates/home/index.html.twig");
+", "home/index.html.twig", "/opt/lampp/htdocs/sitemariage2/templates/home/index.html.twig");
     }
 }

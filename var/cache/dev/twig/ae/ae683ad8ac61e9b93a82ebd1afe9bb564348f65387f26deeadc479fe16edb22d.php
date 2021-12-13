@@ -158,16 +158,15 @@ class __TwigTemplate_a77582a845804a243fa9ab2978fe373b6f848d9605933240268bccd9f94
   
 
 
-
 <h2 class=\"text-capitalize\" >Commentaires <span >";
-        // line 56
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["centredebeaute"]) || array_key_exists("centredebeaute", $context) ? $context["centredebeaute"] : (function () { throw new RuntimeError('Variable "centredebeaute" does not exist.', 56, $this->source); })()), "getCommentaire", [], "any", false, false, false, 56), "count", [], "any", false, false, false, 56), "html", null, true);
+        // line 55
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["centredebeaute"]) || array_key_exists("centredebeaute", $context) ? $context["centredebeaute"] : (function () { throw new RuntimeError('Variable "centredebeaute" does not exist.', 55, $this->source); })()), "getCommentaire", [], "any", false, false, false, 55), "count", [], "any", false, false, false, 55), "html", null, true);
         echo "</span></h2>
                 
                 ";
-        // line 58
+        // line 57
         if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_USER")) {
-            // line 59
+            // line 58
             echo "                <form action=\"";
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("comment_add3");
             echo "\" method=\"post\">
@@ -181,43 +180,43 @@ class __TwigTemplate_a77582a845804a243fa9ab2978fe373b6f848d9605933240268bccd9f94
                             </button>
                         </div>
                         <input type=\"hidden\" name=\"_csrf_token\" value=\"";
-            // line 69
+            // line 68
             echo twig_escape_filter($this->env, $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderCsrfToken("authenticate"), "html", null, true);
             echo "\">
                         <input type=\"hidden\" name=\"post_id\" value=\"";
-            // line 70
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["centredebeaute"]) || array_key_exists("centredebeaute", $context) ? $context["centredebeaute"] : (function () { throw new RuntimeError('Variable "centredebeaute" does not exist.', 70, $this->source); })()), "id", [], "any", false, false, false, 70), "html", null, true);
+            // line 69
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["centredebeaute"]) || array_key_exists("centredebeaute", $context) ? $context["centredebeaute"] : (function () { throw new RuntimeError('Variable "centredebeaute" does not exist.', 69, $this->source); })()), "id", [], "any", false, false, false, 69), "html", null, true);
             echo "\">
                     </div>
                 </form>
                 <hr>
                 ";
         } else {
-            // line 75
+            // line 74
             echo "                    <a href=\"";
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
             echo "\" class=\"btn btn-link\">Connectez vous pour commenter</a>
                 ";
         }
-        // line 77
+        // line 76
         echo "                <!-- show comments -->
                 ";
-        // line 78
+        // line 77
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["centredebeaute"]) || array_key_exists("centredebeaute", $context) ? $context["centredebeaute"] : (function () { throw new RuntimeError('Variable "centredebeaute" does not exist.', 78, $this->source); })()), "getCommentaire", [], "any", false, false, false, 78));
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["centredebeaute"]) || array_key_exists("centredebeaute", $context) ? $context["centredebeaute"] : (function () { throw new RuntimeError('Variable "centredebeaute" does not exist.', 77, $this->source); })()), "getCommentaire", [], "any", false, false, false, 77));
         foreach ($context['_seq'] as $context["_key"] => $context["commentaire"]) {
-            // line 79
+            // line 78
             echo "                <div class=\"media mt-3\">
                     <div class=\"media-body\">
                         <span class=\"comment-username\">";
-            // line 81
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["commentaire"], "user", [], "any", false, false, false, 81), "nom", [], "any", false, false, false, 81), "html", null, true);
+            // line 80
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["commentaire"], "user", [], "any", false, false, false, 80), "nom", [], "any", false, false, false, 80), "html", null, true);
             echo " ";
-            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["commentaire"], "createdAt", [], "any", false, false, false, 81), "F jS \\a\\t g:ia"), "html", null, true);
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["commentaire"], "createdAt", [], "any", false, false, false, 80), "F jS \\a\\t g:ia"), "html", null, true);
             echo "</span>
                         <p class=\"comment mt-2\">";
-            // line 82
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["commentaire"], "text", [], "any", false, false, false, 82), "html", null, true);
+            // line 81
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["commentaire"], "text", [], "any", false, false, false, 81), "html", null, true);
             echo "</p>
                     </div>
                     <hr>
@@ -229,10 +228,10 @@ class __TwigTemplate_a77582a845804a243fa9ab2978fe373b6f848d9605933240268bccd9f94
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['commentaire'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 89
+        // line 88
         echo "            </div>
            
-                
+         </div>       
         </div>
 <style>
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
@@ -533,7 +532,7 @@ main{
 
     public function getDebugInfo()
     {
-        return array (  233 => 89,  220 => 82,  214 => 81,  210 => 79,  206 => 78,  203 => 77,  197 => 75,  189 => 70,  185 => 69,  171 => 59,  169 => 58,  164 => 56,  149 => 44,  145 => 43,  141 => 42,  137 => 41,  130 => 37,  126 => 36,  105 => 18,  99 => 15,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  232 => 88,  219 => 81,  213 => 80,  209 => 78,  205 => 77,  202 => 76,  196 => 74,  188 => 69,  184 => 68,  170 => 58,  168 => 57,  163 => 55,  149 => 44,  145 => 43,  141 => 42,  137 => 41,  130 => 37,  126 => 36,  105 => 18,  99 => 15,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -592,7 +591,6 @@ main{
   
 
 
-
 <h2 class=\"text-capitalize\" >Commentaires <span >{{centredebeaute.getCommentaire.count}}</span></h2>
                 
                 {% if is_granted('ROLE_USER') %}
@@ -628,7 +626,7 @@ main{
                 {% endfor %}
             </div>
            
-                
+         </div>       
         </div>
 <style>
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
@@ -908,6 +906,6 @@ main{
 
 </style>
 
-{% endblock %}", "home/detailcentre.html.twig", "/opt/lampp/htdocs/sitemariage/templates/home/detailcentre.html.twig");
+{% endblock %}", "home/detailcentre.html.twig", "/opt/lampp/htdocs/sitemariage2/templates/home/detailcentre.html.twig");
     }
 }

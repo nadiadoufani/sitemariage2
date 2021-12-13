@@ -47,14 +47,14 @@ class __TwigTemplate_4dd11ba2c58f3c66ad908a5e51a61b54ba8a721bb812198df65a1511eb6
 
 <style>
 .form{
-    margin-top: 5px;
+    
     display:flex;
     width:100%;
     height:500px;
     align-items:left;
     justify-content:left;
     border-radius:0px 0px 15px 15px;
-    padding:15px;
+    
     
     background-image:url(\"https://www.mariefrance.fr/wp-content/uploads/sites/5/2015/04/mariage-court-750x410.jpg\");
     background-repeat: no-repeat;
@@ -140,14 +140,14 @@ h4{
 
 <style>
 .form{
-    margin-top: 5px;
+    
     display:flex;
     width:100%;
     height:500px;
     align-items:left;
     justify-content:left;
     border-radius:0px 0px 15px 15px;
-    padding:15px;
+    
     
     background-image:url(\"https://www.mariefrance.fr/wp-content/uploads/sites/5/2015/04/mariage-court-750x410.jpg\");
     background-repeat: no-repeat;

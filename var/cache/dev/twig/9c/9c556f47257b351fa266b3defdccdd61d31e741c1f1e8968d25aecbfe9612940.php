@@ -52,16 +52,16 @@ class __TwigTemplate_62be88dac5a25813a887f36a4a65e51f3467ed6758077c06bfbcf1d86b6
     
     display:flex;
     width:100%;
-    height:300px;
+    height:500px;
     align-items:left;
     justify-content:left;
     border-radius:0px 0px 15px 15px;
     padding:15px;
     
-    background-image:url(\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0gqybw5dPqZgU5VMNrt8DnpAZtNYY_DaMcA&usqp=CAU\");
+    background-image:url(\"https://images.pexels.com/photos/949223/pexels-photo-949223.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\");
     background-repeat: no-repeat;
     background-attachment: fixed; 
-    background-size: cover;
+    background-position:center;
 }
     .btn{
         width: 100px;
@@ -145,16 +145,16 @@ h4{
     
     display:flex;
     width:100%;
-    height:300px;
+    height:500px;
     align-items:left;
     justify-content:left;
     border-radius:0px 0px 15px 15px;
     padding:15px;
     
-    background-image:url(\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0gqybw5dPqZgU5VMNrt8DnpAZtNYY_DaMcA&usqp=CAU\");
+    background-image:url(\"https://images.pexels.com/photos/949223/pexels-photo-949223.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940\");
     background-repeat: no-repeat;
     background-attachment: fixed; 
-    background-size: cover;
+    background-position:center;
 }
     .btn{
         width: 100px;

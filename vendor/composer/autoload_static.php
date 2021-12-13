@@ -114,6 +114,7 @@ class ComposerStaticInit159d02a960b52d544a0d102a5f309268
             'Symfony\\Bridge\\PhpUnit\\' => 23,
             'Symfony\\Bridge\\Monolog\\' => 23,
             'Symfony\\Bridge\\Doctrine\\' => 24,
+            'Stripe\\' => 7,
             'Sensio\\Bundle\\FrameworkExtraBundle\\' => 35,
         ),
         'P' => 
@@ -477,6 +478,10 @@ class ComposerStaticInit159d02a960b52d544a0d102a5f309268
         'Symfony\\Bridge\\Doctrine\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/doctrine-bridge',
+        ),
+        'Stripe\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/stripe/stripe-php/lib',
         ),
         'Sensio\\Bundle\\FrameworkExtraBundle\\' => 
         array (

@@ -92,7 +92,7 @@ class __TwigTemplate_3ff5b7491ce8a90cddc4dbd826d47fb0e1e0c3ad646c3d514c3370187e8
         // line 8
         echo "</div>
 
-<div style=\"margin-top:100px;\">
+<div style=\"margin-top:50px;\">
     
     <h3>Animation mariage</h3>
     <p style=\"text-align: center;\">
@@ -200,11 +200,11 @@ Afin de ne vous préoccuper de rien le jour de l’événement et et de tout pr�
     <div class=\"card1\"style=\"margin-left:10px;\"><img src=\"";
         // line 78
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/4a30662481b6b4cf2eaac76d747e833b.jpg"), "html", null, true);
-        echo "\" alt=\"\"></div>
+        echo "\" alt=\"\" style=\"height:135px;width:200px;\"></div>
     <div class=\"card1\"style=\"margin-left:10px;\"><img src=\"";
         // line 79
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("imgcomment/e99ba87dcf183209ce8d74b3d4110b8b.jpg"), "html", null, true);
-        echo "\" alt=\"\"></div>
+        echo "\" alt=\"\" style=\"height:135px;width:200px;\"></div>
 
     
   </div>
@@ -212,6 +212,9 @@ Afin de ne vous préoccuper de rien le jour de l’événement et et de tout pr�
   
 </section>
 <style>
+body{
+ background-image:url(\"http://alijafarian.com/demos/responsive-jquery-accordions/images/texture_old_map.png\");
+}
 .card1 {
     display: inline-block;
     
@@ -219,7 +222,6 @@ Afin de ne vous préoccuper de rien le jour de l’événement et et de tout pr�
   width: 200px;
   height: 100px;
   border-radius: 40px;
-
   cursor: pointer;
   transition: 0.4s;
 }
@@ -229,11 +231,7 @@ Afin de ne vous préoccuper de rien le jour de l’événement et et de tout pr�
     -5px -5px 30px 15px rgba(0,0,0,0.22);
 }
   
-
-
-
  
-
 *{
     box-sizing: border-box;
     margin: 0;
@@ -244,9 +242,6 @@ Afin de ne vous préoccuper de rien le jour de l’événement et et de tout pr�
 :root {
   --curve: 40;
 }
-
-
-
 .cards{
   display:grid;
   grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
@@ -255,7 +250,6 @@ Afin de ne vous préoccuper de rien le jour de l’événement et et de tout pr�
   padding: 0;
   list-style: none;
 }
-
 .card {
   
   display: block;
@@ -264,12 +258,10 @@ Afin de ne vous préoccuper de rien le jour de l’événement et et de tout pr�
   overflow: hidden;
   text-decoration: none;
 }
-
 .card-image{
   width:100%;
   
 }
-
 .card_overlay {
   position: absolute;
   bottom: 0;
@@ -281,7 +273,6 @@ Afin de ne vous préoccuper de rien le jour de l’événement et et de tout pr�
   transform: translateY(100%);
   transition: 0.2s ease-in-out;
 }
-
 .card:hover .card_overlay {
   transform: translateY(0);
   -webkit-transform: translateY(0);
@@ -289,7 +280,6 @@ Afin de ne vous préoccuper de rien le jour de l’événement et et de tout pr�
   -ms-transform: translateY(0);
   -o-transform: translateY(0);
 }
-
 .card-header{
   position: relative;
   display:flex;
@@ -300,9 +290,7 @@ Afin de ne vous préoccuper de rien le jour de l’événement et et de tout pr�
   padding:2em;
   transform: translateY(-100%); 
   transition: 0.2s ease-in-out; 
-
 }
-
 .card-arc{
   width:5em;
   
@@ -311,29 +299,24 @@ Afin de ne vous préoccuper de rien le jour de l’événement et et de tout pr�
   right:0;
   z-index: 1;
 }
-
 .card-arc path{
   fill:var(--surface-color);
   d: path(\"M 40 80 c 22 0 40 -22 40 -40 v 40 Z\");
 }
-
 .card:hover .card-header{
   transform: translateY(0);  
 }
-
 .card-thumb{
   flex-shrink: 0;
   width:3.125em;
   height:3.125em;
   border-radius: 50%;
 }
-
 .card-title{
   font-size: 1.3rem;
   margin:0 0 0.3em;
   color: #52b17a;
 }
-
 .card-description {
   padding-bottom: 10rem;
   margin:0;
@@ -353,8 +336,6 @@ Afin de ne vous préoccuper de rien le jour de l’événement et et de tout pr�
    color:hotpink;
    text-align: center;
  }   
-
-
 .btn-blink1 {
  position: relative;
  display: inline-block;
@@ -370,7 +351,6 @@ Afin de ne vous préoccuper de rien le jour de l’événement et et de tout pr�
  color:palevioletred;
  animation: anim-btn1 1s ease-in-out infinite alternate;
 }
-
 @keyframes anim-btn1 {
  from {
   transform: scale(1);
@@ -385,7 +365,6 @@ Afin de ne vous préoccuper de rien le jour de l’événement et et de tout pr�
   box-shadow: 0 0 12px purple, 0 0 10px rgba(0, 0, 0, .5) inset;
  }
 }
-
 </style>
 
 
@@ -425,7 +404,7 @@ Afin de ne vous préoccuper de rien le jour de l’événement et et de tout pr�
 {% include 'musique_de_mariage/_filtre.html.twig' with{form:form} only %}
 </div>
 
-<div style=\"margin-top:100px;\">
+<div style=\"margin-top:50px;\">
     
     <h3>Animation mariage</h3>
     <p style=\"text-align: center;\">
@@ -493,8 +472,8 @@ Afin de ne vous préoccuper de rien le jour de l’événement et et de tout pr�
    
     <div class=\"card1\" style=\"margin-left:10px;\"><img src=\"{{asset('imgcomment/79198e373b1556b60ed66f5cbbd30644.jpg')}}\" alt=\"\"></div>
     <div class=\"card1\" style=\"margin-left:10px;\"><img src=\"{{asset('imgcomment/ffeae0b1571c6b9526c6246c22632044.jpg')}}\" alt=\"\"></div>
-    <div class=\"card1\"style=\"margin-left:10px;\"><img src=\"{{asset('imgcomment/4a30662481b6b4cf2eaac76d747e833b.jpg')}}\" alt=\"\"></div>
-    <div class=\"card1\"style=\"margin-left:10px;\"><img src=\"{{asset('imgcomment/e99ba87dcf183209ce8d74b3d4110b8b.jpg')}}\" alt=\"\"></div>
+    <div class=\"card1\"style=\"margin-left:10px;\"><img src=\"{{asset('imgcomment/4a30662481b6b4cf2eaac76d747e833b.jpg')}}\" alt=\"\" style=\"height:135px;width:200px;\"></div>
+    <div class=\"card1\"style=\"margin-left:10px;\"><img src=\"{{asset('imgcomment/e99ba87dcf183209ce8d74b3d4110b8b.jpg')}}\" alt=\"\" style=\"height:135px;width:200px;\"></div>
 
     
   </div>
@@ -502,6 +481,9 @@ Afin de ne vous préoccuper de rien le jour de l’événement et et de tout pr�
   
 </section>
 <style>
+body{
+ background-image:url(\"http://alijafarian.com/demos/responsive-jquery-accordions/images/texture_old_map.png\");
+}
 .card1 {
     display: inline-block;
     
@@ -509,7 +491,6 @@ Afin de ne vous préoccuper de rien le jour de l’événement et et de tout pr�
   width: 200px;
   height: 100px;
   border-radius: 40px;
-
   cursor: pointer;
   transition: 0.4s;
 }
@@ -519,11 +500,7 @@ Afin de ne vous préoccuper de rien le jour de l’événement et et de tout pr�
     -5px -5px 30px 15px rgba(0,0,0,0.22);
 }
   
-
-
-
  
-
 *{
     box-sizing: border-box;
     margin: 0;
@@ -534,9 +511,6 @@ Afin de ne vous préoccuper de rien le jour de l’événement et et de tout pr�
 :root {
   --curve: 40;
 }
-
-
-
 .cards{
   display:grid;
   grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
@@ -545,7 +519,6 @@ Afin de ne vous préoccuper de rien le jour de l’événement et et de tout pr�
   padding: 0;
   list-style: none;
 }
-
 .card {
   
   display: block;
@@ -554,12 +527,10 @@ Afin de ne vous préoccuper de rien le jour de l’événement et et de tout pr�
   overflow: hidden;
   text-decoration: none;
 }
-
 .card-image{
   width:100%;
   
 }
-
 .card_overlay {
   position: absolute;
   bottom: 0;
@@ -571,7 +542,6 @@ Afin de ne vous préoccuper de rien le jour de l’événement et et de tout pr�
   transform: translateY(100%);
   transition: 0.2s ease-in-out;
 }
-
 .card:hover .card_overlay {
   transform: translateY(0);
   -webkit-transform: translateY(0);
@@ -579,7 +549,6 @@ Afin de ne vous préoccuper de rien le jour de l’événement et et de tout pr�
   -ms-transform: translateY(0);
   -o-transform: translateY(0);
 }
-
 .card-header{
   position: relative;
   display:flex;
@@ -590,9 +559,7 @@ Afin de ne vous préoccuper de rien le jour de l’événement et et de tout pr�
   padding:2em;
   transform: translateY(-100%); 
   transition: 0.2s ease-in-out; 
-
 }
-
 .card-arc{
   width:5em;
   
@@ -601,29 +568,24 @@ Afin de ne vous préoccuper de rien le jour de l’événement et et de tout pr�
   right:0;
   z-index: 1;
 }
-
 .card-arc path{
   fill:var(--surface-color);
   d: path(\"M 40 80 c 22 0 40 -22 40 -40 v 40 Z\");
 }
-
 .card:hover .card-header{
   transform: translateY(0);  
 }
-
 .card-thumb{
   flex-shrink: 0;
   width:3.125em;
   height:3.125em;
   border-radius: 50%;
 }
-
 .card-title{
   font-size: 1.3rem;
   margin:0 0 0.3em;
   color: #52b17a;
 }
-
 .card-description {
   padding-bottom: 10rem;
   margin:0;
@@ -643,8 +605,6 @@ Afin de ne vous préoccuper de rien le jour de l’événement et et de tout pr�
    color:hotpink;
    text-align: center;
  }   
-
-
 .btn-blink1 {
  position: relative;
  display: inline-block;
@@ -660,7 +620,6 @@ Afin de ne vous préoccuper de rien le jour de l’événement et et de tout pr�
  color:palevioletred;
  animation: anim-btn1 1s ease-in-out infinite alternate;
 }
-
 @keyframes anim-btn1 {
  from {
   transform: scale(1);
@@ -675,7 +634,6 @@ Afin de ne vous préoccuper de rien le jour de l’événement et et de tout pr�
   box-shadow: 0 0 12px purple, 0 0 10px rgba(0, 0, 0, .5) inset;
  }
 }
-
 </style>
 
 

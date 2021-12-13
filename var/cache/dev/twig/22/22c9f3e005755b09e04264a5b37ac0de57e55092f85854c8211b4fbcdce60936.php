@@ -147,13 +147,31 @@ class __TwigTemplate_ba1f0063c05d59f2c7edd2bfbd7e9d23917ed1b25966632fbb0d8f4b718
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["calendar"], "textColor", [], "any", false, false, false, 35), "html", null, true);
             echo "</td>
                 <td>
-                    <a href=\"";
-            // line 37
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("calendar_show", ["id" => twig_get_attribute($this->env, $this->source, $context["calendar"], "id", [], "any", false, false, false, 37)]), "html", null, true);
+                    <a style=\"border-radius: 4px;
+    
+    color: aqua;
+    background: #666;
+    padding: 10px;
+    width: 20%;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px 3px #823579;
+    margin: 0 auto;
+    \" href=\"";
+            // line 46
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("calendar_show", ["id" => twig_get_attribute($this->env, $this->source, $context["calendar"], "id", [], "any", false, false, false, 46)]), "html", null, true);
             echo "\">show</a>
-                    <a href=\"";
-            // line 38
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("calendar_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["calendar"], "id", [], "any", false, false, false, 38)]), "html", null, true);
+                    <a style=\"border-radius: 4px;
+    
+    color: aqua;
+    background: #666;
+    padding: 10px;
+    width: 20%;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px 3px #823579;
+    margin: 0 auto;
+    \" href=\"";
+            // line 56
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("calendar_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["calendar"], "id", [], "any", false, false, false, 56)]), "html", null, true);
             echo "\">edit</a>
                 </td>
             </tr>
@@ -161,7 +179,7 @@ class __TwigTemplate_ba1f0063c05d59f2c7edd2bfbd7e9d23917ed1b25966632fbb0d8f4b718
             $context['_iterated'] = true;
         }
         if (!$context['_iterated']) {
-            // line 42
+            // line 60
             echo "            <tr>
                 <td colspan=\"10\">no records found</td>
             </tr>
@@ -170,16 +188,34 @@ class __TwigTemplate_ba1f0063c05d59f2c7edd2bfbd7e9d23917ed1b25966632fbb0d8f4b718
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['calendar'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 46
+        // line 64
         echo "        </tbody>
     </table>
 
-    <a href=\"";
-        // line 49
+    <a style=\"border-radius: 4px;
+    
+    color: aqua;
+    background: #666;
+    padding: 10px;
+    width: 20%;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px 3px #823579;
+    margin: 0 auto;
+    \" href=\"";
+        // line 76
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("calendar_new");
         echo "\">Create new</a>
-    <a href=\"";
-        // line 50
+    <a style=\"border-radius: 4px;
+    
+    color: aqua;
+    background: #666;
+    padding: 10px;
+    width: 20%;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px 3px #823579;
+    margin: 0 auto;
+    \" href=\"";
+        // line 86
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("rendez_vous");
         echo "\">Back</a>
 ";
@@ -203,7 +239,7 @@ class __TwigTemplate_ba1f0063c05d59f2c7edd2bfbd7e9d23917ed1b25966632fbb0d8f4b718
 
     public function getDebugInfo()
     {
-        return array (  183 => 50,  179 => 49,  174 => 46,  165 => 42,  156 => 38,  152 => 37,  147 => 35,  143 => 34,  139 => 33,  135 => 32,  131 => 31,  127 => 30,  123 => 29,  119 => 28,  115 => 27,  112 => 26,  107 => 25,  87 => 7,  77 => 6,  59 => 4,  36 => 1,);
+        return array (  219 => 86,  206 => 76,  192 => 64,  183 => 60,  174 => 56,  161 => 46,  147 => 35,  143 => 34,  139 => 33,  135 => 32,  131 => 31,  127 => 30,  123 => 29,  119 => 28,  115 => 27,  112 => 26,  107 => 25,  87 => 7,  77 => 6,  59 => 4,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -244,8 +280,26 @@ class __TwigTemplate_ba1f0063c05d59f2c7edd2bfbd7e9d23917ed1b25966632fbb0d8f4b718
                 <td>{{ calendar.borderColor }}</td>
                 <td>{{ calendar.textColor }}</td>
                 <td>
-                    <a href=\"{{ path('calendar_show', {'id': calendar.id}) }}\">show</a>
-                    <a href=\"{{ path('calendar_edit', {'id': calendar.id}) }}\">edit</a>
+                    <a style=\"border-radius: 4px;
+    
+    color: aqua;
+    background: #666;
+    padding: 10px;
+    width: 20%;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px 3px #823579;
+    margin: 0 auto;
+    \" href=\"{{ path('calendar_show', {'id': calendar.id}) }}\">show</a>
+                    <a style=\"border-radius: 4px;
+    
+    color: aqua;
+    background: #666;
+    padding: 10px;
+    width: 20%;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px 3px #823579;
+    margin: 0 auto;
+    \" href=\"{{ path('calendar_edit', {'id': calendar.id}) }}\">edit</a>
                 </td>
             </tr>
         {% else %}
@@ -256,8 +310,26 @@ class __TwigTemplate_ba1f0063c05d59f2c7edd2bfbd7e9d23917ed1b25966632fbb0d8f4b718
         </tbody>
     </table>
 
-    <a href=\"{{ path('calendar_new') }}\">Create new</a>
-    <a href=\"{{ path('rendez_vous') }}\">Back</a>
+    <a style=\"border-radius: 4px;
+    
+    color: aqua;
+    background: #666;
+    padding: 10px;
+    width: 20%;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px 3px #823579;
+    margin: 0 auto;
+    \" href=\"{{ path('calendar_new') }}\">Create new</a>
+    <a style=\"border-radius: 4px;
+    
+    color: aqua;
+    background: #666;
+    padding: 10px;
+    width: 20%;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px 3px #823579;
+    margin: 0 auto;
+    \" href=\"{{ path('rendez_vous') }}\">Back</a>
 {% endblock %}", "calendar/index.html.twig", "/opt/lampp/htdocs/sitemariage2/templates/calendar/index.html.twig");
     }
 }

@@ -5,8 +5,8 @@
 {% block body %}
   <br>
     <br>
-
-    <section class="form">
+<div  class="back">
+    <section class="form1">
         <div class="container">
 
             {% if notification %}
@@ -36,8 +36,11 @@
                     {{ form_row(form.password) }}
 
                     {{ form_end(form) }}
+                    <a href="{{path('app_login')}}"><button type="submit" style="float: inline-start;">login</button></a>
                 </div>
-                <div class="col"></div>
+                <div class="col">
+                  
+                </div>
             </div>
         </div>
     </section>
@@ -50,18 +53,25 @@
   box-sizing: border-box;
 }
 
+.back{
+   background-image:url("{{asset('https://cdn.pixabay.com/photo/2021/04/25/15/41/flower-6206819__340.jpg')}}");
+   background-size: 100% 60%;
+   background-repeat: no-repeat;
+   
+}
 
 
 form{
 width: 500px;
+
 box-shadow: 1px -4px  21px 20px #d4d4d4;
   border-radius: 8px;
   padding: 50px;
-  background: linear-gradient(to top, black,orange,orangered);
+  background: linear-gradient(to top, black,rgb(129, 110, 75),rgb(235, 145, 187));
   
 }
 
-label{
+labelz{
   position: relative;
   display: block;
   margin-bottom: 25px;
@@ -89,7 +99,7 @@ strong{
   display: block;
 }
 
-.btn{
+.btn,button{
   display: inline-block;
   width: 180px;
   height: 50px;
@@ -107,7 +117,7 @@ strong{
   text-transform: uppercase;
 }
 
-.btn:hover{
+.btn:hover,button:hover{
   box-shadow: 0 20px 30px;
   letter-spacing: 1px;
   outline: none;

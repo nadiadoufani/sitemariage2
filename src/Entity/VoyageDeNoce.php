@@ -44,6 +44,16 @@ class VoyageDeNoce
      */
     private $admin;
 
+    /**
+     * @ORM\OneToMany(targetEntity=Commentaire::class, mappedBy="voyagedenoce")
+     */
+    private $commentaire;
+
+    public function __construct()
+    {
+        $this->commentaire = new ArrayCollection();
+    }
+
   
 
     
@@ -109,6 +119,36 @@ class VoyageDeNoce
     public function setAdmin(?Admin $admin): self
     {
         $this->admin = $admin;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Commentaire[]
+     */
+    public function getCommentaire(): Collection
+    {
+        return $this->commentaire;
+    }
+
+    public function addCommentaire(Commentaire $commentaire): self
+    {
+        if (!$this->commentaire->contains($commentaire)) {
+            $this->commentaire[] = $commentaire;
+            $commentaire->setVoyageDeNoce($this);
+        }
+
+        return $this;
+    }
+
+    public function removeCommentaire(Commentaire $commentaire): self
+    {
+        if ($this->commentaire->removeElement($commentaire)) {
+            // set the owning side to null (unless already changed)
+            if ($commentaire->getVoyageDeNoce() === $this) {
+                $commentaire->setVoyageDeNoce(null);
+            }
+        }
 
         return $this;
     }

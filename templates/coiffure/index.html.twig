@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello CoiffureController!{% endblock %}
+{% block title %}{% endblock %}
 
 {% block body %}
 
@@ -14,6 +14,14 @@
 
 
 <style>
+body{
+ background-image:url("http://alijafarian.com/demos/responsive-jquery-accordions/images/texture_old_map.png");
+}
+.sec{
+    box-shadow:0 5px 10px rgba(0,0,0,.8);
+  border-radius:50px;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -24,12 +32,13 @@
     position:relative;
     width:100%;
     height:auto;
-    margin:80px auto 0;
-    margin-bottom: 50px;
+    margin:50px auto 0;
+    
+   
 }
 .coiffure .box {
     position:relative;
-    width:calc(400px - 60px);
+    width:calc(400px - 5px);
     height:calc(450px - 30px);
     background:#000;
     float:left;
@@ -204,38 +213,48 @@ section p {
 	color: black;
 }
 </style>
+<body>
 <div class="card-wrap "  style="margin-top:100px;">
 {% include 'coiffure/_filtre.html.twig' with{form:form} only %}
 </div>
 
 
-<div style="margin-top:300px;">
+<div style="margin-top:50px;">
 <h3 >Coiffure mariage</h3>
 <p style="text-align: center;" >
 Vous vous mariez prochainement et êtes en plein dans les préparatifs du plus beau jour de votre vie… 
 <br>Vous venez de trouver votre magnifique robe de mariée et avez choisi les accessoires qui la sublimeront.
-<br> Il est désormais temps de vous préoccuper de votre mise en beauté. À commencer par votre coiffure de mariée !
+Il est désormais temps de vous <br>préoccuper de votre mise en beauté. À commencer par votre coiffure de mariée !
 
 Mais alors, comment se coiffer quand on a les cheveux longs ou bien très courts ?
-<br> Quelle coupe choisir avec un visage rond, carré ou allongé ? Quand faire son premier essai dans un salon avant le mariage ? Quand se faire coiffer pour le jour J ? Comment respecter son budget beauté ? Découvrez tous nos avis,
+<br> Quelle coupe choisir avec un visage rond, carré ou allongé ? Quand faire son premier essai dans un salon avant le mariage ? Quand se faire coiffer pour le jour J ?<br> Comment respecter son budget beauté ? Découvrez tous nos avis,
 <br> conseils et inspirations pour une coiffure de mariage réussie ! 
 </p>
 </div>
+<section style="margin-top:5px;">
 <div class="coiffure" >
 {% for item in coiffure%}
+
     <div class="box">
+    <a href="{{path('home_detail_coiffure',{'id':item.id})}}" >
         <div class="imgBox">
-            <img src="/imgcoiffure/{{ item.image }}">
+        
+           <img src="/imgcoiffure/{{ item.image }}">
         </div>
         <div class="content">
             <h2>{{ item.nom}}</h2>
             <p>{{ item.description}}</p>
+           
         </div>
+      
     </div>
+    </a>
     {% endfor %}
 </div>
+</section>
+<div style="text-align: center;"><img src="https://cdn.pixabay.com/photo/2020/03/06/08/23/divider-4906386_960_720.png" alt="" style="height: 100px;width: 500px;text-align: center;"></div>
 
-<section>
+<section style="margin-top:20px;">
 	<div class="circle circle-one">
 		<img src="{{asset('imgcomment/11108871.webp')}}" alt="" title="">
 	</div>
@@ -246,7 +265,7 @@ Mais alors, comment se coiffer quand on a les cheveux longs ou bien très courts
 	
 	<div>
 		
-        <h2 > maquilleuse de mariage</h2>	
+        <h2> maquilleuse de mariage</h2>	
 		
 		
 		<p >Puisque vous serez la star de votre journée de célébration, vous devez accorder une grande importance à votre mise en beauté et rayonner tout au long de votre événement.
@@ -257,14 +276,11 @@ Mais alors, comment se coiffer quand on a les cheveux longs ou bien très courts
             <br> leurs forfaits, leurs méthodes, les produits utilisés, et prendre contact avec eux 4 à 6 mois à l’avance afin d’obtenir des demandes de devis détaillées
             <br> en fonction de vos besoins.
             
-            Un bon professionnel saura vous conseiller et vous aider dans la mission de trouver la coiffure et le maquillage correspondant à vos désirs mais
-            <br> aussi à la forme de votre visage, votre teint, votre robe de mariée et vos envies d’accessoires.
-            
-            <br>Cette personne ou cette équipe devra également vous proposer des soins en adéquation avec votre peau et votre type de cheveu et vous garantir
-            <br> une tenue durable du maquillage et de la coiffure, avec des retouches regulières si besoin.</p>
+       
+            </p>
 
 	</div>
 </section>
-
+</body>
 
 {% endblock %}
